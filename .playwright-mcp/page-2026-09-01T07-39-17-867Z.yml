@@ -1,0 +1,53 @@
+- generic [ref=f115e2]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=f115e4] [cursor=pointer]
+  - alert [ref=f115e1]: Curated Shows at INOX in Mumbai– Now Showing & Upcoming Films
+  - generic [ref=f115e7]:
+    - banner [ref=f115e8]:
+      - generic [ref=f115e10]:
+        - generic [ref=f115e11]:
+          - link [ref=f115e13] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f115e14]
+          - button "Map Point Icon Mumbai" [ref=f115e17] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f115e18]
+            - generic [ref=f115e19]: Mumbai
+        - navigation [ref=f115e20]:
+          - link "Home" [ref=f115e21] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f115e22] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f115e23] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f115e24] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f115e25] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [active] [ref=f115e26] [cursor=pointer]:
+            - generic [ref=f115e27]: More
+            - img "Arrow Down" [ref=f115e28]
+        - generic [ref=f115e29]:
+          - button [ref=f115e30] [cursor=pointer]
+          - button [ref=f115e35] [cursor=pointer]:
+            - img "User Icon" [ref=f115e37]
+          - button "Download App GIF Download App" [ref=f115e38] [cursor=pointer]:
+            - img "Download App GIF" [ref=f115e39]
+            - generic [ref=f115e40]: Download App
+    - generic [ref=f115e1989]:
+      - generic [ref=f115e1991]:
+        - generic [ref=f115e1992]:
+          - heading "Curated Shows" [level=1] [ref=f115e1993]
+          - generic [ref=f115e1994]:
+            - textbox "Search for movies, festivals..." [ref=f115e1995]
+            - button [ref=f115e1999] [cursor=pointer]:
+              - img "Microphone Icon" [ref=f115e2000]
+        - generic:
+          - figure:
+            - img "Curated Show Icon"
+      - generic [ref=f115e2001]:
+        - figure [ref=f115e2002]:
+          - img "No Curated Show Icon" [ref=f115e2003]
+        - heading "No Curated Shows Available" [level=2] [ref=f115e2004]
+        - paragraph [ref=f115e2005]: Thank you for your interest in our curated shows. There is no curated content currently listed in your city, but hopefully, you'll be able to enjoy your favourite movies soon. Please stay tuned!
+        - button "Back to Homepage" [ref=f115e2006] [cursor=pointer]
+  - region "Notifications alt+T"

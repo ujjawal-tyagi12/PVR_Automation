@@ -1,0 +1,40 @@
+---
+title: Skills and Prompts
+description: The .claude/skills/ catalog and how they chain together
+---
+
+## Skill catalog
+
+| Skill | Role |
+|-------|------|
+| `/setup-framework` | Scaffold or verify this repo layout in a new project |
+| `/generate-test-cases` | Requirements from module + navigation + user stories |
+| `/create-md-ticket` | Requirements from Excel/CSV → `requirements/{module}.md` |
+| `/playwright-mcp` | Planner → Generator → Healer, MCP-grounded |
+| `/e2e-review` | Review generated tests against architecture + rule engine |
+
+## Colleague flow
+
+```bash
+claude --chrome
+```
+
+```text
+/setup-framework          # skip if already in a cloned project
+# put credentials in .env.local (from .env.example)
+/generate-test-cases       # or /create-md-ticket
+/playwright-mcp
+/e2e-review
+```
+
+## Session starter prompt
+
+```text
+Start with /mcp to confirm Playwright MCP.
+If Chrome is needed, ensure session was launched with --chrome (or /chrome).
+Then run Planner → Generator → Healer for requirements/{module}.md.
+```
+
+Prompt templates for each agent live in
+`.claude/skills/playwright-mcp/references/prompts.md` and are mirrored in
+[planner-healer-generator.mdx](./planner-healer-generator).

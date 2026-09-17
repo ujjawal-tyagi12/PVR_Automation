@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(curl -sL -w \"\\\\nHTTP_STATUS:%{http_code}\\\\n\" \"https://docs.google.com/spreadsheets/d/11OoU6tAn5LoEZI1ROzJcMrOK_dpgtjZ1pGAm8EDtIDM/export?format=csv&gid=0\" -o \"/private/tmp/claude-501/-Users-exchange-Desktop-Utility-2/88020feb-beee-4082-b2a5-e260708a7478/scratchpad/testcases.csv\")",
+      "Bash(curl -sL \"https://docs.google.com/spreadsheets/d/11OoU6tAn5LoEZI1ROzJcMrOK_dpgtjZ1pGAm8EDtIDM/edit\" -o \"/private/tmp/claude-501/-Users-exchange-Desktop-Utility-2/88020feb-beee-4082-b2a5-e260708a7478/scratchpad/sheet.html\" -w \"HTTP_STATUS:%{http_code}\\\\n\")",
+      "Bash(python3 *)"
+    ]
+  }
+}

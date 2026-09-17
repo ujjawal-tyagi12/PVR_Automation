@@ -1,0 +1,199 @@
+- generic [ref=f596e2]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=f596e4] [cursor=pointer]
+  - alert [ref=f596e1]: PVR INOX Investors Section – Financial Reports, Shareholder Info
+  - generic [ref=f596e7]:
+    - banner [ref=f596e8]:
+      - generic [ref=f596e10]:
+        - generic [ref=f596e11]:
+          - link [ref=f596e13] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f596e14]
+          - button "Map Point Icon Mumbai" [ref=f596e17] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f596e18]
+            - generic [ref=f596e19]: Mumbai
+        - navigation [ref=f596e20]:
+          - link "Home" [ref=f596e21] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f596e22] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f596e23] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f596e24] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f596e25] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=f596e26] [cursor=pointer]:
+            - generic [ref=f596e27]: More
+            - img "Arrow Down" [ref=f596e28]
+        - generic [ref=f596e29]:
+          - button [ref=f596e30] [cursor=pointer]
+          - button [ref=f596e35] [cursor=pointer]:
+            - img "User Icon" [ref=f596e37]
+          - button "Download App GIF Download App" [ref=f596e38] [cursor=pointer]:
+            - img "Download App GIF" [ref=f596e39]
+            - generic [ref=f596e40]: Download App
+    - generic [ref=f596e819]:
+      - heading "Investor Section" [level=1] [ref=f596e821]
+      - generic [ref=f596e823]:
+        - generic [ref=f596e826]:
+          - button "Financials" [ref=f596e827] [cursor=pointer]
+          - button "Statutory Disclosures" [ref=f596e828] [cursor=pointer]
+          - button "Investor Support" [ref=f596e829] [cursor=pointer]
+          - button "Scheme of merger PVR & INOX" [ref=f596e830] [cursor=pointer]
+          - button "Statement of Deviation(s) or Variations(s)" [ref=f596e831] [cursor=pointer]
+        - button "Scroll tabs right" [ref=f596e832] [cursor=pointer]:
+          - img "right-arrow" [ref=f596e833]
+      - generic [ref=f596e834]:
+        - generic [ref=f596e835]:
+          - button "Annual Report" [active] [ref=f596e839] [cursor=pointer]
+          - button "10 Years Highlight" [ref=f596e837] [cursor=pointer]
+          - button "Investor Presentation" [ref=f596e841] [cursor=pointer]
+          - button "Quarterly Financials" [ref=f596e843] [cursor=pointer]
+          - button "Subsidiary Report" [ref=f596e845] [cursor=pointer]
+        - generic [ref=f596e1537]:
+          - generic [ref=f596e1539]:
+            - combobox [ref=f596e1540] [cursor=pointer]:
+              - generic: All Years
+            - combobox [ref=f596e1541] [cursor=pointer]:
+              - generic: Jan
+          - generic [ref=f596e1542]:
+            - article [ref=f596e1543]:
+              - img "2024-25" [ref=f596e1545]
+              - generic [ref=f596e1547]:
+                - generic [ref=f596e1548]: 2024-25
+                - button "Download 2024-25" [ref=f596e1549] [cursor=pointer]:
+                  - img "Download" [ref=f596e1550]
+            - article [ref=f596e1551]:
+              - img "2023-24" [ref=f596e1553]
+              - generic [ref=f596e1555]:
+                - generic [ref=f596e1556]: 2023-24
+                - button "Download 2023-24" [ref=f596e1557] [cursor=pointer]:
+                  - img "Download" [ref=f596e1558]
+            - article [ref=f596e1559]:
+              - img "2022-23" [ref=f596e1561]
+              - generic [ref=f596e1563]:
+                - generic [ref=f596e1564]: 2022-23
+                - button "Download 2022-23" [ref=f596e1565] [cursor=pointer]:
+                  - img "Download" [ref=f596e1566]
+            - article [ref=f596e1567]:
+              - img "2021-22" [ref=f596e1569]
+              - generic [ref=f596e1571]:
+                - generic [ref=f596e1572]: 2021-22
+                - button "Download 2021-22" [ref=f596e1573] [cursor=pointer]:
+                  - img "Download" [ref=f596e1574]
+            - article [ref=f596e1575]:
+              - img "2020-21" [ref=f596e1577]
+              - generic [ref=f596e1579]:
+                - generic [ref=f596e1580]: 2020-21
+                - button "Download 2020-21" [disabled] [ref=f596e1581]:
+                  - img "Download" [ref=f596e1582]
+            - article [ref=f596e1583]:
+              - img "2020-21" [ref=f596e1585]
+              - generic [ref=f596e1587]:
+                - generic [ref=f596e1588]: 2020-21
+                - button "Download 2020-21" [ref=f596e1589] [cursor=pointer]:
+                  - img "Download" [ref=f596e1590]
+            - article [ref=f596e1591]:
+              - img "2019-20" [ref=f596e1593]
+              - generic [ref=f596e1595]:
+                - generic [ref=f596e1596]: 2019-20
+                - button "Download 2019-20" [ref=f596e1597] [cursor=pointer]:
+                  - img "Download" [ref=f596e1598]
+            - article [ref=f596e1599]:
+              - img "2018-19" [ref=f596e1601]
+              - generic [ref=f596e1603]:
+                - generic [ref=f596e1604]: 2018-19
+                - button "Download 2018-19" [ref=f596e1605] [cursor=pointer]:
+                  - img "Download" [ref=f596e1606]
+            - article [ref=f596e1607]:
+              - img "2017-18" [ref=f596e1609]
+              - generic [ref=f596e1611]:
+                - generic [ref=f596e1612]: 2017-18
+                - button "Download 2017-18" [ref=f596e1613] [cursor=pointer]:
+                  - img "Download" [ref=f596e1614]
+            - article [ref=f596e1615]:
+              - img "2016-17" [ref=f596e1617]
+              - generic [ref=f596e1619]:
+                - generic [ref=f596e1620]: 2016-17
+                - button "Download 2016-17" [ref=f596e1621] [cursor=pointer]:
+                  - img "Download" [ref=f596e1622]
+            - article [ref=f596e1623]:
+              - img "2015-16" [ref=f596e1625]
+              - generic [ref=f596e1627]:
+                - generic [ref=f596e1628]: 2015-16
+                - button "Download 2015-16" [ref=f596e1629] [cursor=pointer]:
+                  - img "Download" [ref=f596e1630]
+            - article [ref=f596e1631]:
+              - img "2014-15" [ref=f596e1633]
+              - generic [ref=f596e1635]:
+                - generic [ref=f596e1636]: 2014-15
+                - button "Download 2014-15" [ref=f596e1637] [cursor=pointer]:
+                  - img "Download" [ref=f596e1638]
+            - article [ref=f596e1639]:
+              - img "2013-14" [ref=f596e1641]
+              - generic [ref=f596e1643]:
+                - generic [ref=f596e1644]: 2013-14
+                - button "Download 2013-14" [ref=f596e1645] [cursor=pointer]:
+                  - img "Download" [ref=f596e1646]
+            - article [ref=f596e1647]:
+              - img "2012-13" [ref=f596e1649]
+              - generic [ref=f596e1651]:
+                - generic [ref=f596e1652]: 2012-13
+                - button "Download 2012-13" [ref=f596e1653] [cursor=pointer]:
+                  - img "Download" [ref=f596e1654]
+            - article [ref=f596e1655]:
+              - img "2011-12" [ref=f596e1657]
+              - generic [ref=f596e1659]:
+                - generic [ref=f596e1660]: 2011-12
+                - button "Download 2011-12" [ref=f596e1661] [cursor=pointer]:
+                  - img "Download" [ref=f596e1662]
+            - article [ref=f596e1663]:
+              - img "2010-11" [ref=f596e1665]
+              - generic [ref=f596e1667]:
+                - generic [ref=f596e1668]: 2010-11
+                - button "Download 2010-11" [ref=f596e1669] [cursor=pointer]:
+                  - img "Download" [ref=f596e1670]
+            - article [ref=f596e1671]:
+              - img "2009-10" [ref=f596e1673]
+              - generic [ref=f596e1675]:
+                - generic [ref=f596e1676]: 2009-10
+                - button "Download 2009-10" [ref=f596e1677] [cursor=pointer]:
+                  - img "Download" [ref=f596e1678]
+            - article [ref=f596e1679]:
+              - img "2008-09" [ref=f596e1681]
+              - generic [ref=f596e1683]:
+                - generic [ref=f596e1684]: 2008-09
+                - button "Download 2008-09" [ref=f596e1685] [cursor=pointer]:
+                  - img "Download" [ref=f596e1686]
+            - article [ref=f596e1687]:
+              - img "2007-08" [ref=f596e1689]
+              - generic [ref=f596e1691]:
+                - generic [ref=f596e1692]: 2007-08
+                - button "Download 2007-08" [ref=f596e1693] [cursor=pointer]:
+                  - img "Download" [ref=f596e1694]
+            - article [ref=f596e1695]:
+              - img "2006-07" [ref=f596e1697]
+              - generic [ref=f596e1699]:
+                - generic [ref=f596e1700]: 2006-07
+                - button "Download 2006-07" [ref=f596e1701] [cursor=pointer]:
+                  - img "Download" [ref=f596e1702]
+            - article [ref=f596e1703]:
+              - img "2005-06" [ref=f596e1705]
+              - generic [ref=f596e1707]:
+                - generic [ref=f596e1708]: 2005-06
+                - button "Download 2005-06" [ref=f596e1709] [cursor=pointer]:
+                  - img "Download" [ref=f596e1710]
+            - article [ref=f596e1711]:
+              - img "2004-05" [ref=f596e1713]
+              - generic [ref=f596e1715]:
+                - generic [ref=f596e1716]: 2004-05
+                - button "Download 2004-05" [ref=f596e1717] [cursor=pointer]:
+                  - img "Download" [ref=f596e1718]
+            - article [ref=f596e1719]:
+              - img "2003-04" [ref=f596e1721]
+              - generic [ref=f596e1723]:
+                - generic [ref=f596e1724]: 2003-04
+                - button "Download 2003-04" [ref=f596e1725] [cursor=pointer]:
+                  - img "Download" [ref=f596e1726]
+  - region "Notifications alt+T"

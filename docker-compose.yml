@@ -1,0 +1,13 @@
+services:
+  e2e:
+    build: .
+    environment:
+      CI: 'true'
+      BASE_URL: ${BASE_URL}
+      API_BASE_URL: ${API_BASE_URL}
+      TEST_USERNAME: ${TEST_USERNAME}
+      TEST_PASSWORD: ${TEST_PASSWORD}
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./tta-report:/app/tta-report
+      - ./test-results:/app/test-results

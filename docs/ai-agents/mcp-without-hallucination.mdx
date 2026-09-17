@@ -1,0 +1,34 @@
+---
+title: MCP Without Hallucination
+description: Why locators and navigation must be grounded in MCP, not guessed
+---
+
+## The problem
+
+Ask an LLM to write a Playwright locator without seeing the page, and it will invent a
+plausible-looking `data-testid` or CSS selector that doesn't exist in the DOM. Tests pass code
+review, then fail on first run — or worse, silently match the wrong element.
+
+## The fix: ground every locator in a live observation
+
+| Server | Gives you | Use for |
+|--------|-----------|---------|
+| **Playwright MCP** (`.mcp.json`, `@playwright/mcp`) | Accessibility snapshots, deterministic browser tools | Navigation, selector discovery while generating Page objects |
+| **Chrome MCP** (`claude --chrome` / `/chrome`) | A real, possibly authenticated Chrome tab, console + network | Auth-heavy flows, debugging flaky failures, verifying Healer fixes |
+
+Rule of thumb: **never invent `data-testid` or roles when MCP can read the page.**
+
+## Locator priority (once you have real DOM evidence)
+
+1. `data-testid` / `data-testvalue`
+2. `id`, `name`
+3. Playwright role/label/placeholder locators (`getByRole`, `getByLabel`, `getByPlaceholder`)
+4. CSS selectors
+5. XPath — last resort
+
+## In this repo
+
+Confirm Playwright MCP is connected with `/mcp` before running Generator or Healer. Add
+`--browser=chrome`, `--storage-state=.auth/session.json`, or `--headed` to `.mcp.json`'s
+`args` for harder cases. Full details:
+`.claude/skills/playwright-mcp/references/mcp-claude-code.md`.

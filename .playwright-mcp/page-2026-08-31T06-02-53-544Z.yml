@@ -1,0 +1,385 @@
+- generic [ref=f179e2]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=f179e1738] [cursor=pointer]
+  - alert [ref=f179e1]
+  - generic [ref=f179e7]:
+    - banner [ref=f179e8]:
+      - generic [ref=f179e10]:
+        - generic [ref=f179e11]:
+          - link [ref=f179e13] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f179e14]
+          - button "Map Point Icon Mumbai" [active] [ref=f179e1739] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f179e1740]
+            - generic [ref=f179e1741]: Mumbai
+        - navigation [ref=f179e20]:
+          - link "Home" [ref=f179e21] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f179e22] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f179e23] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f179e24] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f179e25] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=f179e26] [cursor=pointer]:
+            - generic [ref=f179e27]: More
+            - img "Arrow Down" [ref=f179e28]
+        - generic [ref=f179e29]:
+          - button [ref=f179e30] [cursor=pointer]
+          - button [ref=f179e35] [cursor=pointer]:
+            - img "User Icon" [ref=f179e37]
+          - button "Download App GIF Download App" [ref=f179e38] [cursor=pointer]:
+            - img "Download App GIF" [ref=f179e39]
+            - generic [ref=f179e40]: Download App
+    - generic [ref=f179e41]:
+      - generic [ref=f179e1742]:
+        - generic [ref=f179e1744]:
+          - img "Background" [ref=f179e1746]
+          - generic [ref=f179e1747]:
+            - img "Background"
+        - generic [ref=f179e1748]:
+          - generic:
+            - link:
+              - /url: /moviesessions/mumbai/movie/undefined
+          - list [ref=f179e1751]:
+            - listitem [ref=f179e1752]
+            - listitem [ref=f179e1753]
+            - listitem [ref=f179e1754]
+          - link "Book Now" [ref=f179e1756] [cursor=pointer]:
+            - /url: /moviesessions/mumbai/movie/undefined
+        - button [ref=f179e1758] [cursor=pointer]
+        - generic [ref=f179e1762]:
+          - heading "IN THE SPOTLIGHT" [level=2] [ref=f179e1763]
+          - generic [ref=f179e1767]:
+            - generic [ref=f179e1768]:
+              - button [ref=f179e1770] [cursor=pointer]:
+                - generic [ref=f179e1772]:
+                  - figure [ref=f179e1773]:
+                    - img "Ramayanam(Hindi)" [ref=f179e1774]
+                  - heading "Re-Release" [level=2] [ref=f179e1777]
+              - button [ref=f179e1779] [cursor=pointer]:
+                - figure [ref=f179e1782]:
+                  - img "Dhurandhar(Hindi)" [ref=f179e1783]
+              - button [ref=f179e1785] [cursor=pointer]:
+                - generic [ref=f179e1787]:
+                  - figure [ref=f179e1788]:
+                    - 'img "Spider-Man: Brand New Day" [ref=f179e1789]'
+                  - heading "30 Sep'26" [level=2] [ref=f179e1792]
+              - button [ref=f179e1794] [cursor=pointer]:
+                - generic [ref=f179e1796]:
+                  - figure [ref=f179e1797]:
+                    - img "Raksha Bandhan" [ref=f179e1798]
+                  - heading "Re-Release" [level=2] [ref=f179e1801]
+              - button [ref=f179e1803] [cursor=pointer]:
+                - generic [ref=f179e1805]:
+                  - figure [ref=f179e1806]:
+                    - img "Border 2(Hindi)" [ref=f179e1807]
+                  - heading "Re-Release" [level=2] [ref=f179e1810]
+              - button [ref=f179e1812] [cursor=pointer]:
+                - generic [ref=f179e1814]:
+                  - figure [ref=f179e1815]:
+                    - img "1920 London (Hindi)" [ref=f179e1816]
+                  - heading "Re-Release" [level=2] [ref=f179e1819]
+            - generic [ref=f179e1820] [cursor=pointer]
+      - generic [ref=f179e1823]:
+        - heading "Discover the Experiences" [level=3] [ref=f179e1824]
+        - generic [ref=f179e1826]:
+          - list [ref=f179e1828]:
+            - listitem [ref=f179e1829]:
+              - link [ref=f179e1830] [cursor=pointer]:
+                - /url: /experiences?experienceID=a05e9ffd67fb51e11e1e36e02f6f14ec:372a8675b65bfe2a2bc53ab2d5e4a250:33dea9453ccf89dec85cf30abe673ed345d73d5988e8be49
+                - img "Logo" [ref=f179e1831]
+            - listitem [ref=f179e1832]:
+              - link [ref=f179e1833] [cursor=pointer]:
+                - /url: /experiences?experienceID=4d1825fac7f48336990fc12cd302f31d:8307dca2e1f309669fb73133703fa7cc:62939be95974e4508c4ebba614a55c447b893b443cf6d09e
+                - img "Logo" [ref=f179e1834]
+            - listitem [ref=f179e1835]:
+              - link [ref=f179e1836] [cursor=pointer]:
+                - /url: /experiences?experienceID=2fa734f66505f36d034e97a0c2cbf105:25c9bbf82615c472da82f383318c5b8a:5cf8bddfe3276fd139366be4f83e40ddf9d073cf42d6691a
+                - img "Logo" [ref=f179e1837]
+            - listitem [ref=f179e1838]:
+              - link [ref=f179e1839] [cursor=pointer]:
+                - /url: /experiences?experienceID=855877f07adb6a113fda65e01ddb37f0:b8b250a30b6da140127c80e159f24b61:fb9ccf4af267f243c9ab7a121816bed6a63d1a786a7c20ff
+                - img "Logo" [ref=f179e1840]
+          - link "View More" [ref=f179e1842] [cursor=pointer]:
+            - /url: /experiences
+    - generic [ref=f179e47]:
+      - generic [ref=f179e49]:
+        - generic [ref=f179e50]:
+          - button "Experience the Magic on the Big Screen! Book your tickets now and enjoy an unforgettable cinematic adventure. Get Exclusive Movie Deals Now!" [ref=f179e52] [cursor=pointer]:
+            - generic [ref=f179e53]:
+              - figure [ref=f179e54]:
+                - img "Web" [ref=f179e55]
+              - generic [ref=f179e56]:
+                - paragraph [ref=f179e1843]:
+                  - strong [ref=f179e1844]: Experience the Magic on the Big Screen!
+                  - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+                - generic [ref=f179e60]: Get Exclusive Movie Deals Now!
+          - button [ref=f179e62] [cursor=pointer]:
+            - generic [ref=f179e63]:
+              - figure [ref=f179e64]:
+                - img "Video" [ref=f179e65]
+                - button "Play video" [ref=f179e66]
+              - paragraph [ref=f179e1845]: Get ready for adrenaline-pumping action, intense drama, and edge-of-your-seat excitement. Reserve your seats today!
+          - button [ref=f179e74] [cursor=pointer]:
+            - generic [ref=f179e75]:
+              - figure [ref=f179e76]:
+                - img "Non" [ref=f179e77]
+              - paragraph [ref=f179e1846]:
+                - strong [ref=f179e1847]: Experience the Magic on the Big Screen!
+                - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+        - generic [ref=f179e82]:
+          - generic [ref=f179e83] [cursor=pointer]
+          - generic [ref=f179e84] [cursor=pointer]
+          - generic [ref=f179e85] [cursor=pointer]
+      - button "Previous" [ref=f179e86] [cursor=pointer]
+      - button "Next" [ref=f179e87] [cursor=pointer]
+    - generic [ref=f179e88]:
+      - generic [ref=f179e90]:
+        - generic [ref=f179e92]:
+          - button "Now Showing" [ref=f179e96] [cursor=pointer]
+          - button "Coming Soon" [ref=f179e97] [cursor=pointer]
+          - button "Experiences" [ref=f179e1848] [cursor=pointer]
+          - button "Trailers" [ref=f179e98] [cursor=pointer]
+          - button "Offers" [ref=f179e99] [cursor=pointer]
+        - generic [ref=f179e100]:
+          - button "Food Icon Food" [ref=f179e101] [cursor=pointer]:
+            - img "Food Icon" [ref=f179e102]
+            - generic [ref=f179e103]: Food
+          - button "Curated Shows Icon Curated Shows" [ref=f179e104] [cursor=pointer]:
+            - img "Curated Shows Icon" [ref=f179e105]
+            - generic [ref=f179e106]: Curated Shows
+      - generic [ref=f179e107]:
+        - generic [ref=f179e109]:
+          - heading "Now Showing" [level=2] [ref=f179e110]
+          - button "Filter Icon Filter" [ref=f179e1850] [cursor=pointer]:
+            - img "Filter Icon" [ref=f179e1852]
+            - generic [ref=f179e1853]: Filter
+        - iframe [ref=f179e120]:
+          - link [ref=f183e2] [cursor=pointer]:
+            - /url: https://adreq.adster.tech/v1/click?actual_adunit=&ad_type=banner&ad_unit=&adv_name=PVR+advertiser&adv_vert=pvrcinemas&advertiser_id=01KJPX5D4X7K6P5624FFBS8ZGG&app_name=inox-uat-web.pvrinox.com&buy_type=CPM&cb=&city=Delhi&click_id=01M1B6JEE4CMBHMYDBPM45S2DG&click_url=https%3A%2F%2Fwww.getonecard.app%2F%3Fdeep_link_value%3DOffers%26af_force_deeplink%3Dtrue%26af_dp%3Donecard%253A%252F%252Fmainactivity%26source_caller%3Dui%26deep_link_sub1%3DSCREEN%26shortlink%3DOffers%26utm_source%3Dpvr_ads%26c%3DOffers%2520Page%26pid%3DSMS%26af_xp%3Dtext&client_timestamp=0&country=IND&cpc=0&creative_id=01KWV71P8NGJDCC1HFKMCSX8ZF&creative_text=&crn=&ctype=&derived_ecpm=10&ds=&ds_model=&dt=Desktop&eid=pvrcinemas&ga_id=&hour=0&lin=&line_id=01KWV780Q1YGD1HXK4E2C2K226&m=0&network=adster&order_id=01KWV780Q1YGD1HXK4E2C2K226&org_id=01KJPX5D4X7K6P5624FFBS8ZGG&partner_id=pvrcinemas&placement_id=pvr-next-desktop-home-btf-banner&pri=1&product_category=&product_subtype=&publisher_id=01KJQ0SP661H9D3MBDXNRSMHH3&pubn=&region=IN-DL&req_id=01M1B6JEE4PSG2JC64K8W8N6Q2&req_type=banner&timestamp=0&user_agent=&user_id=179925fc-85e4-4662-8e87-6f742d00aeda
+            - img "OneCard Offer_Jan26_Homepage BTF 1440x250" [ref=f183e3]
+      - generic [ref=f179e121]:
+        - generic [ref=f179e123]:
+          - heading [level=2] [ref=f179e124]: Coming Soon
+          - link [ref=f179e125] [cursor=pointer]:
+            - /url: /coming-soon
+            - text: View More
+        - generic [ref=f179e130]:
+          - button [ref=f179e132] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 30 Sep'26
+                    - heading [level=3]: Jana Nayagan
+                    - generic:
+                      - generic:
+                        - paragraph: 30m
+                        - generic:
+                          - paragraph: Hindi (Original)
+                          - generic: "+3"
+                      - generic:
+                        - paragraph: A
+                        - paragraph: Action
+                        - generic: "+3"
+            - generic [ref=f179e138]:
+              - paragraph [ref=f179e139]: Releasing On 30 Sep'26
+              - heading [level=3] [ref=f179e140]: Jana Nayagan
+              - generic [ref=f179e141]:
+                - generic [ref=f179e142]:
+                  - paragraph [ref=f179e143]: 30m
+                  - generic [ref=f179e145]:
+                    - paragraph [ref=f179e146]: Hindi (Original)
+                    - generic [ref=f179e1854]: "+3"
+                - generic [ref=f179e147]:
+                  - paragraph [ref=f179e148]: A
+                  - generic [ref=f179e150]:
+                    - paragraph [ref=f179e151]: Action
+                    - generic [ref=f179e152]: "+3"
+          - button [ref=f179e155] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: Varanasi (film)
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi
+                      - generic:
+                        - paragraph: S
+                        - paragraph: Musical
+                        - generic: "+3"
+            - generic [ref=f179e157]:
+              - generic [ref=f179e158]: 45 fans are hyped for this movie!
+              - generic [ref=f179e161]:
+                - paragraph [ref=f179e162]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f179e163]: Varanasi (film)
+                - generic [ref=f179e164]:
+                  - generic [ref=f179e165]:
+                    - paragraph [ref=f179e166]: 1h
+                    - paragraph [ref=f179e169]: Hindi
+                  - generic [ref=f179e172]:
+                    - paragraph [ref=f179e173]: S
+                    - generic [ref=f179e175]:
+                      - paragraph [ref=f179e176]: Musical
+                      - generic [ref=f179e177]: "+3"
+          - button [ref=f179e180] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: King (2026 film)
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi
+                      - generic:
+                        - paragraph: S
+                        - paragraph: Action
+                        - generic: "+1"
+            - generic [ref=f179e182]:
+              - generic [ref=f179e183]: 25 fans are hyped for this movie!
+              - generic [ref=f179e186]:
+                - paragraph [ref=f179e187]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f179e188]: King (2026 film)
+                - generic [ref=f179e189]:
+                  - generic [ref=f179e190]:
+                    - paragraph [ref=f179e191]: 1h
+                    - paragraph [ref=f179e194]: Hindi
+                  - generic [ref=f179e197]:
+                    - paragraph [ref=f179e198]: S
+                    - generic [ref=f179e200]:
+                      - paragraph [ref=f179e201]: Action
+                      - generic [ref=f179e202]: "+1"
+          - button [ref=f179e205] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: English
+                      - generic:
+                        - paragraph: UA 13+
+                        - paragraph: Action
+                        - generic: "+2"
+            - generic [ref=f179e207]:
+              - generic [ref=f179e208]: 12 fans are hyped for this movie!
+              - generic [ref=f179e213]:
+                - paragraph [ref=f179e214]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f179e215]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                - generic [ref=f179e216]:
+                  - generic [ref=f179e217]:
+                    - paragraph [ref=f179e218]: 1h
+                    - paragraph [ref=f179e221]: English
+                  - generic [ref=f179e222]:
+                    - paragraph [ref=f179e223]: UA 13+
+                    - generic [ref=f179e225]:
+                      - paragraph [ref=f179e226]: Action
+                      - generic [ref=f179e227]: "+2"
+          - button [ref=f179e230] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: PROJECT HAIL MARY
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: English
+                      - generic:
+                        - paragraph: UA 13+
+                        - paragraph: Science Fiction
+            - generic [ref=f179e232]:
+              - generic [ref=f179e233]: 9 fans are hyped for this movie!
+              - generic [ref=f179e236]:
+                - paragraph [ref=f179e237]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f179e238]: PROJECT HAIL MARY
+                - generic [ref=f179e239]:
+                  - generic [ref=f179e240]:
+                    - paragraph [ref=f179e241]: 1h
+                    - paragraph [ref=f179e244]: English
+                  - generic [ref=f179e247]:
+                    - paragraph [ref=f179e248]: UA 13+
+                    - paragraph [ref=f179e251]: Science Fiction
+      - heading [level=2] [ref=f179e1865]: Experiences
+    - button "Scroll to top Arrow Up Icon" [ref=f179e1427] [cursor=pointer]:
+      - generic [ref=f179e1428]: Scroll to top
+      - img "Arrow Up Icon" [ref=f179e1429]
+    - contentinfo [ref=f179e1430]:
+      - generic [ref=f179e1431]:
+        - generic [ref=f179e1432]:
+          - generic [ref=f179e1433]:
+            - link [ref=f179e1434] [cursor=pointer]:
+              - /url: /
+              - img "Brand Logo" [ref=f179e1435]
+            - paragraph [ref=f179e1436]: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            - list [ref=f179e1437]:
+              - listitem [ref=f179e1438]:
+                - link [ref=f179e1439] [cursor=pointer]:
+                  - /url: https://www.facebook.com/moviesatpvr/
+              - listitem [ref=f179e1440]:
+                - link [ref=f179e1441] [cursor=pointer]:
+                  - /url: https://www.instagram.com/pvrpictures/?hl=en
+              - listitem [ref=f179e1442]:
+                - link [ref=f179e1443] [cursor=pointer]:
+                  - /url: https://x.com/_PVRCinemas?lang=en
+              - listitem [ref=f179e1444]:
+                - link [ref=f179e1445] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/pvr-limited
+              - listitem [ref=f179e1446]:
+                - link [ref=f179e1447] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+          - generic [ref=f179e1448]:
+            - heading "Support" [level=3] [ref=f179e1449]
+            - navigation [ref=f179e1453]:
+              - list [ref=f179e1454]:
+                - listitem [ref=f179e1455]:
+                  - link "Privacy Policy" [ref=f179e1456] [cursor=pointer]:
+                    - /url: /privacy-policy
+                - listitem [ref=f179e1457]:
+                  - link "Terms & Conditions" [ref=f179e1458] [cursor=pointer]:
+                    - /url: /terms-conditions
+                - listitem [ref=f179e1459]:
+                  - link "Terms of Use" [ref=f179e1460] [cursor=pointer]:
+                    - /url: /terms-use
+                - listitem [ref=f179e1461]:
+                  - link "Customer Experience" [ref=f179e1462] [cursor=pointer]:
+                    - /url: /feedback
+          - generic [ref=f179e1463]:
+            - heading "GET THE APP" [level=3] [ref=f179e1464]
+            - generic [ref=f179e1468]:
+              - link [ref=f179e1469] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/pvr-cinemas-movie-tickets/id878127874
+                - img "IOS Play Store" [ref=f179e1470]
+              - link [ref=f179e1471] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.net.pvr
+                - img "Google Play Store" [ref=f179e1472]
+        - generic [ref=f179e1473]:
+          - paragraph [ref=f179e1474]: Copyright © 2026 PVR. All Rights Reserved
+          - figure [ref=f179e1475]:
+            - link [ref=f179e1476] [cursor=pointer]:
+              - /url: /
+              - img "Footer Tagline" [ref=f179e1477]
+    - button "Open Movie Jockey chat" [ref=f179e1866] [cursor=pointer]:
+      - img "Movie Jockey"
+  - region "Notifications alt+T"

@@ -1,0 +1,35 @@
+---
+title: Class Plan
+description: Suggested teaching sequence for a workshop on this framework
+---
+
+## Audience
+
+QA engineers / SDETs comfortable with basic TypeScript, new to AI-assisted test generation.
+
+## Sequence (matches `.claude/skills/playwright-mcp/SKILL.md` § Teaching Sequence)
+
+1. **Explain the three-agent model** — Planner, Generator, Healer
+   ([planner-healer-generator.mdx](./planner-healer-generator)).
+2. **Demonstrate MCP browser grounding** — Playwright MCP + Chrome on Claude Code
+   ([mcp-without-hallucination.mdx](./mcp-without-hallucination)).
+3. **Run a live generate → validate → heal loop** against `src/tests/sample.spec.ts` or a
+   real feature from `requirements/`.
+4. **Make students pass `rules:check` before grading** — walk through
+   [rule-engine.mdx](./rule-engine) and a couple of intentional violations.
+
+## Suggested timing (90 min)
+
+| Segment | Minutes |
+|---------|---------|
+| Architecture + rule engine walkthrough | 15 |
+| MCP grounding demo (Playwright MCP + Chrome) | 15 |
+| Live Planner → Generator → Healer run | 40 |
+| Student exercise: fix a `rules:check` failure | 15 |
+| Wrap-up + Q&A | 5 |
+
+## Prerequisites to have installed beforehand
+
+- Claude Code (`curl -fsSL https://claude.ai/install.sh | bash`)
+- Node.js + this repo cloned, `npm install` + `npx playwright install chromium` done
+- Claude in Chrome extension, logged into a Claude Pro/Max/Team/Enterprise account

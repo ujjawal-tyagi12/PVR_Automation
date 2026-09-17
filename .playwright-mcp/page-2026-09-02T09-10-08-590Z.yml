@@ -1,0 +1,1516 @@
+- generic [ref=f20e2]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=f20e2202] [cursor=pointer]
+  - alert [ref=f20e1]
+  - generic [ref=f20e7]:
+    - banner [ref=f20e8]:
+      - generic [ref=f20e10]:
+        - generic [ref=f20e11]:
+          - link [ref=f20e13] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f20e14]
+          - button "Map Point Icon Mumbai" [ref=f20e2203] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f20e2204]
+            - generic [ref=f20e2205]: Mumbai
+        - navigation [ref=f20e20]:
+          - link "Home" [ref=f20e21] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f20e22] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f20e23] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f20e24] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f20e25] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [expanded] [ref=f20e26] [cursor=pointer]:
+            - generic [ref=f20e27]: More
+            - img "Arrow Down" [ref=f20e28]
+        - generic [ref=f20e29]:
+          - button [ref=f20e30] [cursor=pointer]
+          - button [ref=f20e35] [cursor=pointer]:
+            - img "User Icon" [ref=f20e37]
+          - button "Download App GIF Download App" [ref=f20e38] [cursor=pointer]:
+            - img "Download App GIF" [ref=f20e39]
+            - generic [ref=f20e40]: Download App
+    - generic [ref=f20e41]:
+      - generic [ref=f20e43]:
+        - iframe [ref=f20e46]:
+          - generic [ref=f27e1]:
+            - generic "YouTube Video Player" [ref=f27e3]
+            - button "Show player controls" [ref=f27e7] [cursor=pointer]
+        - generic [ref=f20e47]:
+          - generic [ref=f20e48]: Re-Release
+          - link "Ramayanam(Hindi)" [ref=f20e51] [cursor=pointer]:
+            - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-03T02%3A30%3A00.000Z
+          - list [ref=f20e52]:
+            - listitem [ref=f20e53]:
+              - generic [ref=f20e54]: S
+            - listitem [ref=f20e55]:
+              - generic [ref=f20e56]: Hindi
+            - listitem [ref=f20e57]:
+              - generic [ref=f20e58]: Adventure, Action
+          - paragraph [ref=f20e59]:
+            - link "Next Show tomorrow at 8:00 AM" [ref=f20e60] [cursor=pointer]:
+              - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-03T02%3A30%3A00.000Z
+              - generic [ref=f20e61]: Next Show tomorrow at
+              - text: 8:00 AM
+          - link "Book Now" [ref=f20e63] [cursor=pointer]:
+            - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-03T02%3A30%3A00.000Z
+        - button [ref=f20e65] [cursor=pointer]
+        - generic [ref=f20e70]:
+          - button [ref=f20e71] [cursor=pointer]
+          - button [ref=f20e79] [cursor=pointer]
+        - generic [ref=f20e87]:
+          - heading "IN THE SPOTLIGHT" [level=2] [ref=f20e88]
+          - generic [ref=f20e1880]:
+            - generic [ref=f20e1881]:
+              - button [ref=f20e1883] [cursor=pointer]:
+                - generic [ref=f20e1885]:
+                  - figure [ref=f20e1886]:
+                    - img "Ramayanam(Hindi)" [ref=f20e1887]
+                  - heading "Re-Release" [level=2] [ref=f20e1890]
+              - button [ref=f20e1892] [cursor=pointer]:
+                - figure [ref=f20e1895]:
+                  - img "Dhurandhar(Hindi)" [ref=f20e1896]
+              - button [ref=f20e1898] [cursor=pointer]:
+                - generic [ref=f20e1900]:
+                  - figure [ref=f20e1901]:
+                    - 'img "Spider-Man: Brand New Day" [ref=f20e1902]'
+                  - heading "30 Sep'26" [level=2] [ref=f20e1905]
+              - button [ref=f20e1907] [cursor=pointer]:
+                - generic [ref=f20e1909]:
+                  - figure [ref=f20e1910]:
+                    - img "Raksha Bandhan" [ref=f20e1911]
+                  - heading "Re-Release" [level=2] [ref=f20e1914]
+              - button [ref=f20e1916] [cursor=pointer]:
+                - generic [ref=f20e1918]:
+                  - figure [ref=f20e1919]:
+                    - img "Border 2(Hindi)" [ref=f20e1920]
+                  - heading "Re-Release" [level=2] [ref=f20e1923]
+              - button [ref=f20e1925] [cursor=pointer]:
+                - generic [ref=f20e1927]:
+                  - figure [ref=f20e1928]:
+                    - img "1920 London (Hindi)" [ref=f20e1929]
+                  - heading "Re-Release" [level=2] [ref=f20e1932]
+            - generic [ref=f20e1933] [cursor=pointer]
+      - generic [ref=f20e93]:
+        - heading "Discover the Experiences" [level=3] [ref=f20e94]
+        - generic [ref=f20e96]:
+          - list [ref=f20e98]:
+            - listitem [ref=f20e99]:
+              - link [ref=f20e100] [cursor=pointer]:
+                - /url: /experiences?experienceID=4aee134b3a92ac458f39e8d12fdc69e7:38aca558e3465f16af45e9b87abc5dcf:79ce0e58c2ee36c5e484bed7685711b26066a21876e8202b
+                - img "Logo" [ref=f20e101]
+            - listitem [ref=f20e102]:
+              - link [ref=f20e103] [cursor=pointer]:
+                - /url: /experiences?experienceID=ccaa5541e083598f864b9b62e477a7d7:5fdca20c0c92f93602035f3dd32fb35c:a8c021f84ab5181f1d917934af3272ff80bf1d0df38cf008
+                - img "Logo" [ref=f20e104]
+            - listitem [ref=f20e105]:
+              - link [ref=f20e106] [cursor=pointer]:
+                - /url: /experiences?experienceID=a46f28ccfbcc310fbd582be776314e2f:ad0a5644dc712ec82e4d746c01f1d287:08b671e58e4386f7c17be0f17daf61f4794e285c59a5ecb8
+                - img "Logo" [ref=f20e107]
+            - listitem [ref=f20e108]:
+              - link [ref=f20e109] [cursor=pointer]:
+                - /url: /experiences?experienceID=d7859feac1099f0cc0fbd787aa7470ba:a3fa4619439c20f35b79b806b84f52fa:da1a41cee3df9104d7e084b82b58e0fa238873909bc2c9a4
+                - img "Logo" [ref=f20e110]
+          - link "View More" [ref=f20e112] [cursor=pointer]:
+            - /url: /experiences
+    - generic [ref=f20e115]:
+      - generic [ref=f20e117]:
+        - generic [ref=f20e118]:
+          - button "Experience the Magic on the Big Screen! Book your tickets now and enjoy an unforgettable cinematic adventure. Get Exclusive Movie Deals Now!" [ref=f20e120] [cursor=pointer]:
+            - generic [ref=f20e121]:
+              - figure [ref=f20e122]:
+                - img "Web" [ref=f20e123]
+              - generic [ref=f20e124]:
+                - paragraph [ref=f20e2206]:
+                  - strong [ref=f20e2207]: Experience the Magic on the Big Screen!
+                  - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+                - generic [ref=f20e128]: Get Exclusive Movie Deals Now!
+          - button [ref=f20e130] [cursor=pointer]:
+            - generic [ref=f20e131]:
+              - figure [ref=f20e132]:
+                - img "Video" [ref=f20e133]
+                - button "Play video" [ref=f20e134]
+              - paragraph [ref=f20e2208]: Get ready for adrenaline-pumping action, intense drama, and edge-of-your-seat excitement. Reserve your seats today!
+          - button [ref=f20e142] [cursor=pointer]:
+            - generic [ref=f20e143]:
+              - figure [ref=f20e144]:
+                - img "Non" [ref=f20e145]
+              - paragraph [ref=f20e2209]:
+                - strong [ref=f20e2210]: Experience the Magic on the Big Screen!
+                - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+        - generic [ref=f20e150]:
+          - generic [ref=f20e151] [cursor=pointer]
+          - generic [ref=f20e152] [cursor=pointer]
+          - generic [ref=f20e153] [cursor=pointer]
+      - button "Previous" [ref=f20e1939] [cursor=pointer]
+    - generic [ref=f20e155]:
+      - generic [ref=f20e157]:
+        - generic [ref=f20e159]:
+          - button "Now Showing" [ref=f20e163] [cursor=pointer]
+          - button "Coming Soon" [ref=f20e164] [cursor=pointer]
+          - button "Experiences" [ref=f20e165] [cursor=pointer]
+          - button "Trailers" [ref=f20e166] [cursor=pointer]
+          - button "Offers" [ref=f20e167] [cursor=pointer]
+        - generic [ref=f20e168]:
+          - button "Food Icon Food" [ref=f20e169] [cursor=pointer]:
+            - img "Food Icon" [ref=f20e170]
+            - generic [ref=f20e171]: Food
+          - button "Curated Shows Icon Curated Shows" [ref=f20e172] [cursor=pointer]:
+            - img "Curated Shows Icon" [ref=f20e173]
+            - generic [ref=f20e174]: Curated Shows
+      - generic [ref=f20e175]:
+        - generic [ref=f20e177]:
+          - heading "Now Showing" [level=2] [ref=f20e178]
+          - generic [ref=f20e179]:
+            - button "Languages" [ref=f20e181] [cursor=pointer]
+            - button "Genre" [ref=f20e188] [cursor=pointer]
+            - button "Filter Icon Filter" [ref=f20e194] [cursor=pointer]:
+              - img "Filter Icon" [ref=f20e196]
+              - generic [ref=f20e197]: Filter
+        - generic [ref=f20e199]:
+          - generic [ref=f20e203]:
+            - generic [ref=f20e206] [cursor=pointer]:
+              - 'img "Spider-Man: Brand New Day" [ref=f20e208]'
+              - generic [ref=f20e210]:
+                - paragraph [ref=f20e212]: 30 Sep'26
+                - 'heading "Spider-Man: Brand New Day" [level=3] [ref=f20e214]'
+                - generic [ref=f20e215]:
+                  - generic [ref=f20e216]:
+                    - paragraph [ref=f20e217]: 1h
+                    - paragraph [ref=f20e220]: English
+                  - generic [ref=f20e221]:
+                    - paragraph [ref=f20e222]: A
+                    - generic [ref=f20e224]:
+                      - paragraph [ref=f20e225]: Action
+                      - generic [ref=f20e226]: "+5"
+            - generic [ref=f20e230] [cursor=pointer]:
+              - img "Raksha Bandhan" [ref=f20e232]
+              - generic [ref=f20e234]:
+                - paragraph [ref=f20e236]: Re-Release
+                - heading "Raksha Bandhan" [level=3] [ref=f20e238]
+                - generic [ref=f20e239]:
+                  - generic [ref=f20e240]:
+                    - paragraph [ref=f20e241]: 2h 3m
+                    - paragraph [ref=f20e244]: Hindi
+                  - generic [ref=f20e245]:
+                    - paragraph [ref=f20e246]: U
+                    - paragraph [ref=f20e249]: Drama
+          - generic [ref=f20e250]:
+            - generic [ref=f20e251] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Dhurandhar(Hindi)"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading "Dhurandhar(Hindi)" [level=3]
+                      - generic:
+                        - generic:
+                          - paragraph: 1h
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: A
+                          - generic:
+                            - paragraph: Adventure
+                            - generic: "+1"
+                      - generic:
+                        - generic:
+                          - button "Flat ₹150 off":
+                            - generic:
+                              - figure:
+                                - img "Offer Icon"
+              - generic [ref=f20e252]:
+                - img "Dhurandhar(Hindi)" [ref=f20e254]
+                - generic [ref=f20e256]:
+                  - generic [ref=f20e257]:
+                    - paragraph
+                  - heading "Dhurandhar(Hindi)" [level=3] [ref=f20e259]
+                  - generic [ref=f20e260]:
+                    - generic [ref=f20e261]:
+                      - paragraph [ref=f20e262]: 1h
+                      - paragraph [ref=f20e265]: Hindi
+                    - generic [ref=f20e266]:
+                      - paragraph [ref=f20e267]: A
+                      - generic [ref=f20e269]:
+                        - paragraph [ref=f20e270]: Adventure
+                        - generic [ref=f20e271]: "+1"
+                    - button "Flat ₹150 off" [ref=f20e274]:
+                      - figure [ref=f20e276]:
+                        - img "Offer Icon" [ref=f20e277]
+            - generic [ref=f20e280] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Ramayanam(Hindi)"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading "Ramayanam(Hindi)" [level=3]
+                      - generic:
+                        - generic:
+                          - paragraph: 1h
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: S
+                          - generic:
+                            - paragraph: Adventure
+                            - generic: "+1"
+              - generic [ref=f20e281]:
+                - img "Ramayanam(Hindi)" [ref=f20e283]
+                - generic [ref=f20e285]:
+                  - paragraph [ref=f20e287]: Re-Release
+                  - heading "Ramayanam(Hindi)" [level=3] [ref=f20e289]
+                  - generic [ref=f20e290]:
+                    - generic [ref=f20e291]:
+                      - paragraph [ref=f20e292]: 1h
+                      - paragraph [ref=f20e295]: Hindi
+                    - generic [ref=f20e296]:
+                      - paragraph [ref=f20e297]: S
+                      - generic [ref=f20e299]:
+                        - paragraph [ref=f20e300]: Adventure
+                        - generic [ref=f20e301]: "+1"
+            - generic [ref=f20e303] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Border 2(Hindi)"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading "Border 2(Hindi)" [level=3]
+                      - generic:
+                        - generic:
+                          - paragraph: 3h 19m
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: U/A
+                          - generic:
+                            - paragraph: Action
+                            - generic: "+1"
+              - generic [ref=f20e304]:
+                - img "Border 2(Hindi)" [ref=f20e306]
+                - generic [ref=f20e308]:
+                  - paragraph [ref=f20e310]: Re-Release
+                  - heading "Border 2(Hindi)" [level=3] [ref=f20e312]
+                  - generic [ref=f20e313]:
+                    - generic [ref=f20e314]:
+                      - paragraph [ref=f20e315]: 3h 19m
+                      - paragraph [ref=f20e318]: Hindi
+                    - generic [ref=f20e319]:
+                      - paragraph [ref=f20e320]: U/A
+                      - generic [ref=f20e322]:
+                        - paragraph [ref=f20e323]: Action
+                        - generic [ref=f20e324]: "+1"
+            - generic [ref=f20e326] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "1920 London (Hindi)"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading "1920 London (Hindi)" [level=3]
+                      - generic:
+                        - generic:
+                          - paragraph: 2h 3m
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: A
+                          - generic:
+                            - paragraph: Horror
+                            - generic: "+1"
+                      - generic:
+                        - generic:
+                          - button "Flat ₹150 off":
+                            - generic:
+                              - figure:
+                                - img "Offer Icon"
+              - generic [ref=f20e327]:
+                - img "1920 London (Hindi)" [ref=f20e329]
+                - generic [ref=f20e331]:
+                  - paragraph [ref=f20e333]: Re-Release
+                  - heading "1920 London (Hindi)" [level=3] [ref=f20e335]
+                  - generic [ref=f20e336]:
+                    - generic [ref=f20e337]:
+                      - paragraph [ref=f20e338]: 2h 3m
+                      - paragraph [ref=f20e341]: Hindi
+                    - generic [ref=f20e342]:
+                      - paragraph [ref=f20e343]: A
+                      - generic [ref=f20e345]:
+                        - paragraph [ref=f20e346]: Horror
+                        - generic [ref=f20e347]: "+1"
+                    - button "Flat ₹150 off" [ref=f20e350]:
+                      - figure [ref=f20e352]:
+                        - img "Offer Icon" [ref=f20e353]
+      - generic [aria-hidden] [ref=f20e356]:
+        - generic [ref=f20e358]:
+          - heading [level=2] [ref=f20e359]: Coming Soon
+          - link [ref=f20e360] [cursor=pointer]:
+            - /url: /coming-soon
+            - text: View More
+        - generic [ref=f20e365]:
+          - button [ref=f20e367] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 30 Sep'26
+                    - heading [level=3]: Jana Nayagan
+                    - generic:
+                      - generic:
+                        - paragraph: 30m
+                        - generic:
+                          - paragraph: Hindi (Original)
+                          - generic: "+3"
+                      - generic:
+                        - paragraph: A
+                        - paragraph: Action
+                        - generic: "+3"
+            - generic [ref=f20e373]:
+              - paragraph [ref=f20e374]: Releasing On 30 Sep'26
+              - heading [level=3] [ref=f20e375]: Jana Nayagan
+              - generic [ref=f20e376]:
+                - generic [ref=f20e377]:
+                  - paragraph [ref=f20e378]: 30m
+                  - generic [ref=f20e380]:
+                    - paragraph [ref=f20e381]: Hindi (Original)
+                    - generic [ref=f20e382]: "+3"
+                - generic [ref=f20e384]:
+                  - paragraph [ref=f20e385]: A
+                  - generic [ref=f20e387]:
+                    - paragraph [ref=f20e388]: Action
+                    - generic [ref=f20e389]: "+3"
+          - button [ref=f20e392] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: Varanasi (film)
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi
+                      - generic:
+                        - paragraph: S
+                        - paragraph: Musical
+                        - generic: "+3"
+            - generic [ref=f20e394]:
+              - generic [ref=f20e395]: 106 fans are hyped for this movie!
+              - generic [ref=f20e400]:
+                - paragraph [ref=f20e401]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f20e402]: Varanasi (film)
+                - generic [ref=f20e403]:
+                  - generic [ref=f20e404]:
+                    - paragraph [ref=f20e405]: 1h
+                    - paragraph [ref=f20e408]: Hindi
+                  - generic [ref=f20e409]:
+                    - paragraph [ref=f20e410]: S
+                    - generic [ref=f20e412]:
+                      - paragraph [ref=f20e413]: Musical
+                      - generic [ref=f20e414]: "+3"
+          - button [ref=f20e417] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: King (2026 film)
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi
+                      - generic:
+                        - paragraph: S
+                        - paragraph: Action
+                        - generic: "+1"
+            - generic [ref=f20e419]:
+              - generic [ref=f20e420]: 25 fans are hyped for this movie!
+              - generic [ref=f20e425]:
+                - paragraph [ref=f20e426]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f20e427]: King (2026 film)
+                - generic [ref=f20e428]:
+                  - generic [ref=f20e429]:
+                    - paragraph [ref=f20e430]: 1h
+                    - paragraph [ref=f20e433]: Hindi
+                  - generic [ref=f20e434]:
+                    - paragraph [ref=f20e435]: S
+                    - generic [ref=f20e437]:
+                      - paragraph [ref=f20e438]: Action
+                      - generic [ref=f20e439]: "+1"
+          - button [ref=f20e442] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: English
+                      - generic:
+                        - paragraph: UA 13+
+                        - paragraph: Action
+                        - generic: "+2"
+            - generic [ref=f20e444]:
+              - generic [ref=f20e445]: 12 fans are hyped for this movie!
+              - generic [ref=f20e450]:
+                - paragraph [ref=f20e451]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f20e452]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                - generic [ref=f20e453]:
+                  - generic [ref=f20e454]:
+                    - paragraph [ref=f20e455]: 1h
+                    - paragraph [ref=f20e458]: English
+                  - generic [ref=f20e459]:
+                    - paragraph [ref=f20e460]: UA 13+
+                    - generic [ref=f20e462]:
+                      - paragraph [ref=f20e463]: Action
+                      - generic [ref=f20e464]: "+2"
+          - button [ref=f20e467] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: PROJECT HAIL MARY
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: English
+                      - generic:
+                        - paragraph: UA 13+
+                        - paragraph: Science Fiction
+            - generic [ref=f20e469]:
+              - generic [ref=f20e470]: 9 fans are hyped for this movie!
+              - generic [ref=f20e475]:
+                - paragraph [ref=f20e476]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f20e477]: PROJECT HAIL MARY
+                - generic [ref=f20e478]:
+                  - generic [ref=f20e479]:
+                    - paragraph [ref=f20e480]: 1h
+                    - paragraph [ref=f20e483]: English
+                  - generic [ref=f20e484]:
+                    - paragraph [ref=f20e485]: UA 13+
+                    - paragraph [ref=f20e488]: Science Fiction
+      - generic [aria-hidden] [ref=f20e489]:
+        - heading [level=2] [ref=f20e492]: Experiences
+        - generic [ref=f20e495]:
+          - generic [ref=f20e496]:
+            - generic [ref=f20e2212]:
+              - iframe [ref=f20e2214]:
+                - generic [ref=f34e1]:
+                  - generic "YouTube Video Player" [ref=f34e3]
+                  - generic [ref=f34e6]:
+                    - generic:
+                      - generic:
+                        - button "Show player controls" [ref=f34e7] [cursor=pointer]
+                        - generic [ref=f34e12]:
+                          - generic: 20th Century Studios
+                          - generic: 5.13M subscribers
+              - button [ref=f20e2216] [cursor=pointer]
+              - generic [ref=f20e2221]:
+                - button [ref=f20e2222] [cursor=pointer]
+                - button [ref=f20e2230] [cursor=pointer]
+            - generic [ref=f20e536]:
+              - button [ref=f20e1949] [cursor=pointer]
+              - button [disabled]
+              - generic [ref=f20e540]:
+                - button [ref=f20e542] [cursor=pointer]:
+                  - figure [ref=f20e545]
+                - button [ref=f20e548] [cursor=pointer]:
+                  - figure [ref=f20e551]
+                - button [ref=f20e554] [cursor=pointer]:
+                  - figure [ref=f20e557]
+                - button [ref=f20e560] [cursor=pointer]:
+                  - figure [ref=f20e563]
+                - button [ref=f20e566] [cursor=pointer]:
+                  - figure [ref=f20e569]
+          - generic [ref=f20e572]:
+            - paragraph [ref=f20e574]:
+              - text: First panoramic visuals on side walls Second three screen viewing format Third extended field of view Fourth deeper immersion in scenes Fifth unique storytelling perspective First panoramic visuals on side walls Second three
+              - button [ref=f20e2238] [cursor=pointer]: Learn More
+            - button [ref=f20e576] [cursor=pointer]:
+              - generic [ref=f20e577]: Explore movies in ScreenX
+      - generic [ref=f20e581]:
+        - heading [level=2] [ref=f20e583]: Trailers
+        - generic [ref=f20e584]:
+          - generic [ref=f20e588]:
+            - button [ref=f20e590] [cursor=pointer]
+            - generic [ref=f20e597]:
+              - heading [level=2] [ref=f20e598]: Dhurandhar(Hindi)
+              - list [ref=f20e599]:
+                - listitem [ref=f20e600]:
+                  - generic [ref=f20e601]: A
+                - listitem [ref=f20e602]:
+                  - generic [ref=f20e603]: 1h
+                - listitem [ref=f20e604]:
+                  - generic [ref=f20e605]: Hindi
+                - listitem [ref=f20e606]:
+                  - generic [ref=f20e607]: Adventure
+                  - generic [ref=f20e608]: "+1"
+              - paragraph [ref=f20e611]: Dhurandhar (transl.?Stalwart) is a 2025 Indian Hindi-language spy action thriller film written, directed, and co-produced by Aditya Dhar. Produced by Jyoti Deshpande, Aditya Dhar, and Lokesh Dhar unde... Read More
+              - button [ref=f20e613] [cursor=pointer]:
+                - generic [ref=f20e614]: Watch More Trailers
+          - generic [ref=f20e618]:
+            - heading [level=3] [ref=f20e620]: Other Movie Trailers
+            - generic [ref=f20e622]:
+              - generic [ref=f20e624] [cursor=pointer]:
+                - button [ref=f20e625]:
+                  - figure [ref=f20e626]
+                - generic [ref=f20e628]:
+                  - heading [level=4] [ref=f20e629]: Dhurandhar(Hindi)
+                  - paragraph [ref=f20e631]: Hindi
+              - generic [ref=f20e633] [cursor=pointer]:
+                - button [ref=f20e634]:
+                  - figure [ref=f20e635]
+                - generic [ref=f20e637]:
+                  - heading [level=4] [ref=f20e638]: Border 2(Hindi)
+                  - paragraph [ref=f20e640]: Hindi
+              - generic [ref=f20e642] [cursor=pointer]:
+                - button [ref=f20e643]:
+                  - figure [ref=f20e644]
+                - generic [ref=f20e646]:
+                  - heading [level=4] [ref=f20e647]: Ramayanam(Hindi)
+                  - paragraph [ref=f20e649]: Hindi
+              - generic [ref=f20e651] [cursor=pointer]:
+                - button [ref=f20e652]:
+                  - figure [ref=f20e653]
+                - generic [ref=f20e655]:
+                  - heading [level=4] [ref=f20e656]: 1920 London (Hindi)
+                  - paragraph [ref=f20e658]: Hindi
+              - generic [ref=f20e660] [cursor=pointer]:
+                - button [ref=f20e661]:
+                  - figure [ref=f20e662]
+                - generic [ref=f20e664]:
+                  - heading [level=4] [ref=f20e665]: Raksha Bandhan
+                  - paragraph [ref=f20e667]: Hindi
+              - generic [ref=f20e669] [cursor=pointer]:
+                - button [ref=f20e670]:
+                  - figure [ref=f20e671]
+                - generic [ref=f20e673]:
+                  - heading [level=4] [ref=f20e674]: "Spider-Man: Brand New Day"
+                  - paragraph [ref=f20e676]: English
+      - generic [ref=f20e680]:
+        - generic [ref=f20e681]:
+          - heading [level=2] [ref=f20e682]: Offers
+          - button [ref=f20e683] [cursor=pointer]: View More
+        - generic [ref=f20e685]:
+          - generic [ref=f20e686]:
+            - generic [ref=f20e687]:
+              - button [ref=f20e689] [cursor=pointer]:
+                - generic [ref=f20e690]:
+                  - figure [ref=f20e691]
+                  - generic [ref=f20e693]:
+                    - paragraph [ref=f20e695]: Movies + Food
+                    - heading [level=3] [ref=f20e696]: BANK OF INDIA FLAT 200 RS OFF
+                    - paragraph [ref=f20e697]: Valid till Tue, 10 Aug'27
+              - button [ref=f20e699] [cursor=pointer]:
+                - generic [ref=f20e700]:
+                  - figure [ref=f20e701]
+                  - generic [ref=f20e703]:
+                    - paragraph [ref=f20e705]: Food
+                    - heading [level=3] [ref=f20e706]: Axis -Contactless- 150 OFF_Qbuster
+                    - paragraph [ref=f20e707]: Valid till Sun, 8 Jun'31
+              - button [ref=f20e709] [cursor=pointer]:
+                - generic [ref=f20e710]:
+                  - figure [ref=f20e711]
+                  - generic [ref=f20e713]:
+                    - paragraph [ref=f20e715]: Movies + Food
+                    - heading [level=3] [ref=f20e716]: Axis bank buy 1 get 1 ticket free -Copy For F&B
+                    - paragraph [ref=f20e717]: Valid till Fri, 10 Jan'31
+              - button [ref=f20e719] [cursor=pointer]:
+                - generic [ref=f20e720]:
+                  - figure [ref=f20e721]
+                  - generic [ref=f20e723]:
+                    - paragraph [ref=f20e725]: Movies + Food
+                    - heading [level=3] [ref=f20e726]: Kotak Bank - Cinema Day 99% off on Movie ticket3
+                    - paragraph [ref=f20e727]: Valid till Tue, 27 Nov'29
+              - button [ref=f20e729] [cursor=pointer]:
+                - generic [ref=f20e730]:
+                  - figure [ref=f20e731]
+                  - generic [ref=f20e733]:
+                    - paragraph [ref=f20e735]: Movies + Food
+                    - heading [level=3] [ref=f20e736]: New Master Card Offer-20%_16236
+                    - paragraph [ref=f20e737]: Valid till Sat, 28 Oct'28
+              - button [ref=f20e739] [cursor=pointer]:
+                - generic [ref=f20e740]:
+                  - figure [ref=f20e741]
+                  - generic [ref=f20e743]:
+                    - paragraph [ref=f20e745]: Movies + Food
+                    - heading [level=3] [ref=f20e746]: CID STORED _CREDITCARD WISE_COPY2
+                    - paragraph [ref=f20e747]: Valid till Sun, 5 Nov'28
+              - button [ref=f20e749] [cursor=pointer]:
+                - generic [ref=f20e750]:
+                  - figure [ref=f20e751]
+                  - generic [ref=f20e753]:
+                    - paragraph [ref=f20e755]: Movies + Food
+                    - heading [level=3] [ref=f20e756]: COPY BANK OF INDIA FLAT 200 RS OFF
+                    - paragraph [ref=f20e757]: Valid till Mon, 7 Jun'27
+              - button [ref=f20e759] [cursor=pointer]:
+                - generic [ref=f20e760]:
+                  - figure [ref=f20e761]
+                  - generic [ref=f20e763]:
+                    - paragraph [ref=f20e765]: Food
+                    - heading [level=3] [ref=f20e766]: Copy-IDBI Cine Treat Offer
+                    - paragraph [ref=f20e767]: Valid till Thu, 24 Jun'27
+              - button [ref=f20e769] [cursor=pointer]:
+                - generic [ref=f20e770]:
+                  - figure [ref=f20e771]
+                  - generic [ref=f20e773]:
+                    - paragraph [ref=f20e775]: Movies + Food
+                    - heading [level=3] [ref=f20e776]: 17082-Number Ticket Based food Offer 80 Rs GST dsc
+                    - paragraph [ref=f20e777]: Valid till Wed, 30 Jun'27
+              - button [ref=f20e779] [cursor=pointer]:
+                - generic [ref=f20e780]:
+                  - figure [ref=f20e781]
+                  - generic [ref=f20e783]:
+                    - paragraph [ref=f20e785]: Food
+                    - heading [level=3] [ref=f20e786]: 17081 - Number Ticket Based food Offer 50 Rs
+                    - paragraph [ref=f20e787]: Valid till Wed, 30 Jun'27
+              - button [ref=f20e789] [cursor=pointer]:
+                - generic [ref=f20e790]:
+                  - figure [ref=f20e791]
+                  - generic [ref=f20e793]:
+                    - paragraph [ref=f20e795]: Movies + Food
+                    - heading [level=3] [ref=f20e796]: 17083 - Number Ticket Based food Offer 40 %
+                    - paragraph [ref=f20e797]: Valid till Wed, 30 Jun'27
+              - button [ref=f20e799] [cursor=pointer]:
+                - generic [ref=f20e800]:
+                  - figure [ref=f20e801]
+                  - generic [ref=f20e803]:
+                    - paragraph [ref=f20e805]: Movies + Food
+                    - heading [level=3] [ref=f20e806]: 17084-Number Ticket Based food Offer 40 % GST disc
+                    - paragraph [ref=f20e807]: Valid till Wed, 30 Jun'27
+              - button [ref=f20e809] [cursor=pointer]:
+                - generic [ref=f20e810]:
+                  - figure [ref=f20e811]
+                  - generic [ref=f20e813]:
+                    - paragraph [ref=f20e815]: Movies + Food
+                    - heading [level=3] [ref=f20e816]: 17089 - Number Ticket based voucher 80%
+                    - paragraph [ref=f20e817]: Valid till Wed, 30 Jun'27
+              - button [ref=f20e819] [cursor=pointer]:
+                - generic [ref=f20e820]:
+                  - figure [ref=f20e821]
+                  - generic [ref=f20e823]:
+                    - paragraph [ref=f20e825]: Movies + Food
+                    - heading [level=3] [ref=f20e826]: 17111 - Buy any regular popcorn with a ticket transaction and get ?10 off on a food item.
+                    - paragraph [ref=f20e827]: Valid till Wed, 30 Jun'27
+              - button [ref=f20e829] [cursor=pointer]:
+                - generic [ref=f20e830]:
+                  - figure [ref=f20e831]
+                  - generic [ref=f20e833]:
+                    - paragraph [ref=f20e835]: Movies + Food
+                    - heading [level=3] [ref=f20e836]: 17113-Ticket based food offer buy Popcorn get Coke small free
+                    - paragraph [ref=f20e837]: Valid till Wed, 30 Jun'27
+              - button [ref=f20e839] [cursor=pointer]:
+                - generic [ref=f20e840]:
+                  - figure [ref=f20e841]
+                  - generic [ref=f20e843]:
+                    - paragraph [ref=f20e845]: Movies + Food
+                    - heading [level=3] [ref=f20e846]: 17114-Ticket based food offer buy Combo get Coke small free
+                    - paragraph [ref=f20e847]: Valid till Wed, 30 Jun'27
+              - button [ref=f20e849] [cursor=pointer]:
+                - generic [ref=f20e850]:
+                  - figure [ref=f20e851]
+                  - generic [ref=f20e853]:
+                    - paragraph [ref=f20e855]: Movies + Food
+                    - heading [level=3] [ref=f20e856]: 17093 - Number 25% off
+                    - paragraph [ref=f20e857]: Valid till Fri, 2 Jul'27
+              - button [ref=f20e859] [cursor=pointer]:
+                - generic [ref=f20e860]:
+                  - figure [ref=f20e861]
+                  - generic [ref=f20e863]:
+                    - paragraph [ref=f20e865]: Movies + Food
+                    - heading [level=3] [ref=f20e866]: 17132 - TEST offer
+                    - paragraph [ref=f20e867]: Valid till Sat, 31 Jul'27
+              - button [ref=f20e869] [cursor=pointer]:
+                - generic [ref=f20e870]:
+                  - figure [ref=f20e871]
+                  - generic [ref=f20e873]:
+                    - paragraph [ref=f20e875]: Movies + Food
+                    - heading [level=3] [ref=f20e876]: 17136 - TEST Bank offer slab cap wise
+                    - paragraph [ref=f20e877]: Valid till Sat, 31 Jul'27
+              - button [ref=f20e879] [cursor=pointer]:
+                - generic [ref=f20e880]:
+                  - figure [ref=f20e881]
+                  - generic [ref=f20e883]:
+                    - paragraph [ref=f20e885]: Movies + Food
+                    - heading [level=3] [ref=f20e886]: 17144 - Bank offer 0.01%
+                    - paragraph [ref=f20e887]: Valid till Sat, 31 Jul'27
+              - button [ref=f20e889] [cursor=pointer]:
+                - generic [ref=f20e890]:
+                  - figure [ref=f20e891]
+                  - generic [ref=f20e893]:
+                    - paragraph [ref=f20e895]: Movies + Food
+                    - heading [level=3] [ref=f20e896]: 17221 - 200 Rs off BOI
+                    - paragraph [ref=f20e897]: Valid till Tue, 31 Aug'27
+              - button [ref=f20e899] [cursor=pointer]:
+                - generic [ref=f20e900]:
+                  - figure [ref=f20e901]
+                  - generic [ref=f20e903]:
+                    - paragraph [ref=f20e905]: Movies + Food
+                    - heading [level=3] [ref=f20e906]: TEST BANK OFFER -155 OFF_Max Disc ComBank EDC
+                    - paragraph [ref=f20e907]: Valid till Sat, 24 Jun'28
+              - button [ref=f20e909] [cursor=pointer]:
+                - generic [ref=f20e910]:
+                  - figure [ref=f20e911]
+                  - generic [ref=f20e913]:
+                    - paragraph [ref=f20e915]: Movies + Food
+                    - heading [level=3] [ref=f20e916]: Test Com Bank Buy 1 Get 1 Ticket Free -17226
+                    - paragraph [ref=f20e917]: Valid till Thu, 22 Aug'30
+              - button [ref=f20e919] [cursor=pointer]:
+                - generic [ref=f20e920]:
+                  - figure [ref=f20e921]
+                  - generic [ref=f20e923]:
+                    - paragraph [ref=f20e925]: Movies + Food
+                    - heading [level=3] [ref=f20e926]: Test Com Bank Buy 1 Get 1 Ticket Free -DayWise
+                    - paragraph [ref=f20e927]: Valid till Sun, 1 Dec'30
+              - button [ref=f20e929] [cursor=pointer]:
+                - generic [ref=f20e930]:
+                  - figure [ref=f20e931]
+                  - generic [ref=f20e933]:
+                    - paragraph [ref=f20e935]: Movies + Food
+                    - heading [level=3] [ref=f20e936]: 17179 - Number 25% off
+                    - paragraph [ref=f20e937]: Valid till Fri, 15 Aug'31
+              - button [ref=f20e939] [cursor=pointer]:
+                - generic [ref=f20e940]:
+                  - figure [ref=f20e941]
+                  - generic [ref=f20e943]:
+                    - paragraph [ref=f20e945]: Movies + Food
+                    - heading [level=3] [ref=f20e946]: Icici-buy Popcorn Salted Tub get puff samosa free
+                    - paragraph [ref=f20e947]: Valid till Sat, 12 Sep'26
+              - button [ref=f20e949] [cursor=pointer]:
+                - generic [ref=f20e950]:
+                  - figure [ref=f20e951]
+                  - generic [ref=f20e953]:
+                    - paragraph [ref=f20e955]: Movies + Food
+                    - heading [level=3] [ref=f20e956]: Kotak Offer - buy popcorn salted get salted small
+                    - paragraph [ref=f20e957]: Valid till Sun, 13 Sep'26
+              - button [ref=f20e959] [cursor=pointer]:
+                - generic [ref=f20e960]:
+                  - figure [ref=f20e961]
+                  - generic [ref=f20e963]:
+                    - paragraph [ref=f20e965]: Food
+                    - heading [level=3] [ref=f20e966]: INR 100 Rs Off On Min Purchase of 500
+                    - paragraph [ref=f20e967]: Valid till Sat, 26 Sep'26
+              - button [ref=f20e969] [cursor=pointer]:
+                - generic [ref=f20e970]:
+                  - figure [ref=f20e971]
+                  - generic [ref=f20e973]:
+                    - paragraph [ref=f20e975]: Movies + Food
+                    - heading [level=3] [ref=f20e976]: BOI- BANK Offers VOUCHER 25 %_X
+                    - paragraph [ref=f20e977]: Valid till Wed, 30 Sep'26
+              - button [ref=f20e979] [cursor=pointer]:
+                - generic [ref=f20e980]:
+                  - figure [ref=f20e981]
+                  - generic [ref=f20e983]:
+                    - paragraph [ref=f20e985]: Movies + Food
+                    - heading [level=3] [ref=f20e986]: 10 % Off In BOI
+                    - paragraph [ref=f20e987]: Valid till Thu, 1 Oct'26
+              - button [ref=f20e989] [cursor=pointer]:
+                - generic [ref=f20e990]:
+                  - figure [ref=f20e991]
+                  - generic [ref=f20e993]:
+                    - paragraph [ref=f20e995]: Movies + Food
+                    - heading [level=3] [ref=f20e996]: MasterCard ContactLess Bnak Offer - 50% Off-Bo
+                    - paragraph [ref=f20e997]: Valid till Sun, 25 Oct'26
+              - button [ref=f20e999] [cursor=pointer]:
+                - generic [ref=f20e1000]:
+                  - figure [ref=f20e1001]
+                  - generic [ref=f20e1003]:
+                    - paragraph [ref=f20e1005]: Movies
+                    - heading [level=3] [ref=f20e1006]: 15% OFF AT BO on BOI
+                    - paragraph [ref=f20e1007]: Valid till Fri, 6 Nov'26
+              - button [ref=f20e1009] [cursor=pointer]:
+                - generic [ref=f20e1010]:
+                  - figure [ref=f20e1011]
+                  - generic [ref=f20e1013]:
+                    - paragraph [ref=f20e1015]: Food
+                    - heading [level=3] [ref=f20e1016]: AMEX - BUY POPCORN TUB GET SMALL POPCORN FREE
+                    - paragraph [ref=f20e1017]: Valid till Sat, 7 Nov'26
+              - button [ref=f20e1019] [cursor=pointer]:
+                - generic [ref=f20e1020]:
+                  - figure [ref=f20e1021]
+                  - generic [ref=f20e1023]:
+                    - paragraph [ref=f20e1025]: Movies + Food
+                    - heading [level=3] [ref=f20e1026]: BOI OFFER - 99 VALUE DISCOUNT_27
+                    - paragraph [ref=f20e1027]: Valid till Thu, 10 Dec'26
+              - button [ref=f20e1029] [cursor=pointer]:
+                - generic [ref=f20e1030]:
+                  - figure [ref=f20e1031]
+                  - generic [ref=f20e1033]:
+                    - paragraph [ref=f20e1035]: Movies + Food
+                    - heading [level=3] [ref=f20e1036]: BOI- BOGO OFFER buy 2 get 1
+                    - paragraph [ref=f20e1037]: Valid till Sat, 12 Dec'26
+              - button [ref=f20e1039] [cursor=pointer]:
+                - generic [ref=f20e1040]:
+                  - figure [ref=f20e1041]
+                  - generic [ref=f20e1043]:
+                    - paragraph [ref=f20e1045]: Food
+                    - heading [level=3] [ref=f20e1046]: Google Wallet Free Popcorn [50G]
+                    - paragraph [ref=f20e1047]: Valid till Thu, 31 Dec'26
+              - button [ref=f20e1049] [cursor=pointer]:
+                - generic [ref=f20e1050]:
+                  - figure [ref=f20e1051]
+                  - generic [ref=f20e1053]:
+                    - paragraph [ref=f20e1055]: Movies + Food
+                    - heading [level=3] [ref=f20e1056]: Axis bank buy 1 get 1 ticket free -Copy_16427
+                    - paragraph [ref=f20e1057]: Valid till Fri, 8 Jan'27
+              - button [ref=f20e1059] [cursor=pointer]:
+                - generic [ref=f20e1060]:
+                  - figure [ref=f20e1061]
+                  - generic [ref=f20e1063]:
+                    - paragraph [ref=f20e1065]: Movies + Food
+                    - heading [level=3] [ref=f20e1066]: BOI - TEST 250 RS OFF AT BO - 15391
+                    - paragraph [ref=f20e1067]: Valid till Thu, 18 Feb'27
+              - button [ref=f20e1069] [cursor=pointer]:
+                - generic [ref=f20e1070]:
+                  - figure [ref=f20e1071]
+                  - generic [ref=f20e1073]:
+                    - paragraph [ref=f20e1075]: Movies + Food
+                    - heading [level=3] [ref=f20e1076]: 16828-GGS GST After Disc
+                    - paragraph [ref=f20e1077]: Valid till Sun, 28 Feb'27
+              - button [ref=f20e1079] [cursor=pointer]:
+                - generic [ref=f20e1080]:
+                  - figure [ref=f20e1081]
+                  - generic [ref=f20e1083]:
+                    - paragraph [ref=f20e1085]: Movies + Food
+                    - heading [level=3] [ref=f20e1086]: 16962 - 50% off min Trnvalue 300
+                    - paragraph [ref=f20e1087]: Valid till Sat, 1 May'27
+              - button [ref=f20e1089] [cursor=pointer]:
+                - generic [ref=f20e1090]:
+                  - figure [ref=f20e1091]
+                  - generic [ref=f20e1093]:
+                    - paragraph [ref=f20e1095]: Movies + Food
+                    - heading [level=3] [ref=f20e1096]: Promotional Code - 75 Rs Off On Purchase Passport
+                    - paragraph [ref=f20e1097]: Valid till Fri, 14 May'27
+              - button [ref=f20e1099] [cursor=pointer]:
+                - generic [ref=f20e1100]:
+                  - figure [ref=f20e1101]
+                  - generic [ref=f20e1103]:
+                    - paragraph [ref=f20e1105]: Movies + Food
+                    - heading [level=3] [ref=f20e1106]: 1-IDBI Movie Saver Bonanza
+                    - paragraph [ref=f20e1107]: Valid till Fri, 21 May'27
+              - button [ref=f20e1109] [cursor=pointer]:
+                - generic [ref=f20e1110]:
+                  - figure [ref=f20e1111]
+                  - generic [ref=f20e1113]:
+                    - paragraph [ref=f20e1115]: Food
+                    - heading [level=3] [ref=f20e1116]: 17002 - Buy Coke Regular get Samosa Free - Auto
+                    - paragraph [ref=f20e1117]: Valid till Thu, 27 May'27
+              - button [ref=f20e1119] [cursor=pointer]:
+                - generic [ref=f20e1120]:
+                  - figure [ref=f20e1121]
+                  - generic [ref=f20e1123]:
+                    - paragraph [ref=f20e1125]: Movies + Food
+                    - heading [level=3] [ref=f20e1126]: SINGLE BIN BANK OFFER-15952
+                    - paragraph [ref=f20e1127]: Valid till Sun, 13 Jun'27
+              - button [ref=f20e1129] [cursor=pointer]:
+                - generic [ref=f20e1130]:
+                  - figure [ref=f20e1131]
+                  - generic [ref=f20e1133]:
+                    - paragraph [ref=f20e1135]: Movies + Food
+                    - heading [level=3] [ref=f20e1136]: Buy Ticket Upto 1000 & get Combo Worth 350 MPay
+                    - paragraph [ref=f20e1137]: Valid till Tue, 22 Jun'27
+              - button [ref=f20e1139] [cursor=pointer]:
+                - generic [ref=f20e1140]:
+                  - figure [ref=f20e1141]
+                  - generic [ref=f20e1143]:
+                    - paragraph [ref=f20e1145]: Movies + Food
+                    - heading [level=3] [ref=f20e1146]: 50 % off 200 Per Ticket_ S3 Bucket Checking
+                    - paragraph [ref=f20e1147]: Valid till Sun, 27 Jun'27
+              - button [ref=f20e1149] [cursor=pointer]:
+                - generic [ref=f20e1150]:
+                  - figure [ref=f20e1151]
+                  - generic [ref=f20e1153]:
+                    - paragraph [ref=f20e1155]: Movies + Food
+                    - heading [level=3] [ref=f20e1156]: Axis Bank FLAT 100 RS OFF
+                    - paragraph [ref=f20e1157]: Valid till Wed, 11 Aug'27
+              - button [ref=f20e1159] [cursor=pointer]:
+                - generic [ref=f20e1160]:
+                  - figure [ref=f20e1161]
+                  - generic [ref=f20e1163]:
+                    - paragraph [ref=f20e1165]: Food
+                    - heading [level=3] [ref=f20e1166]: 16700-100rs off on F&B
+                    - paragraph [ref=f20e1167]: Valid till Tue, 30 Nov'27
+              - button [ref=f20e1169] [cursor=pointer]:
+                - generic [ref=f20e1170]:
+                  - figure [ref=f20e1171]
+                  - generic [ref=f20e1173]:
+                    - paragraph [ref=f20e1175]: Movies + Food
+                    - heading [level=3] [ref=f20e1176]: AMEX - 20 % OFF AT ALL
+                    - paragraph [ref=f20e1177]: Valid till Thu, 6 Apr'28
+              - button [ref=f20e1179] [cursor=pointer]:
+                - generic [ref=f20e1180]:
+                  - figure [ref=f20e1181]
+                  - generic [ref=f20e1183]:
+                    - paragraph [ref=f20e1185]: Movies + Food
+                    - heading [level=3] [ref=f20e1186]: COPY _PJPT BOI OFFER - RS 50
+                    - paragraph [ref=f20e1187]: Valid till Sat, 15 Jul'28
+              - button [ref=f20e1189] [cursor=pointer]:
+                - generic [ref=f20e1190]:
+                  - figure [ref=f20e1191]
+                  - generic [ref=f20e1193]:
+                    - paragraph [ref=f20e1195]: Movies
+                    - heading [level=3] [ref=f20e1196]: BOI _LALA- 10 Parcentage New
+                    - paragraph [ref=f20e1197]: Valid till Mon, 21 Aug'28
+              - button [ref=f20e1199] [cursor=pointer]:
+                - generic [ref=f20e1200]:
+                  - figure [ref=f20e1201]
+                  - generic [ref=f20e1203]:
+                    - paragraph [ref=f20e1205]: Food
+                    - heading [level=3] [ref=f20e1206]: BOI _LALA- 10 PArcentage
+                    - paragraph [ref=f20e1207]: Valid till Mon, 21 Aug'28
+              - button [ref=f20e1209] [cursor=pointer]:
+                - generic [ref=f20e1210]:
+                  - figure [ref=f20e1211]
+                  - generic [ref=f20e1213]:
+                    - paragraph [ref=f20e1215]: Movies + Food
+                    - heading [level=3] [ref=f20e1216]: Axis bank buy 1 get 1 ticket free
+                    - paragraph [ref=f20e1217]: Valid till Tue, 22 Aug'28
+              - button [ref=f20e1219] [cursor=pointer]:
+                - generic [ref=f20e1220]:
+                  - figure [ref=f20e1221]
+                  - generic [ref=f20e1223]:
+                    - paragraph [ref=f20e1225]: Movies + Food
+                    - heading [level=3] [ref=f20e1226]: BOI OFFER - 99 VALUE DISCOUNT_CHANGES SUMMARY
+                    - paragraph [ref=f20e1227]: Valid till Wed, 4 Oct'28
+              - button [ref=f20e1229] [cursor=pointer]:
+                - generic [ref=f20e1230]:
+                  - figure [ref=f20e1231]
+                  - generic [ref=f20e1233]:
+                    - paragraph [ref=f20e1235]: Movies + Food
+                    - heading [level=3] [ref=f20e1236]: BOI CARD OFFER - 100 VALUE DISCOUNT_RUN
+                    - paragraph [ref=f20e1237]: Valid till Sat, 7 Oct'28
+              - button [ref=f20e1239] [cursor=pointer]:
+                - generic [ref=f20e1240]:
+                  - figure [ref=f20e1241]
+                  - generic [ref=f20e1243]:
+                    - paragraph [ref=f20e1245]: Movies + Food
+                    - heading [level=3] [ref=f20e1246]: BOI CARD OFFER - 99 VALUE DISCOUNT_CITY
+                    - paragraph [ref=f20e1247]: Valid till Sat, 7 Oct'28
+              - button [ref=f20e1249] [cursor=pointer]:
+                - generic [ref=f20e1250]:
+                  - figure [ref=f20e1251]
+                  - generic [ref=f20e1253]:
+                    - paragraph [ref=f20e1255]: Movies + Food
+                    - heading [level=3] [ref=f20e1256]: BOI CARD OFFER - 70 % DISCOUNT_RUN
+                    - paragraph [ref=f20e1257]: Valid till Sun, 8 Oct'28
+              - button [ref=f20e1259] [cursor=pointer]:
+                - generic [ref=f20e1260]:
+                  - figure [ref=f20e1261]
+                  - generic [ref=f20e1263]:
+                    - paragraph [ref=f20e1265]: Movies + Food
+                    - heading [level=3] [ref=f20e1266]: BOI CARD OFFER - 70 VALUE DISCOUNT_RUN
+                    - paragraph [ref=f20e1267]: Valid till Sun, 8 Oct'28
+              - button [ref=f20e1269] [cursor=pointer]:
+                - generic [ref=f20e1270]:
+                  - figure [ref=f20e1271]
+                  - generic [ref=f20e1273]:
+                    - paragraph [ref=f20e1275]: Movies + Food
+                    - heading [level=3] [ref=f20e1276]: NV-BOI CARD OFFER - BOGO DISCOUNT_RUN
+                    - paragraph [ref=f20e1277]: Valid till Sun, 8 Oct'28
+              - button [ref=f20e1279] [cursor=pointer]:
+                - generic [ref=f20e1280]:
+                  - figure [ref=f20e1281]
+                  - generic [ref=f20e1283]:
+                    - paragraph [ref=f20e1285]: Movies + Food
+                    - heading [level=3] [ref=f20e1286]: BOI CARD OFFER - 55 VALUE DISCOUNT_RUN
+                    - paragraph [ref=f20e1287]: Valid till Mon, 9 Oct'28
+              - button [ref=f20e1289] [cursor=pointer]:
+                - generic [ref=f20e1290]:
+                  - figure [ref=f20e1291]
+                  - generic [ref=f20e1293]:
+                    - paragraph [ref=f20e1295]: Movies + Food
+                    - heading [level=3] [ref=f20e1296]: NV-BOI CARD OFFER - BOGO DISCOUNT_RUN1
+                    - paragraph [ref=f20e1297]: Valid till Mon, 9 Oct'28
+              - button [ref=f20e1299] [cursor=pointer]:
+                - generic [ref=f20e1300]:
+                  - figure [ref=f20e1301]
+                  - generic [ref=f20e1303]:
+                    - paragraph [ref=f20e1305]: Movies + Food
+                    - heading [level=3] [ref=f20e1306]: TEST BANK OFFER - 10 % OFF_SCREEN WISE
+                    - paragraph [ref=f20e1307]: Valid till Mon, 9 Oct'28
+              - button [ref=f20e1309] [cursor=pointer]:
+                - generic [ref=f20e1310]:
+                  - figure [ref=f20e1311]
+                  - generic [ref=f20e1313]:
+                    - paragraph [ref=f20e1315]: Movies + Food
+                    - heading [level=3] [ref=f20e1316]: TEST BANK OFFER - 10 % OFF_CLASS WISE
+                    - paragraph [ref=f20e1317]: Valid till Mon, 9 Oct'28
+              - button [ref=f20e1319] [cursor=pointer]:
+                - generic [ref=f20e1320]:
+                  - figure [ref=f20e1321]
+                  - generic [ref=f20e1323]:
+                    - paragraph [ref=f20e1325]: Movies + Food
+                    - heading [level=3] [ref=f20e1326]: TEST BANK OFFER -155 OFF_OUTLET WISE
+                    - paragraph [ref=f20e1327]: Valid till Mon, 9 Oct'28
+              - button [ref=f20e1329] [cursor=pointer]:
+                - generic [ref=f20e1330]:
+                  - figure [ref=f20e1331]
+                  - generic [ref=f20e1333]:
+                    - paragraph [ref=f20e1335]: Movies + Food
+                    - heading [level=3] [ref=f20e1336]: TEST BANK OFFER -20% OFF_CAPPING CRITERIA
+                    - paragraph [ref=f20e1337]: Valid till Mon, 9 Oct'28
+              - button [ref=f20e1339] [cursor=pointer]:
+                - generic [ref=f20e1340]:
+                  - figure [ref=f20e1341]
+                  - generic [ref=f20e1343]:
+                    - paragraph [ref=f20e1345]: Movies + Food
+                    - heading [level=3] [ref=f20e1346]: TEST BOI CARD OFFER - VALUE DISCOUNT
+                    - paragraph [ref=f20e1347]: Valid till Mon, 9 Oct'28
+              - button [ref=f20e1349] [cursor=pointer]:
+                - generic [ref=f20e1350]:
+                  - figure [ref=f20e1351]
+                  - generic [ref=f20e1353]:
+                    - paragraph [ref=f20e1355]: Movies
+                    - heading [level=3] [ref=f20e1356]: TEst Staff Discount - Ticket Voucher_16194
+                    - paragraph [ref=f20e1357]: Valid till Tue, 10 Oct'28
+              - button [ref=f20e1359] [cursor=pointer]:
+                - generic [ref=f20e1360]:
+                  - figure [ref=f20e1361]
+                  - generic [ref=f20e1363]:
+                    - paragraph [ref=f20e1365]: Food
+                    - heading [level=3] [ref=f20e1366]: Test Staff Discount on F&B
+                    - paragraph [ref=f20e1367]: Valid till Tue, 10 Oct'28
+              - button [ref=f20e1369] [cursor=pointer]:
+                - generic [ref=f20e1370]:
+                  - figure [ref=f20e1371]
+                  - generic [ref=f20e1373]:
+                    - paragraph [ref=f20e1375]: Movies + Food
+                    - heading [level=3] [ref=f20e1376]: Master Card Offer-15%_16235
+                    - paragraph [ref=f20e1377]: Valid till Sat, 28 Oct'28
+              - button [ref=f20e1379] [cursor=pointer]:
+                - generic [ref=f20e1380]:
+                  - figure [ref=f20e1381]
+                  - generic [ref=f20e1383]:
+                    - paragraph [ref=f20e1385]: Movies + Food
+                    - heading [level=3] [ref=f20e1386]: CID STORED _CREDITCARD WISE
+                    - paragraph [ref=f20e1387]: Valid till Sun, 5 Nov'28
+              - button [ref=f20e1389] [cursor=pointer]:
+                - generic [ref=f20e1390]:
+                  - figure [ref=f20e1391]
+                  - generic [ref=f20e1393]:
+                    - paragraph [ref=f20e1395]: Movies + Food
+                    - heading [level=3] [ref=f20e1396]: CID STORED _CREDITCARD WISE_COPY
+                    - paragraph [ref=f20e1397]: Valid till Sun, 5 Nov'28
+              - button [ref=f20e1399] [cursor=pointer]:
+                - generic [ref=f20e1400]:
+                  - figure [ref=f20e1401]
+                  - generic [ref=f20e1403]:
+                    - paragraph [ref=f20e1405]: Movies
+                    - heading [level=3] [ref=f20e1406]: ICICI Bank Flat Rs.200 off on Net Banking_PJ
+                    - paragraph [ref=f20e1407]: Valid till Sun, 5 Nov'28
+              - button [ref=f20e1409] [cursor=pointer]:
+                - generic [ref=f20e1410]:
+                  - figure [ref=f20e1411]
+                  - generic [ref=f20e1413]:
+                    - paragraph [ref=f20e1415]: Movies + Food
+                    - heading [level=3] [ref=f20e1416]: Define Bank Offer- 70 % DISCOUNT
+                    - paragraph [ref=f20e1417]: Valid till Mon, 6 Nov'28
+              - button [ref=f20e1419] [cursor=pointer]:
+                - generic [ref=f20e1420]:
+                  - figure [ref=f20e1421]
+                  - generic [ref=f20e1423]:
+                    - paragraph [ref=f20e1425]: Movies + Food
+                    - heading [level=3] [ref=f20e1426]: Define Bank Offer- BUY 1 GET 1 FREE TICKET
+                    - paragraph [ref=f20e1427]: Valid till Mon, 6 Nov'28
+              - button [ref=f20e1429] [cursor=pointer]:
+                - generic [ref=f20e1430]:
+                  - figure [ref=f20e1431]
+                  - generic [ref=f20e1433]:
+                    - paragraph [ref=f20e1435]: Movies + Food
+                    - heading [level=3] [ref=f20e1436]: OFFER- 15605- BANK OF INDIA FLAT 201 RS OFF
+                    - paragraph [ref=f20e1437]: Valid till Mon, 6 Nov'28
+              - button [ref=f20e1439] [cursor=pointer]:
+                - generic [ref=f20e1440]:
+                  - figure [ref=f20e1441]
+                  - generic [ref=f20e1443]:
+                    - paragraph [ref=f20e1445]: Movies + Food
+                    - heading [level=3] [ref=f20e1446]: TEST BANK OFFER -155 OFF_Max Disc Transaction
+                    - paragraph [ref=f20e1447]: Valid till Mon, 6 Nov'28
+              - button [ref=f20e1449] [cursor=pointer]:
+                - generic [ref=f20e1450]:
+                  - figure [ref=f20e1451]
+                  - generic [ref=f20e1453]:
+                    - paragraph [ref=f20e1455]: Movies + Food
+                    - heading [level=3] [ref=f20e1456]: TEST BANK OFFER -155 OFF_Max Disc Transaction1
+                    - paragraph [ref=f20e1457]: Valid till Mon, 6 Nov'28
+              - button [ref=f20e1459] [cursor=pointer]:
+                - generic [ref=f20e1460]:
+                  - figure [ref=f20e1461]
+                  - generic [ref=f20e1463]:
+                    - paragraph [ref=f20e1465]: Movies + Food
+                    - heading [level=3] [ref=f20e1466]: Test Offer Kotak Flat- MAx Discount 100
+                    - paragraph [ref=f20e1467]: Valid till Tue, 7 Nov'28
+              - button [ref=f20e1469] [cursor=pointer]:
+                - generic [ref=f20e1470]:
+                  - figure [ref=f20e1471]
+                  - generic [ref=f20e1473]:
+                    - paragraph [ref=f20e1475]: Movies + Food
+                    - heading [level=3] [ref=f20e1476]: Define Bank Offer-BOGO- BUY 1 GET 1 FREE TICKET
+                    - paragraph [ref=f20e1477]: Valid till Wed, 8 Nov'28
+              - button [ref=f20e1479] [cursor=pointer]:
+                - generic [ref=f20e1480]:
+                  - figure [ref=f20e1481]
+                  - generic [ref=f20e1483]:
+                    - paragraph [ref=f20e1485]: Movies + Food
+                    - heading [level=3] [ref=f20e1486]: Define Bank Offer-BOGO- BUY 1 GET-DAY
+                    - paragraph [ref=f20e1487]: Valid till Wed, 8 Nov'28
+              - button [ref=f20e1489] [cursor=pointer]:
+                - generic [ref=f20e1490]:
+                  - figure [ref=f20e1491]
+                  - generic [ref=f20e1493]:
+                    - paragraph [ref=f20e1495]: Movies + Food
+                    - heading [level=3] [ref=f20e1496]: Define Bank Offer-BOGO- BUY 1 GET-DAY1
+                    - paragraph [ref=f20e1497]: Valid till Wed, 8 Nov'28
+              - button [ref=f20e1499] [cursor=pointer]:
+                - generic [ref=f20e1500]:
+                  - figure [ref=f20e1501]
+                  - generic [ref=f20e1503]:
+                    - paragraph [ref=f20e1505]: Movies + Food
+                    - heading [level=3] [ref=f20e1506]: Define Bank Offer-BOGO- BUY 1 GET-quarty
+                    - paragraph [ref=f20e1507]: Valid till Wed, 8 Nov'28
+              - button [ref=f20e1509] [cursor=pointer]:
+                - generic [ref=f20e1510]:
+                  - figure [ref=f20e1511]
+                  - generic [ref=f20e1513]:
+                    - paragraph [ref=f20e1515]: Movies + Food
+                    - heading [level=3] [ref=f20e1516]: Define Bank Offer-BOGO- BUY 1 GET-YEAR
+                    - paragraph [ref=f20e1517]: Valid till Wed, 8 Nov'28
+              - button [ref=f20e1519] [cursor=pointer]:
+                - generic [ref=f20e1520]:
+                  - figure [ref=f20e1521]
+                  - generic [ref=f20e1523]:
+                    - paragraph [ref=f20e1525]: Movies + Food
+                    - heading [level=3] [ref=f20e1526]: Test Offer Kotak Flat 77
+                    - paragraph [ref=f20e1527]: Valid till Sat, 11 Nov'28
+              - button [ref=f20e1529] [cursor=pointer]:
+                - generic [ref=f20e1530]:
+                  - figure [ref=f20e1531]
+                  - generic [ref=f20e1533]:
+                    - paragraph [ref=f20e1535]: Movies + Food
+                    - heading [level=3] [ref=f20e1536]: Define Bank Offer- 70 % DISCOUNT-16328
+                    - paragraph [ref=f20e1537]: Valid till Tue, 14 Nov'28
+              - button [ref=f20e1539] [cursor=pointer]:
+                - generic [ref=f20e1540]:
+                  - figure [ref=f20e1541]
+                  - generic [ref=f20e1543]:
+                    - paragraph [ref=f20e1545]: Movies + Food
+                    - heading [level=3] [ref=f20e1546]: OFFER- 15605- BANK OF INDIA FLAT 201 RS OFF-COPY
+                    - paragraph [ref=f20e1547]: Valid till Tue, 14 Nov'28
+              - button [ref=f20e1549] [cursor=pointer]:
+                - generic [ref=f20e1550]:
+                  - figure [ref=f20e1551]
+                  - generic [ref=f20e1553]:
+                    - paragraph [ref=f20e1555]: Movies + Food
+                    - heading [level=3] [ref=f20e1556]: BOI CARD OFFER - BOGO DISCOUNT-27
+                    - paragraph [ref=f20e1557]: Valid till Sun, 10 Dec'28
+              - button [ref=f20e1559] [cursor=pointer]:
+                - generic [ref=f20e1560]:
+                  - figure [ref=f20e1561]
+                  - generic [ref=f20e1563]:
+                    - paragraph [ref=f20e1565]: Movies + Food
+                    - heading [level=3] [ref=f20e1566]: Define Bank Offer- 27% DISCOUNT-16373
+                    - paragraph [ref=f20e1567]: Valid till Sun, 10 Dec'28
+              - button [ref=f20e1569] [cursor=pointer]:
+                - generic [ref=f20e1570]:
+                  - figure [ref=f20e1571]
+                  - generic [ref=f20e1573]:
+                    - paragraph [ref=f20e1575]: Movies + Food
+                    - heading [level=3] [ref=f20e1576]: BANK OF INDIA 20 % Qbuster
+                    - paragraph [ref=f20e1577]: Valid till Sun, 17 Jun'29
+              - button [ref=f20e1579] [cursor=pointer]:
+                - generic [ref=f20e1580]:
+                  - figure [ref=f20e1581]
+                  - generic [ref=f20e1583]:
+                    - paragraph [ref=f20e1585]: Movies + Food
+                    - heading [level=3] [ref=f20e1586]: Copy Offers Voucher in Browser G
+                    - paragraph [ref=f20e1587]: Valid till Fri, 6 Jul'29
+              - button [ref=f20e1589] [cursor=pointer]:
+                - generic [ref=f20e1590]:
+                  - figure [ref=f20e1591]
+                  - generic [ref=f20e1593]:
+                    - paragraph [ref=f20e1595]: Movies + Food
+                    - heading [level=3] [ref=f20e1596]: COPY _PJPT BOI OFFER - RS 99
+                    - paragraph [ref=f20e1597]: Valid till Sat, 7 Jul'29
+              - button [ref=f20e1599] [cursor=pointer]:
+                - generic [ref=f20e1600]:
+                  - figure [ref=f20e1601]
+                  - generic [ref=f20e1603]:
+                    - paragraph [ref=f20e1605]: Movies
+                    - heading [level=3] [ref=f20e1606]: T-Kotak PVR INOX Credit Card 5% Off Movie Ticket
+                    - paragraph [ref=f20e1607]: Valid till Wed, 11 Jul'29
+              - button [ref=f20e1609] [cursor=pointer]:
+                - generic [ref=f20e1610]:
+                  - figure [ref=f20e1611]
+                  - generic [ref=f20e1613]:
+                    - paragraph [ref=f20e1615]: Food
+                    - heading [level=3] [ref=f20e1616]: BOI- BANK CO VOUCHER 11 % -16000
+                    - paragraph [ref=f20e1617]: Valid till Tue, 21 Aug'29
+              - button [ref=f20e1619] [cursor=pointer]:
+                - generic [ref=f20e1620]:
+                  - figure [ref=f20e1621]
+                  - generic [ref=f20e1623]:
+                    - paragraph [ref=f20e1625]: Food
+                    - heading [level=3] [ref=f20e1626]: BOI- BANK FREE VOUCHER 10 % -15999
+                    - paragraph [ref=f20e1627]: Valid till Tue, 21 Aug'29
+              - button [ref=f20e1629] [cursor=pointer]:
+                - generic [ref=f20e1630]:
+                  - figure [ref=f20e1631]
+                  - generic [ref=f20e1633]:
+                    - paragraph [ref=f20e1635]: Movies
+                    - heading [level=3] [ref=f20e1636]: BOI- BANK QTY VOUCHER -15998
+                    - paragraph [ref=f20e1637]: Valid till Tue, 21 Aug'29
+              - button [ref=f20e1639] [cursor=pointer]:
+                - generic [ref=f20e1640]:
+                  - figure [ref=f20e1641]
+                  - generic [ref=f20e1643]:
+                    - paragraph [ref=f20e1645]: Food
+                    - heading [level=3] [ref=f20e1646]: Google Wallet Free Popcorn [50G]-Copy
+                    - paragraph [ref=f20e1647]: Valid till Tue, 13 Nov'29
+              - button [ref=f20e1649] [cursor=pointer]:
+                - generic [ref=f20e1650]:
+                  - figure [ref=f20e1651]
+                  - generic [ref=f20e1653]:
+                    - paragraph [ref=f20e1655]: Movies
+                    - heading [level=3] [ref=f20e1656]: Kotak Bank - 99% OFF 2
+                    - paragraph [ref=f20e1657]: Valid till Wed, 28 Nov'29
+              - button [ref=f20e1659] [cursor=pointer]:
+                - generic [ref=f20e1660]:
+                  - figure [ref=f20e1661]
+                  - generic [ref=f20e1663]:
+                    - paragraph [ref=f20e1665]: Movies + Food
+                    - heading [level=3] [ref=f20e1666]: SBI BANK 20 % Offer - Copy(16425)
+                    - paragraph [ref=f20e1667]: Valid till Tue, 1 Jan'30
+              - button [ref=f20e1669] [cursor=pointer]:
+                - generic [ref=f20e1670]:
+                  - figure [ref=f20e1671]
+                  - generic [ref=f20e1673]:
+                    - paragraph [ref=f20e1675]: Food
+                    - heading [level=3] [ref=f20e1676]: Axis -Contactless- 50 % OFF_Qbuster1
+                    - paragraph [ref=f20e1677]: Valid till Sat, 15 Jun'30
+              - button [ref=f20e1679] [cursor=pointer]:
+                - generic [ref=f20e1680]:
+                  - figure [ref=f20e1681]
+                  - generic [ref=f20e1683]:
+                    - paragraph [ref=f20e1685]: Food
+                    - heading [level=3] [ref=f20e1686]: Axis -Contactless- 50 % OFF_Qbuster
+                    - paragraph [ref=f20e1687]: Valid till Sun, 16 Jun'30
+              - button [ref=f20e1689] [cursor=pointer]:
+                - generic [ref=f20e1690]:
+                  - figure [ref=f20e1691]
+                  - generic [ref=f20e1693]:
+                    - paragraph [ref=f20e1695]: Food
+                    - heading [level=3] [ref=f20e1696]: ICICI-200 OFF ON FB - Cless
+                    - paragraph [ref=f20e1697]: Valid till Sun, 16 Jun'30
+              - button [ref=f20e1699] [cursor=pointer]:
+                - generic [ref=f20e1700]:
+                  - figure [ref=f20e1701]
+                  - generic [ref=f20e1703]:
+                    - paragraph [ref=f20e1705]: Movies + Food
+                    - heading [level=3] [ref=f20e1706]: AMEX - 100 RS OFF AT ALL
+                    - paragraph [ref=f20e1707]: Valid till Wed, 20 Nov'30
+            - generic [ref=f20e1708]:
+              - generic [ref=f20e1709] [cursor=pointer]
+              - generic [ref=f20e1710] [cursor=pointer]
+              - generic [ref=f20e1711] [cursor=pointer]
+              - generic [ref=f20e1712] [cursor=pointer]
+              - generic [ref=f20e1713] [cursor=pointer]
+              - generic [ref=f20e1714] [cursor=pointer]
+              - generic [ref=f20e1715] [cursor=pointer]
+              - generic [ref=f20e1716] [cursor=pointer]
+              - generic [ref=f20e1717] [cursor=pointer]
+              - generic [ref=f20e1718] [cursor=pointer]
+              - generic [ref=f20e1719] [cursor=pointer]
+              - generic [ref=f20e1720] [cursor=pointer]
+              - generic [ref=f20e1721] [cursor=pointer]
+              - generic [ref=f20e1722] [cursor=pointer]
+              - generic [ref=f20e1723] [cursor=pointer]
+              - generic [ref=f20e1724] [cursor=pointer]
+              - generic [ref=f20e1725] [cursor=pointer]
+              - generic [ref=f20e1726] [cursor=pointer]
+              - generic [ref=f20e1727] [cursor=pointer]
+              - generic [ref=f20e1728] [cursor=pointer]
+              - generic [ref=f20e1729] [cursor=pointer]
+              - generic [ref=f20e1730] [cursor=pointer]
+              - generic [ref=f20e1731] [cursor=pointer]
+              - generic [ref=f20e1732] [cursor=pointer]
+              - generic [ref=f20e1733] [cursor=pointer]
+              - generic [ref=f20e1734] [cursor=pointer]
+              - generic [ref=f20e1735] [cursor=pointer]
+              - generic [ref=f20e1736] [cursor=pointer]
+              - generic [ref=f20e1737] [cursor=pointer]
+              - generic [ref=f20e1738] [cursor=pointer]
+              - generic [ref=f20e1739] [cursor=pointer]
+              - generic [ref=f20e1740] [cursor=pointer]
+              - generic [ref=f20e1741] [cursor=pointer]
+              - generic [ref=f20e1742] [cursor=pointer]
+              - generic [ref=f20e1743] [cursor=pointer]
+              - generic [ref=f20e1744] [cursor=pointer]
+              - generic [ref=f20e1745] [cursor=pointer]
+              - generic [ref=f20e1746] [cursor=pointer]
+              - generic [ref=f20e1747] [cursor=pointer]
+              - generic [ref=f20e1748] [cursor=pointer]
+              - generic [ref=f20e1749] [cursor=pointer]
+              - generic [ref=f20e1750] [cursor=pointer]
+              - generic [ref=f20e1751] [cursor=pointer]
+              - generic [ref=f20e1752] [cursor=pointer]
+              - generic [ref=f20e1753] [cursor=pointer]
+              - generic [ref=f20e1754] [cursor=pointer]
+              - generic [ref=f20e1755] [cursor=pointer]
+              - generic [ref=f20e1756] [cursor=pointer]
+              - generic [ref=f20e1757] [cursor=pointer]
+              - generic [ref=f20e1758] [cursor=pointer]
+              - generic [ref=f20e1759] [cursor=pointer]
+              - generic [ref=f20e1760] [cursor=pointer]
+              - generic [ref=f20e1761] [cursor=pointer]
+              - generic [ref=f20e1762] [cursor=pointer]
+              - generic [ref=f20e1763] [cursor=pointer]
+              - generic [ref=f20e1764] [cursor=pointer]
+              - generic [ref=f20e1765] [cursor=pointer]
+              - generic [ref=f20e1766] [cursor=pointer]
+              - generic [ref=f20e1767] [cursor=pointer]
+              - generic [ref=f20e1768] [cursor=pointer]
+              - generic [ref=f20e1769] [cursor=pointer]
+              - generic [ref=f20e1770] [cursor=pointer]
+              - generic [ref=f20e1771] [cursor=pointer]
+              - generic [ref=f20e1772] [cursor=pointer]
+              - generic [ref=f20e1773] [cursor=pointer]
+              - generic [ref=f20e1774] [cursor=pointer]
+              - generic [ref=f20e1775] [cursor=pointer]
+              - generic [ref=f20e1776] [cursor=pointer]
+              - generic [ref=f20e1777] [cursor=pointer]
+              - generic [ref=f20e1778] [cursor=pointer]
+              - generic [ref=f20e1779] [cursor=pointer]
+              - generic [ref=f20e1780] [cursor=pointer]
+              - generic [ref=f20e1781] [cursor=pointer]
+              - generic [ref=f20e1782] [cursor=pointer]
+              - generic [ref=f20e1783] [cursor=pointer]
+              - generic [ref=f20e1784] [cursor=pointer]
+              - generic [ref=f20e1785] [cursor=pointer]
+              - generic [ref=f20e1786] [cursor=pointer]
+              - generic [ref=f20e1787] [cursor=pointer]
+              - generic [ref=f20e1788] [cursor=pointer]
+              - generic [ref=f20e1789] [cursor=pointer]
+              - generic [ref=f20e1790] [cursor=pointer]
+              - generic [ref=f20e1791] [cursor=pointer]
+              - generic [ref=f20e1792] [cursor=pointer]
+              - generic [ref=f20e1793] [cursor=pointer]
+              - generic [ref=f20e1794] [cursor=pointer]
+              - generic [ref=f20e1795] [cursor=pointer]
+              - generic [ref=f20e1796] [cursor=pointer]
+              - generic [ref=f20e1797] [cursor=pointer]
+              - generic [ref=f20e1798] [cursor=pointer]
+              - generic [ref=f20e1799] [cursor=pointer]
+              - generic [ref=f20e1800] [cursor=pointer]
+              - generic [ref=f20e1801] [cursor=pointer]
+              - generic [ref=f20e1802] [cursor=pointer]
+              - generic [ref=f20e1803] [cursor=pointer]
+              - generic [ref=f20e1804] [cursor=pointer]
+              - generic [ref=f20e1805] [cursor=pointer]
+              - generic [ref=f20e1806] [cursor=pointer]
+              - generic [ref=f20e1807] [cursor=pointer]
+              - generic [ref=f20e1808] [cursor=pointer]
+          - generic [ref=f20e1809] [cursor=pointer]
+    - button "Scroll to top Arrow Up Icon" [ref=f20e1810] [cursor=pointer]:
+      - generic [ref=f20e1811]: Scroll to top
+      - img "Arrow Up Icon" [ref=f20e1812]
+    - contentinfo [ref=f20e1830]:
+      - generic [ref=f20e1831]:
+        - generic [ref=f20e1832]:
+          - generic [ref=f20e1833]:
+            - link [ref=f20e1834] [cursor=pointer]:
+              - /url: /
+              - img "Brand Logo" [ref=f20e1835]
+            - paragraph [ref=f20e1836]: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            - list [ref=f20e1837]:
+              - listitem [ref=f20e1838]:
+                - link [ref=f20e1839] [cursor=pointer]:
+                  - /url: https://www.facebook.com/moviesatpvr/
+              - listitem [ref=f20e1840]:
+                - link [ref=f20e1841] [cursor=pointer]:
+                  - /url: https://www.instagram.com/pvrpictures/?hl=en
+              - listitem [ref=f20e1842]:
+                - link [ref=f20e1843] [cursor=pointer]:
+                  - /url: https://x.com/_PVRCinemas?lang=en
+              - listitem [ref=f20e1844]:
+                - link [ref=f20e1845] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/pvr-limited
+              - listitem [ref=f20e1846]:
+                - link [ref=f20e1847] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+          - generic [ref=f20e1848]:
+            - heading "Support" [level=3] [ref=f20e1849]
+            - navigation [ref=f20e1853]:
+              - list [ref=f20e1854]:
+                - listitem [ref=f20e1855]:
+                  - link "Privacy Policy" [ref=f20e1856] [cursor=pointer]:
+                    - /url: /privacy-policy
+                - listitem [ref=f20e1857]:
+                  - link "Terms & Conditions" [ref=f20e1858] [cursor=pointer]:
+                    - /url: /terms-conditions
+                - listitem [ref=f20e1859]:
+                  - link "Terms of Use" [ref=f20e1860] [cursor=pointer]:
+                    - /url: /terms-use
+                - listitem [ref=f20e1861]:
+                  - link "Customer Experience" [ref=f20e1862] [cursor=pointer]:
+                    - /url: /feedback
+          - generic [ref=f20e1863]:
+            - heading "GET THE APP" [level=3] [ref=f20e1864]
+            - generic [ref=f20e1868]:
+              - link [ref=f20e1869] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/pvr-cinemas-movie-tickets/id878127874
+                - img "IOS Play Store" [ref=f20e1870]
+              - link [ref=f20e1871] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.net.pvr
+                - img "Google Play Store" [ref=f20e1872]
+        - generic [ref=f20e1873]:
+          - paragraph [ref=f20e1874]: Copyright © 2026 PVR. All Rights Reserved
+          - figure [ref=f20e1875]:
+            - link [ref=f20e1876] [cursor=pointer]:
+              - /url: /
+              - img "Footer Tagline" [ref=f20e1877]
+    - button "Open Movie Jockey chat" [ref=f20e2239] [cursor=pointer]:
+      - img "Movie Jockey"
+  - region "Notifications alt+T"
+  - menu "More Arrow Down" [active] [ref=f20e2241]:
+    - menuitem "Offers" [ref=f20e2242] [cursor=pointer]
+    - menuitem "Privilege Plus" [ref=f20e2244] [cursor=pointer]
+    - menuitem "Curated Shows" [ref=f20e2246] [cursor=pointer]
+    - menuitem "PVR INOX Kotak Credit Card" [ref=f20e2248] [cursor=pointer]
+    - menuitem "Gift Cards" [ref=f20e2250] [cursor=pointer]
+    - menuitem "ODR Portal" [ref=f20e2252] [cursor=pointer]
+    - menuitem "NVSP" [ref=f20e2254] [cursor=pointer]
+    - menuitem "NEST" [ref=f20e2256] [cursor=pointer]
+    - menuitem "Bulk Gift Card" [ref=f20e2258] [cursor=pointer]
+    - menuitem "Corporate Booking" [ref=f20e2260] [cursor=pointer]
+    - menuitem "Career" [ref=f20e2262] [cursor=pointer]
+    - menuitem "Investor" [ref=f20e2264] [cursor=pointer]
+    - menuitem "News" [ref=f20e2266] [cursor=pointer]
+    - menuitem "About Us" [ref=f20e2268] [cursor=pointer]
+    - menuitem "Advertise with us" [ref=f20e2270] [cursor=pointer]

@@ -1,0 +1,107 @@
+- generic [active] [ref=f254e2]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=f254e4] [cursor=pointer]
+  - alert [ref=f254e1]: PVR INOX Mumbai– Book Movie Tickets & Showtimes | Latest Movies in Mumbai
+  - generic [ref=f254e7]:
+    - banner [ref=f254e8]:
+      - generic [ref=f254e10]:
+        - generic [ref=f254e11]:
+          - link [ref=f254e13] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f254e14]
+          - button "Map Point Icon Mumbai" [ref=f254e17] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f254e18]
+            - generic [ref=f254e19]: Mumbai
+        - navigation [ref=f254e20]:
+          - link "Home" [ref=f254e21] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f254e22] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f254e23] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f254e24] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f254e25] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=f254e26] [cursor=pointer]:
+            - generic [ref=f254e27]: More
+            - img "Arrow Down" [ref=f254e28]
+        - generic [ref=f254e29]:
+          - button [ref=f254e30] [cursor=pointer]
+          - button [ref=f254e35] [cursor=pointer]:
+            - img "User Icon" [ref=f254e37]
+          - button "Download App GIF Download App" [ref=f254e38] [cursor=pointer]:
+            - img "Download App GIF" [ref=f254e39]
+            - generic [ref=f254e40]: Download App
+    - generic [ref=f254e45]:
+      - generic [ref=f254e46]:
+        - heading "All Cinemas" [level=1] [ref=f254e47]
+        - generic [ref=f254e49]:
+          - generic [ref=f254e50]:
+            - heading "3 Cinemas" [level=2] [ref=f254e51]
+            - button [ref=f254e52] [cursor=pointer]:
+              - img "Minimize Icon" [ref=f254e53]
+          - list [ref=f254e55]:
+            - listitem [ref=f254e56]:
+              - generic [ref=f254e61] [cursor=pointer]:
+                - generic [ref=f254e62]:
+                  - heading "DUMMY INOX Megaplex, Sky City Mall, Borivali" [level=3] [ref=f254e63]
+                  - generic [ref=f254e64]:
+                    - figure [ref=f254e65]:
+                      - img "wheelchair accessible" [ref=f254e66]
+                    - button [ref=f254e67]:
+                      - img "not favorited" [ref=f254e68]
+                - generic [ref=f254e69]: 1137.34 km away
+            - listitem [ref=f254e71]:
+              - generic [ref=f254e76] [cursor=pointer]:
+                - generic [ref=f254e77]:
+                  - heading "INOX Megaplex, Inorbit Mall" [level=3] [ref=f254e78]
+                  - generic [ref=f254e79]:
+                    - figure [ref=f254e80]:
+                      - img "wheelchair accessible" [ref=f254e81]
+                    - button [ref=f254e82]:
+                      - img "not favorited" [ref=f254e83]
+                - generic [ref=f254e84]: 1141.61 km away
+            - listitem [ref=f254e86]:
+              - generic [ref=f254e91] [cursor=pointer]:
+                - generic [ref=f254e92]:
+                  - heading "INOX R-City Ghatkopar (INSIGNIA)" [level=3] [ref=f254e93]
+                  - button [ref=f254e95]:
+                    - img "not favorited" [ref=f254e96]
+                - generic [ref=f254e97]: 1141.61 km away
+      - generic [ref=f254e99]:
+        - generic [ref=f254e101]:
+          - figure [ref=f254e102]:
+            - img "theatre" [ref=f254e103]
+          - generic [ref=f254e105]:
+            - generic [ref=f254e106]:
+              - heading "DUMMY INOX Megaplex, Sky City Mall, Borivali" [level=2] [ref=f254e107]
+              - generic [ref=f254e108]: Devipada,Khande Rao Dongari
+              - generic [ref=f254e109]:
+                - generic [ref=f254e110]: 0 Shows
+                - generic [ref=f254e111]: 1137.34 km away
+                - button "Get Directions" [ref=f254e113] [cursor=pointer]
+            - generic [ref=f254e115]:
+              - figure [ref=f254e116]:
+                - img "wheelchair accessible" [ref=f254e117]
+              - button [ref=f254e118] [cursor=pointer]:
+                - img "Heart Icon" [ref=f254e119]
+        - generic [ref=f254e120]:
+          - heading "Other cinemas nearby" [level=1] [ref=f254e121]
+          - generic [ref=f254e125]:
+            - generic [ref=f254e129] [cursor=pointer]:
+              - generic [ref=f254e130]:
+                - heading "INOX Megaplex, Inorbit Mall" [level=2] [ref=f254e133]
+                - generic [ref=f254e135]:
+                  - figure [ref=f254e136]:
+                    - img "wheelchair accessible" [ref=f254e137]
+                  - button [ref=f254e138]:
+                    - img "not favorited" [ref=f254e139]
+              - paragraph [ref=f254e141]: 1141.61 km away
+            - generic [ref=f254e145] [cursor=pointer]:
+              - generic [ref=f254e146]:
+                - heading "INOX R-City Ghatkopar (INSIGNIA)" [level=2] [ref=f254e149]
+                - button [ref=f254e152]:
+                  - img "not favorited" [ref=f254e153]
+              - paragraph [ref=f254e155]: 1141.61 km away
+  - region "Notifications alt+T"

@@ -1,0 +1,127 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link [ref=e9] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=e10]
+          - button "Map Point Icon Delhi" [ref=e13] [cursor=pointer]:
+            - img "Map Point Icon" [ref=e14]
+            - generic [ref=e15]: Delhi
+        - navigation [ref=e16]:
+          - link "Home" [ref=e17] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=e18] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=e19] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=e20] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=e21] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: More
+            - img "Arrow Down" [ref=e24]
+        - generic [ref=e25]:
+          - button [ref=e26] [cursor=pointer]
+          - button [ref=e31] [cursor=pointer]:
+            - img "User Icon" [ref=e33]
+          - button "Download App GIF Download App" [ref=e34] [cursor=pointer]:
+            - img "Download App GIF" [ref=e35]
+            - generic [ref=e36]: Download App
+    - generic [ref=e38]:
+      - img "Trending Movies Icon" [ref=e39]
+      - heading "No Trending Movies Found" [level=2] [ref=e40]
+    - generic [ref=e41]:
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - button "Now Showing" [ref=e49] [cursor=pointer]
+          - button "Coming Soon" [ref=e50] [cursor=pointer]
+          - button "Trailers" [ref=e51] [cursor=pointer]
+          - button "Offers" [ref=e52] [cursor=pointer]
+        - generic [ref=e53]:
+          - button "Food Icon Food" [ref=e54] [cursor=pointer]:
+            - img "Food Icon" [ref=e55]
+            - generic [ref=e56]: Food
+          - button "Curated Shows Icon Curated Shows" [ref=e57] [cursor=pointer]:
+            - img "Curated Shows Icon" [ref=e58]
+            - generic [ref=e59]: Curated Shows
+      - generic [ref=e60]:
+        - heading "Now Showing" [level=2] [ref=e63]
+        - generic [ref=e67]:
+          - figure [ref=e68]:
+            - img "No movies found" [ref=e69]
+          - heading "No movies found" [level=3] [ref=e70]
+      - generic [ref=e73]:
+        - heading [level=2] [ref=e74]: Coming Soon
+        - link [ref=e75] [cursor=pointer]:
+          - /url: /coming-soon
+          - text: View More
+      - generic [ref=e76]:
+        - heading [level=2] [ref=e79]: Trailers
+        - generic [ref=e83]:
+          - figure [ref=e84]
+          - heading [level=3] [ref=e86]: No trailers found
+    - button "Scroll to top Arrow Up Icon" [ref=e88] [cursor=pointer]:
+      - generic [ref=e89]: Scroll to top
+      - img "Arrow Up Icon" [ref=e90]
+    - contentinfo [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - link [ref=e95] [cursor=pointer]:
+              - /url: /
+              - img "Brand Logo" [ref=e96]
+            - paragraph [ref=e97]: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            - list [ref=e98]:
+              - listitem [ref=e99]:
+                - link [ref=e100] [cursor=pointer]:
+                  - /url: https://www.facebook.com/moviesatpvr/
+              - listitem [ref=e101]:
+                - link [ref=e102] [cursor=pointer]:
+                  - /url: https://www.instagram.com/pvrpictures/?hl=en
+              - listitem [ref=e103]:
+                - link [ref=e104] [cursor=pointer]:
+                  - /url: https://x.com/_PVRCinemas?lang=en
+              - listitem [ref=e105]:
+                - link [ref=e106] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/pvr-limited
+              - listitem [ref=e107]:
+                - link [ref=e108] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+          - generic [ref=e109]:
+            - heading "Support" [level=3] [ref=e110]
+            - navigation [ref=e114]:
+              - list [ref=e115]:
+                - listitem [ref=e116]:
+                  - link "Privacy Policy" [ref=e117] [cursor=pointer]:
+                    - /url: /privacy-policy
+                - listitem [ref=e118]:
+                  - link "Terms & Conditions" [ref=e119] [cursor=pointer]:
+                    - /url: /terms-conditions
+                - listitem [ref=e120]:
+                  - link "Terms of Use" [ref=e121] [cursor=pointer]:
+                    - /url: /terms-use
+                - listitem [ref=e122]:
+                  - link "Customer Experience" [ref=e123] [cursor=pointer]:
+                    - /url: /feedback
+          - generic [ref=e124]:
+            - heading "GET THE APP" [level=3] [ref=e125]
+            - generic [ref=e129]:
+              - link [ref=e130] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/pvr-cinemas-movie-tickets/id878127874
+                - img "IOS Play Store" [ref=e131]
+              - link [ref=e132] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.net.pvr
+                - img "Google Play Store" [ref=e133]
+        - generic [ref=e134]:
+          - paragraph [ref=e135]: Copyright © 2026 PVR. All Rights Reserved
+          - figure [ref=e136]:
+            - link [ref=e137] [cursor=pointer]:
+              - /url: /
+              - img "Footer Tagline" [ref=e138]
+    - button "Open Movie Jockey chat" [ref=e139] [cursor=pointer]:
+      - img "Movie Jockey"
+  - region "Notifications alt+T"

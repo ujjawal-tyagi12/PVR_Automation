@@ -1,0 +1,850 @@
+- generic:
+  - button [ref=f261e757] [cursor=pointer]
+  - alert
+  - generic:
+    - banner:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - link:
+                - /url: /
+            - generic:
+              - button:
+                - generic: Mumbai
+          - navigation:
+            - link:
+              - /url: /
+              - text: Home
+            - link:
+              - /url: /cinemas
+              - text: Cinemas
+            - link:
+              - /url: /experiences
+              - text: Experiences
+            - link:
+              - /url: /food
+              - text: Food
+            - link:
+              - /url: /passport
+              - text: Passport
+            - button:
+              - generic: More
+          - generic:
+            - button
+            - generic:
+              - button
+            - button:
+              - generic: Download App
+    - generic:
+      - generic:
+        - generic:
+          - iframe [ref=f261e760]:
+            - generic [ref=f270e1]:
+              - generic "YouTube Video Player" [ref=f270e3]
+              - button "Show player controls" [ref=f270e7] [cursor=pointer]
+          - generic:
+            - generic: Re-Release
+            - generic:
+              - link:
+                - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-08-31T08%3A30%3A00.000Z
+                - text: Ramayanam(Hindi)
+            - list:
+              - listitem:
+                - generic: S
+              - listitem:
+                - generic: Hindi
+              - listitem:
+                - generic: Adventure, Action
+            - paragraph:
+              - link:
+                - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-08-31T08%3A30%3A00.000Z
+                - generic: Next Show today at
+                - text: 2:00 PM
+            - generic:
+              - link:
+                - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-08-31T08%3A30%3A00.000Z
+                - text: Book Now
+          - generic:
+            - button
+          - generic:
+            - button
+            - button
+          - generic:
+            - heading [level=2]: IN THE SPOTLIGHT
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: Re-Release
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: 30 Sep'26
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: Re-Release
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: Re-Release
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: Re-Release
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=3]: Discover the Experiences
+            - generic:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - link:
+                        - /url: /experiences?experienceID=d3e2207587ed444a1047f36ffd10daf9:cec5d14e658688ec9f4753d9fb455b44:1150557c287fbbdd65dc3aa33f8f19e0541c88d0dc7b265d
+                    - listitem:
+                      - link:
+                        - /url: /experiences?experienceID=56f4f7341c97e6027ad2cd3558657188:f0d2cc6b7f6014cef7351e18a40321a1:97ae47301b49fac8bb86561f5ab7c2d7b8082cf6d438cb01
+                    - listitem:
+                      - link:
+                        - /url: /experiences?experienceID=df063a30ccdb94a3ea51401ae54944a6:d8462ce46fdb1b09abc0750294f8af0b:dc1f7cd4f5594e95a06b42ab0fc9703a54c81155b1d85a8e
+                    - listitem:
+                      - link:
+                        - /url: /experiences?experienceID=5d26e00ab675f2afa458404e7574cb8a:c82374a05078940eb1cb1cdc4d79b6ac:b351eaf477e60ced45623630d6982c96903a47d90b6bc99f
+                - generic:
+                  - link:
+                    - /url: /experiences
+                    - text: View More
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - button:
+                    - generic:
+                      - figure
+                      - generic:
+                        - generic:
+                          - paragraph:
+                            - strong: Experience the Magic on the Big Screen!
+                            - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+                        - generic: Get Exclusive Movie Deals Now!
+                - generic:
+                  - button:
+                    - generic:
+                      - figure:
+                        - button
+                      - generic:
+                        - generic:
+                          - paragraph: Get ready for adrenaline-pumping action, intense drama, and edge-of-your-seat excitement. Reserve your seats today!
+                - generic:
+                  - button:
+                    - generic:
+                      - figure
+                      - generic:
+                        - generic:
+                          - paragraph:
+                            - strong: Experience the Magic on the Big Screen!
+                            - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+          - button
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button: Now Showing
+              - button: Coming Soon
+              - button: Experiences
+              - button: Trailers
+              - button: Offers
+          - generic:
+            - button:
+              - generic: Food
+            - button:
+              - generic: Curated Shows
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=2]: Now Showing
+            - generic:
+              - generic:
+                - button:
+                  - generic: Languages
+              - generic:
+                - button:
+                  - generic: Genre
+              - button:
+                - generic: Filter
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: 30 Sep'26
+                              - generic:
+                                - heading [level=3]: "Spider-Man: Brand New Day"
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: A
+                                  - generic:
+                                    - paragraph: Action
+                                    - generic: "+5"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Re-Release
+                              - generic:
+                                - heading [level=3]: Raksha Bandhan
+                              - generic:
+                                - generic:
+                                  - paragraph: 2h 3m
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: U
+                                  - generic:
+                                    - paragraph: Drama
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - heading [level=3]: Dhurandhar(Hindi)
+                        - generic:
+                          - generic:
+                            - paragraph: 1h
+                            - generic:
+                              - paragraph: Hindi
+                          - generic:
+                            - paragraph: A
+                            - generic:
+                              - paragraph: Adventure
+                              - generic: "+1"
+                        - generic:
+                          - button:
+                            - generic:
+                              - figure
+                            - generic: Flat ₹150 off
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading [level=3]: Dhurandhar(Hindi)
+                      - generic:
+                        - generic:
+                          - paragraph: 1h
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: A
+                          - generic:
+                            - paragraph: Adventure
+                            - generic: "+1"
+                        - generic:
+                          - button:
+                            - generic:
+                              - figure
+                            - generic: Flat ₹150 off
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - paragraph: Re-Release
+                        - generic:
+                          - heading [level=3]: Ramayanam(Hindi)
+                        - generic:
+                          - generic:
+                            - paragraph: 1h
+                            - generic:
+                              - paragraph: Hindi
+                          - generic:
+                            - paragraph: S
+                            - generic:
+                              - paragraph: Adventure
+                              - generic: "+1"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading [level=3]: Ramayanam(Hindi)
+                      - generic:
+                        - generic:
+                          - paragraph: 1h
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: S
+                          - generic:
+                            - paragraph: Adventure
+                            - generic: "+1"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - paragraph: Re-Release
+                        - generic:
+                          - heading [level=3]: Border 2(Hindi)
+                        - generic:
+                          - generic:
+                            - paragraph: 3h 19m
+                            - generic:
+                              - paragraph: Hindi
+                          - generic:
+                            - paragraph: U/A
+                            - generic:
+                              - paragraph: Action
+                              - generic: "+1"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading [level=3]: Border 2(Hindi)
+                      - generic:
+                        - generic:
+                          - paragraph: 3h 19m
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: U/A
+                          - generic:
+                            - paragraph: Action
+                            - generic: "+1"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - paragraph: Re-Release
+                        - generic:
+                          - heading [level=3]: 1920 London (Hindi)
+                        - generic:
+                          - generic:
+                            - paragraph: 2h 3m
+                            - generic:
+                              - paragraph: Hindi
+                          - generic:
+                            - paragraph: A
+                            - generic:
+                              - paragraph: Horror
+                              - generic: "+1"
+                        - generic:
+                          - button:
+                            - generic:
+                              - figure
+                            - generic: Flat ₹150 off
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading [level=3]: 1920 London (Hindi)
+                      - generic:
+                        - generic:
+                          - paragraph: 2h 3m
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: A
+                          - generic:
+                            - paragraph: Horror
+                            - generic: "+1"
+                        - generic:
+                          - button:
+                            - generic:
+                              - figure
+                            - generic: Flat ₹150 off
+            - iframe [ref=f261e393]:
+              - link [ref=f265e2] [cursor=pointer]:
+                - /url: https://adreq.adster.tech/v1/click?actual_adunit=&ad_type=banner&ad_unit=&adv_name=PVR+advertiser&adv_vert=pvrcinemas&advertiser_id=01KJPX5D4X7K6P5624FFBS8ZGG&app_name=inox-uat-web.pvrinox.com&buy_type=CPM&cb=&city=Delhi&click_id=01M1B7X5HH38S1KBGVE16HF05X&click_url=https%3A%2F%2Fwww.getonecard.app%2F%3Fdeep_link_value%3DOffers%26af_force_deeplink%3Dtrue%26af_dp%3Donecard%253A%252F%252Fmainactivity%26source_caller%3Dui%26deep_link_sub1%3DSCREEN%26shortlink%3DOffers%26utm_source%3Dpvr_ads%26c%3DOffers%2520Page%26pid%3DSMS%26af_xp%3Dtext&client_timestamp=0&country=IND&cpc=0&creative_id=01KWV71P8NGJDCC1HFKMCSX8ZF&creative_text=&crn=&ctype=&derived_ecpm=10&ds=&ds_model=&dt=Desktop&eid=pvrcinemas&ga_id=&hour=0&lin=&line_id=01KWV780Q1YGD1HXK4E2C2K226&m=0&network=adster&order_id=01KWV780Q1YGD1HXK4E2C2K226&org_id=01KJPX5D4X7K6P5624FFBS8ZGG&partner_id=pvrcinemas&placement_id=pvr-next-desktop-home-btf-banner&pri=1&product_category=&product_subtype=&publisher_id=01KJQ0SP661H9D3MBDXNRSMHH3&pubn=&region=IN-DL&req_id=01M1B7X5HHB1DX5BTSFDWKP3R5&req_type=banner&timestamp=0&user_agent=&user_id=179925fc-85e4-4662-8e87-6f742d00aeda
+                - img "OneCard Offer_Jan26_Homepage BTF 1440x250" [ref=f265e3]
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=2]: Coming Soon
+            - link:
+              - /url: /coming-soon
+              - text: View More
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 30 Sep'26
+                              - heading [level=3]: Jana Nayagan
+                              - generic:
+                                - generic:
+                                  - paragraph: 30m
+                                  - generic:
+                                    - paragraph: Hindi (Original)
+                                    - generic: "+3"
+                                - generic:
+                                  - paragraph: A
+                                  - paragraph: Action
+                                  - generic: "+3"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 30 Sep'26
+                              - heading [level=3]: Jana Nayagan
+                              - generic:
+                                - generic:
+                                  - paragraph: 30m
+                                  - generic:
+                                    - paragraph: Hindi (Original)
+                                    - generic: "+3"
+                                - generic:
+                                  - paragraph: A
+                                  - generic:
+                                    - paragraph: Action
+                                    - generic: "+3"
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: Varanasi (film)
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: S
+                                  - paragraph: Musical
+                                  - generic: "+3"
+                      - generic:
+                        - generic:
+                          - generic: 45 fans are hyped for this movie!
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: Varanasi (film)
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: S
+                                  - generic:
+                                    - paragraph: Musical
+                                    - generic: "+3"
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: King (2026 film)
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: S
+                                  - paragraph: Action
+                                  - generic: "+1"
+                      - generic:
+                        - generic:
+                          - generic: 25 fans are hyped for this movie!
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: King (2026 film)
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: S
+                                  - generic:
+                                    - paragraph: Action
+                                    - generic: "+1"
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: UA 13+
+                                  - paragraph: Action
+                                  - generic: "+2"
+                      - generic:
+                        - generic:
+                          - generic: 12 fans are hyped for this movie!
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: UA 13+
+                                  - generic:
+                                    - paragraph: Action
+                                    - generic: "+2"
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: PROJECT HAIL MARY
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: UA 13+
+                                  - paragraph: Science Fiction
+                      - generic:
+                        - generic:
+                          - generic: 9 fans are hyped for this movie!
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: PROJECT HAIL MARY
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: UA 13+
+                                  - generic:
+                                    - paragraph: Science Fiction
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=2]: Experiences
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - iframe [ref=f261e761]:
+                              - generic [ref=f269e1]:
+                                - generic "YouTube Video Player" [ref=f269e3]
+                                - generic [ref=f269e6]:
+                                  - generic:
+                                    - generic:
+                                      - button "Show player controls" [ref=f269e7] [cursor=pointer]
+                                      - generic [ref=f269e12]:
+                                        - generic: INOX Movies
+                                        - generic: 34.9K subscribers
+                            - generic:
+                              - button
+                            - generic:
+                              - button
+                              - button
+                - generic:
+                  - generic:
+                    - button [disabled]
+                    - button
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: First private lounges for guestsSecond gourmet dining optionsThird top tier luxury seatingFourth premium service and privacyFifth most exclusive cinema experience
+                  - generic:
+                    - button:
+                      - generic: Explore movies in INSIGNIA
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=2]: Trailers
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - button
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading [level=2]: Dhurandhar(Hindi)
+                            - list:
+                              - listitem:
+                                - generic: A
+                              - listitem:
+                                - generic: 1h
+                              - listitem:
+                                - generic: Hindi
+                              - listitem:
+                                - generic: Adventure
+                                - generic: "+1"
+                            - generic:
+                              - paragraph: Dhurandhar (transl.?Stalwart) is a 2025 Indian Hindi-language spy action thriller film written, directed, and co-produced by Aditya Dhar. Produced by Jyoti Deshpande, Aditya Dhar, and Lokesh Dhar unde... Read More
+                            - generic:
+                              - button:
+                                - generic: Watch More Trailers
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - heading [level=3]: Other Movie Trailers
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: Dhurandhar(Hindi)
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: Border 2(Hindi)
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: Ramayanam(Hindi)
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: 1920 London (Hindi)
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: Raksha Bandhan
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: "Spider-Man: Brand New Day"
+                                  - generic:
+                                    - paragraph: English
+    - button:
+      - generic: Scroll to top
+    - contentinfo:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /
+            - paragraph: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://www.facebook.com/moviesatpvr/
+              - listitem:
+                - link:
+                  - /url: https://www.instagram.com/pvrpictures/?hl=en
+              - listitem:
+                - link:
+                  - /url: https://x.com/_PVRCinemas?lang=en
+              - listitem:
+                - link:
+                  - /url: https://in.linkedin.com/company/pvr-limited
+              - listitem:
+                - link:
+                  - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+          - generic:
+            - heading [level=3]:
+              - generic: Support
+            - navigation:
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /privacy-policy
+                    - text: Privacy Policy
+                - listitem:
+                  - link:
+                    - /url: /terms-conditions
+                    - text: Terms & Conditions
+                - listitem:
+                  - link:
+                    - /url: /terms-use
+                    - text: Terms of Use
+                - listitem:
+                  - link:
+                    - /url: /feedback
+                    - text: Customer Experience
+          - generic:
+            - heading [level=3]:
+              - generic: GET THE APP
+            - generic:
+              - link:
+                - /url: https://apps.apple.com/in/app/pvr-cinemas-movie-tickets/id878127874
+              - link:
+                - /url: https://play.google.com/store/apps/details?id=com.net.pvr
+        - generic:
+          - paragraph: Copyright © 2026 PVR. All Rights Reserved
+          - figure:
+            - link:
+              - /url: /
+  - region "Notifications alt+T"
+  - dialog [ref=f261e790]:
+    - heading "Dialog" [level=2] [ref=f261e791]
+    - heading [level=2] [ref=f261e793]:
+      - button [ref=f261e794] [cursor=pointer]
+    - generic [ref=f261e799]:
+      - generic [ref=f261e800]:
+        - generic [ref=f261e802]:
+          - heading "Welcome!" [level=1] [ref=f261e803]
+          - paragraph [ref=f261e804]: Enter your phone number to proceed
+        - generic [ref=f261e805]:
+          - generic [ref=f261e806]:
+            - generic [ref=f261e808]:
+              - textbox "Enter your phone number 11" [active] [ref=f261e809]
+              - generic:
+                - generic: Phone Number
+                - generic: "*"
+              - generic:
+                - generic: "+91"
+                - generic: "|"
+            - button "Get OTP" [disabled]
+          - generic [ref=f261e810]:
+            - separator [ref=f261e811]: or Sign-in with
+            - button "Google Logo Google" [ref=f261e812] [cursor=pointer]:
+              - img "Google Logo" [ref=f261e813]
+              - generic [ref=f261e814]: Google
+      - paragraph [ref=f261e816]:
+        - text: By proceeding, you agree to our
+        - link "Terms & Conditions" [ref=f261e817] [cursor=pointer]:
+          - /url: /terms-conditions
+        - text: and
+        - link "Privacy Policy" [ref=f261e818] [cursor=pointer]:
+          - /url: /privacy-policy
+        - text: .

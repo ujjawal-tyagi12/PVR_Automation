@@ -1,0 +1,1794 @@
+- generic:
+  - button [ref=f156e1890] [cursor=pointer]
+  - alert
+  - generic:
+    - banner [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - link:
+                - /url: /
+            - generic:
+              - button:
+                - generic: Mumbai
+          - navigation:
+            - link:
+              - /url: /
+              - text: Home
+            - link:
+              - /url: /cinemas
+              - text: Cinemas
+            - link:
+              - /url: /experiences
+              - text: Experiences
+            - link:
+              - /url: /food
+              - text: Food
+            - link:
+              - /url: /passport
+              - text: Passport
+            - button:
+              - generic: More
+          - generic:
+            - button
+            - generic:
+              - button
+            - button:
+              - generic: Download App
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - iframe [ref=f156e46]:
+            - generic [ref=f165e1]:
+              - generic "YouTube Video Player" [ref=f165e3]
+              - button "Show player controls" [ref=f165e50] [cursor=pointer]
+          - generic:
+            - generic: Re-Release
+            - generic:
+              - link:
+                - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-01T08%3A30%3A00.000Z
+                - text: Ramayanam(Hindi)
+            - list:
+              - listitem:
+                - generic: S
+              - listitem:
+                - generic: Hindi
+              - listitem:
+                - generic: Adventure, Action
+            - paragraph:
+              - link:
+                - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-01T08%3A30%3A00.000Z
+                - generic: Next Show today at
+                - text: 2:00 PM
+            - generic:
+              - link:
+                - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-01T08%3A30%3A00.000Z
+                - text: Book Now
+          - generic:
+            - button
+          - generic:
+            - button
+            - button
+          - generic:
+            - heading [level=2]: IN THE SPOTLIGHT
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: Re-Release
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: 30 Sep'26
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: Re-Release
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: Re-Release
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - figure
+                          - generic:
+                            - generic:
+                              - heading [level=2]: Re-Release
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=3]: Discover the Experiences
+            - generic:
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - link:
+                        - /url: /experiences?experienceID=7e1d1b9c4755c6ae43a4518cebdb75e7:d2931805b4c4f90e586bb933c59ec784:b269e0d393c039687a1ee14883a5ef58633dc10e245b2815
+                    - listitem:
+                      - link:
+                        - /url: /experiences?experienceID=fee7081879e9ccdab365a07dc664a594:03d37454d206d67dd498fbba242d1b91:d56b46be350d3966e337ee7de3d2fe574c77875bf3eaf8c8
+                    - listitem:
+                      - link:
+                        - /url: /experiences?experienceID=b78a8e252bd763d12ae069a44cdeab5c:649102cf29e1a76353a922dc65dc0c88:a834eef89bc53ed241bdaecd0bedd8162cdc183c1add21da
+                    - listitem:
+                      - link:
+                        - /url: /experiences?experienceID=cce7c67156df22db698882b66a3d3b50:3d1a5059e21924558d9c8d06286ca44e:46fa76feca88c3543c633131d2c26bc26dc5a295a7bbf703
+                - generic:
+                  - link:
+                    - /url: /experiences
+                    - text: View More
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - button:
+                    - generic:
+                      - figure
+                      - generic:
+                        - generic:
+                          - paragraph:
+                            - strong: Experience the Magic on the Big Screen!
+                            - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+                        - generic: Get Exclusive Movie Deals Now!
+                - generic:
+                  - button:
+                    - generic:
+                      - figure:
+                        - button
+                      - generic:
+                        - generic:
+                          - paragraph: Get ready for adrenaline-pumping action, intense drama, and edge-of-your-seat excitement. Reserve your seats today!
+                - generic:
+                  - button:
+                    - generic:
+                      - figure
+                      - generic:
+                        - generic:
+                          - paragraph:
+                            - strong: Experience the Magic on the Big Screen!
+                            - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+          - button
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button: Now Showing
+              - button: Coming Soon
+              - button: Experiences
+              - button: Trailers
+              - button: Offers
+          - generic:
+            - button:
+              - generic: Food
+            - button:
+              - generic: Curated Shows
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=2]: Now Showing
+            - generic:
+              - generic:
+                - button:
+                  - generic: Languages
+              - generic:
+                - button:
+                  - generic: Genre
+              - button:
+                - generic: Filter
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: 30 Sep'26
+                              - generic:
+                                - heading [level=3]: "Spider-Man: Brand New Day"
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: A
+                                  - generic:
+                                    - paragraph: Action
+                                    - generic: "+5"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Re-Release
+                              - generic:
+                                - heading [level=3]: Raksha Bandhan
+                              - generic:
+                                - generic:
+                                  - paragraph: 2h 3m
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: U
+                                  - generic:
+                                    - paragraph: Drama
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - heading [level=3]: Dhurandhar(Hindi)
+                        - generic:
+                          - generic:
+                            - paragraph: 1h
+                            - generic:
+                              - paragraph: Hindi
+                          - generic:
+                            - paragraph: A
+                            - generic:
+                              - paragraph: Adventure
+                              - generic: "+1"
+                        - generic:
+                          - button:
+                            - generic:
+                              - figure
+                            - generic: Flat ₹150 off
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading [level=3]: Dhurandhar(Hindi)
+                      - generic:
+                        - generic:
+                          - paragraph: 1h
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: A
+                          - generic:
+                            - paragraph: Adventure
+                            - generic: "+1"
+                        - generic:
+                          - button:
+                            - generic:
+                              - figure
+                            - generic: Flat ₹150 off
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - paragraph: Re-Release
+                        - generic:
+                          - heading [level=3]: Ramayanam(Hindi)
+                        - generic:
+                          - generic:
+                            - paragraph: 1h
+                            - generic:
+                              - paragraph: Hindi
+                          - generic:
+                            - paragraph: S
+                            - generic:
+                              - paragraph: Adventure
+                              - generic: "+1"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading [level=3]: Ramayanam(Hindi)
+                      - generic:
+                        - generic:
+                          - paragraph: 1h
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: S
+                          - generic:
+                            - paragraph: Adventure
+                            - generic: "+1"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - paragraph: Re-Release
+                        - generic:
+                          - heading [level=3]: Border 2(Hindi)
+                        - generic:
+                          - generic:
+                            - paragraph: 3h 19m
+                            - generic:
+                              - paragraph: Hindi
+                          - generic:
+                            - paragraph: U/A
+                            - generic:
+                              - paragraph: Action
+                              - generic: "+1"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading [level=3]: Border 2(Hindi)
+                      - generic:
+                        - generic:
+                          - paragraph: 3h 19m
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: U/A
+                          - generic:
+                            - paragraph: Action
+                            - generic: "+1"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - paragraph: Re-Release
+                        - generic:
+                          - heading [level=3]: 1920 London (Hindi)
+                        - generic:
+                          - generic:
+                            - paragraph: 2h 3m
+                            - generic:
+                              - paragraph: Hindi
+                          - generic:
+                            - paragraph: A
+                            - generic:
+                              - paragraph: Horror
+                              - generic: "+1"
+                        - generic:
+                          - button:
+                            - generic:
+                              - figure
+                            - generic: Flat ₹150 off
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading [level=3]: 1920 London (Hindi)
+                      - generic:
+                        - generic:
+                          - paragraph: 2h 3m
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: A
+                          - generic:
+                            - paragraph: Horror
+                            - generic: "+1"
+                        - generic:
+                          - button:
+                            - generic:
+                              - figure
+                            - generic: Flat ₹150 off
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - heading [level=2]: Coming Soon
+            - link:
+              - /url: /coming-soon
+              - text: View More
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 30 Sep'26
+                              - heading [level=3]: Jana Nayagan
+                              - generic:
+                                - generic:
+                                  - paragraph: 30m
+                                  - generic:
+                                    - paragraph: Hindi (Original)
+                                    - generic: "+3"
+                                - generic:
+                                  - paragraph: A
+                                  - paragraph: Action
+                                  - generic: "+3"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 30 Sep'26
+                              - heading [level=3]: Jana Nayagan
+                              - generic:
+                                - generic:
+                                  - paragraph: 30m
+                                  - generic:
+                                    - paragraph: Hindi (Original)
+                                    - generic: "+3"
+                                - generic:
+                                  - paragraph: A
+                                  - generic:
+                                    - paragraph: Action
+                                    - generic: "+3"
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: Varanasi (film)
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: S
+                                  - paragraph: Musical
+                                  - generic: "+3"
+                      - generic:
+                        - generic:
+                          - generic: 45 fans are hyped for this movie!
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: Varanasi (film)
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: S
+                                  - generic:
+                                    - paragraph: Musical
+                                    - generic: "+3"
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: King (2026 film)
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: S
+                                  - paragraph: Action
+                                  - generic: "+1"
+                      - generic:
+                        - generic:
+                          - generic: 25 fans are hyped for this movie!
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: King (2026 film)
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: Hindi
+                                - generic:
+                                  - paragraph: S
+                                  - generic:
+                                    - paragraph: Action
+                                    - generic: "+1"
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: UA 13+
+                                  - paragraph: Action
+                                  - generic: "+2"
+                      - generic:
+                        - generic:
+                          - generic: 12 fans are hyped for this movie!
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: UA 13+
+                                  - generic:
+                                    - paragraph: Action
+                                    - generic: "+2"
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: PROJECT HAIL MARY
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: UA 13+
+                                  - paragraph: Science Fiction
+                      - generic:
+                        - generic:
+                          - generic: 9 fans are hyped for this movie!
+                          - generic:
+                            - generic:
+                              - paragraph: Releasing On 26 Dec'26
+                              - heading [level=3]: PROJECT HAIL MARY
+                              - generic:
+                                - generic:
+                                  - paragraph: 1h
+                                  - generic:
+                                    - paragraph: English
+                                - generic:
+                                  - paragraph: UA 13+
+                                  - generic:
+                                    - paragraph: Science Fiction
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - heading [level=2]: Experiences
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - iframe [ref=f156e505]:
+                              - generic [ref=f163e1]:
+                                - generic "YouTube Video Player" [ref=f163e3]
+                                - generic [ref=f163e6]:
+                                  - generic:
+                                    - generic:
+                                      - button "Show player controls" [ref=f163e65] [cursor=pointer]
+                                      - generic [ref=f163e22]:
+                                        - generic: INOX Movies
+                                        - generic: 35K subscribers
+                            - generic:
+                              - button
+                            - generic:
+                              - button
+                              - button
+                - generic:
+                  - generic:
+                    - button [disabled]
+                    - button
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - figure
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph: First private lounges for guestsSecond gourmet dining optionsThird top tier luxury seatingFourth premium service and privacyFifth most exclusive cinema experience
+                  - generic:
+                    - button:
+                      - generic: Explore movies in INSIGNIA
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=2]: Trailers
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - button
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading [level=2]: Dhurandhar(Hindi)
+                            - list:
+                              - listitem:
+                                - generic: A
+                              - listitem:
+                                - generic: 1h
+                              - listitem:
+                                - generic: Hindi
+                              - listitem:
+                                - generic: Adventure
+                                - generic: "+1"
+                            - generic:
+                              - paragraph: Dhurandhar (transl.?Stalwart) is a 2025 Indian Hindi-language spy action thriller film written, directed, and co-produced by Aditya Dhar. Produced by Jyoti Deshpande, Aditya Dhar, and Lokesh Dhar unde... Read More
+                            - generic:
+                              - button:
+                                - generic: Watch More Trailers
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - heading [level=3]: Other Movie Trailers
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: Dhurandhar(Hindi)
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: Border 2(Hindi)
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: Ramayanam(Hindi)
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: 1920 London (Hindi)
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: Raksha Bandhan
+                                  - generic:
+                                    - paragraph: Hindi
+                            - generic:
+                              - generic:
+                                - button:
+                                  - figure
+                                - generic:
+                                  - heading [level=4]: "Spider-Man: Brand New Day"
+                                  - generic:
+                                    - paragraph: English
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=2]: Offers
+                - button: View More
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BANK OF INDIA FLAT 200 RS OFF
+                              - paragraph: Valid till Tue, 10 Aug'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: Axis -Contactless- 150 OFF_Qbuster
+                              - paragraph: Valid till Sun, 8 Jun'31
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Axis bank buy 1 get 1 ticket free -Copy For F&B
+                              - paragraph: Valid till Fri, 10 Jan'31
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Kotak Bank - Cinema Day 99% off on Movie ticket3
+                              - paragraph: Valid till Tue, 27 Nov'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: New Master Card Offer-20%_16236
+                              - paragraph: Valid till Sat, 28 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: CID STORED _CREDITCARD WISE_COPY2
+                              - paragraph: Valid till Sun, 5 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: COPY BANK OF INDIA FLAT 200 RS OFF
+                              - paragraph: Valid till Mon, 7 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: Copy-IDBI Cine Treat Offer
+                              - paragraph: Valid till Thu, 24 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17082-Number Ticket Based food Offer 80 Rs GST dsc
+                              - paragraph: Valid till Wed, 30 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: 17081 - Number Ticket Based food Offer 50 Rs
+                              - paragraph: Valid till Wed, 30 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17083 - Number Ticket Based food Offer 40 %
+                              - paragraph: Valid till Wed, 30 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17084-Number Ticket Based food Offer 40 % GST disc
+                              - paragraph: Valid till Wed, 30 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17089 - Number Ticket based voucher 80%
+                              - paragraph: Valid till Wed, 30 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17111 - Buy any regular popcorn with a ticket transaction and get ?10 off on a food item.
+                              - paragraph: Valid till Wed, 30 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17113-Ticket based food offer buy Popcorn get Coke small free
+                              - paragraph: Valid till Wed, 30 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17114-Ticket based food offer buy Combo get Coke small free
+                              - paragraph: Valid till Wed, 30 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17093 - Number 25% off
+                              - paragraph: Valid till Fri, 2 Jul'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17132 - TEST offer
+                              - paragraph: Valid till Sat, 31 Jul'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17136 - TEST Bank offer slab cap wise
+                              - paragraph: Valid till Sat, 31 Jul'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17144 - Bank offer 0.01%
+                              - paragraph: Valid till Sat, 31 Jul'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17221 - 200 Rs off BOI
+                              - paragraph: Valid till Tue, 31 Aug'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: TEST BANK OFFER -155 OFF_Max Disc ComBank EDC
+                              - paragraph: Valid till Sat, 24 Jun'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Commercial Bank Get 2 Lkr OFF -17229
+                              - paragraph: Valid till Sat, 11 Aug'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Commercial Bank Get 4 Lkr OFF -17230
+                              - paragraph: Valid till Sun, 26 Aug'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Test Com Bank Buy 1 Get 1 Ticket Free -17226
+                              - paragraph: Valid till Thu, 22 Aug'30
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Test Com Bank Buy 1 Get 1 Ticket Free -DayWise
+                              - paragraph: Valid till Sun, 1 Dec'30
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 17179 - Number 25% off
+                              - paragraph: Valid till Fri, 15 Aug'31
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Icici-buy Popcorn Salted Tub get puff samosa free
+                              - paragraph: Valid till Sat, 12 Sep'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Kotak Offer - buy popcorn salted get salted small
+                              - paragraph: Valid till Sun, 13 Sep'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: INR 100 Rs Off On Min Purchase of 500
+                              - paragraph: Valid till Sat, 26 Sep'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI- BANK Offers VOUCHER 25 %_X
+                              - paragraph: Valid till Wed, 30 Sep'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 10 % Off In BOI
+                              - paragraph: Valid till Thu, 1 Oct'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: MasterCard ContactLess Bnak Offer - 50% Off-Bo
+                              - paragraph: Valid till Sun, 25 Oct'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies
+                              - heading [level=3]: 15% OFF AT BO on BOI
+                              - paragraph: Valid till Fri, 6 Nov'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: AMEX - BUY POPCORN TUB GET SMALL POPCORN FREE
+                              - paragraph: Valid till Sat, 7 Nov'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI OFFER - 99 VALUE DISCOUNT_27
+                              - paragraph: Valid till Thu, 10 Dec'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI- BOGO OFFER buy 2 get 1
+                              - paragraph: Valid till Sat, 12 Dec'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: Google Wallet Free Popcorn [50G]
+                              - paragraph: Valid till Thu, 31 Dec'26
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Axis bank buy 1 get 1 ticket free -Copy_16427
+                              - paragraph: Valid till Fri, 8 Jan'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI - TEST 250 RS OFF AT BO - 15391
+                              - paragraph: Valid till Thu, 18 Feb'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 16828-GGS GST After Disc
+                              - paragraph: Valid till Sun, 28 Feb'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 16962 - 50% off min Trnvalue 300
+                              - paragraph: Valid till Sat, 1 May'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Promotional Code - 75 Rs Off On Purchase Passport
+                              - paragraph: Valid till Fri, 14 May'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 1-IDBI Movie Saver Bonanza
+                              - paragraph: Valid till Fri, 21 May'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: 17002 - Buy Coke Regular get Samosa Free - Auto
+                              - paragraph: Valid till Thu, 27 May'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: SINGLE BIN BANK OFFER-15952
+                              - paragraph: Valid till Sun, 13 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Buy Ticket Upto 1000 & get Combo Worth 350 MPay
+                              - paragraph: Valid till Tue, 22 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: 50 % off 200 Per Ticket_ S3 Bucket Checking
+                              - paragraph: Valid till Sun, 27 Jun'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Axis Bank FLAT 100 RS OFF
+                              - paragraph: Valid till Wed, 11 Aug'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: 16700-100rs off on F&B
+                              - paragraph: Valid till Tue, 30 Nov'27
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: AMEX - 20 % OFF AT ALL
+                              - paragraph: Valid till Thu, 6 Apr'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: COPY _PJPT BOI OFFER - RS 50
+                              - paragraph: Valid till Sat, 15 Jul'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies
+                              - heading [level=3]: BOI _LALA- 10 Parcentage New
+                              - paragraph: Valid till Mon, 21 Aug'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: BOI _LALA- 10 PArcentage
+                              - paragraph: Valid till Mon, 21 Aug'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Axis bank buy 1 get 1 ticket free
+                              - paragraph: Valid till Tue, 22 Aug'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI OFFER - 99 VALUE DISCOUNT_CHANGES SUMMARY
+                              - paragraph: Valid till Wed, 4 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI CARD OFFER - 100 VALUE DISCOUNT_RUN
+                              - paragraph: Valid till Sat, 7 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI CARD OFFER - 99 VALUE DISCOUNT_CITY
+                              - paragraph: Valid till Sat, 7 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI CARD OFFER - 70 % DISCOUNT_RUN
+                              - paragraph: Valid till Sun, 8 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI CARD OFFER - 70 VALUE DISCOUNT_RUN
+                              - paragraph: Valid till Sun, 8 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: NV-BOI CARD OFFER - BOGO DISCOUNT_RUN
+                              - paragraph: Valid till Sun, 8 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI CARD OFFER - 55 VALUE DISCOUNT_RUN
+                              - paragraph: Valid till Mon, 9 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: NV-BOI CARD OFFER - BOGO DISCOUNT_RUN1
+                              - paragraph: Valid till Mon, 9 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: TEST BANK OFFER - 10 % OFF_SCREEN WISE
+                              - paragraph: Valid till Mon, 9 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: TEST BANK OFFER - 10 % OFF_CLASS WISE
+                              - paragraph: Valid till Mon, 9 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: TEST BANK OFFER -155 OFF_OUTLET WISE
+                              - paragraph: Valid till Mon, 9 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: TEST BANK OFFER -20% OFF_CAPPING CRITERIA
+                              - paragraph: Valid till Mon, 9 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: TEST BOI CARD OFFER - VALUE DISCOUNT
+                              - paragraph: Valid till Mon, 9 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies
+                              - heading [level=3]: TEst Staff Discount - Ticket Voucher_16194
+                              - paragraph: Valid till Tue, 10 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: Test Staff Discount on F&B
+                              - paragraph: Valid till Tue, 10 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Master Card Offer-15%_16235
+                              - paragraph: Valid till Sat, 28 Oct'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: CID STORED _CREDITCARD WISE
+                              - paragraph: Valid till Sun, 5 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: CID STORED _CREDITCARD WISE_COPY
+                              - paragraph: Valid till Sun, 5 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies
+                              - heading [level=3]: ICICI Bank Flat Rs.200 off on Net Banking_PJ
+                              - paragraph: Valid till Sun, 5 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Define Bank Offer- 70 % DISCOUNT
+                              - paragraph: Valid till Mon, 6 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Define Bank Offer- BUY 1 GET 1 FREE TICKET
+                              - paragraph: Valid till Mon, 6 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: OFFER- 15605- BANK OF INDIA FLAT 201 RS OFF
+                              - paragraph: Valid till Mon, 6 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: TEST BANK OFFER -155 OFF_Max Disc Transaction
+                              - paragraph: Valid till Mon, 6 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: TEST BANK OFFER -155 OFF_Max Disc Transaction1
+                              - paragraph: Valid till Mon, 6 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Test Offer Kotak Flat- MAx Discount 100
+                              - paragraph: Valid till Tue, 7 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Define Bank Offer-BOGO- BUY 1 GET 1 FREE TICKET
+                              - paragraph: Valid till Wed, 8 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Define Bank Offer-BOGO- BUY 1 GET-DAY
+                              - paragraph: Valid till Wed, 8 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Define Bank Offer-BOGO- BUY 1 GET-DAY1
+                              - paragraph: Valid till Wed, 8 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Define Bank Offer-BOGO- BUY 1 GET-quarty
+                              - paragraph: Valid till Wed, 8 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Define Bank Offer-BOGO- BUY 1 GET-YEAR
+                              - paragraph: Valid till Wed, 8 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Test Offer Kotak Flat 77
+                              - paragraph: Valid till Sat, 11 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Define Bank Offer- 70 % DISCOUNT-16328
+                              - paragraph: Valid till Tue, 14 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: OFFER- 15605- BANK OF INDIA FLAT 201 RS OFF-COPY
+                              - paragraph: Valid till Tue, 14 Nov'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BOI CARD OFFER - BOGO DISCOUNT-27
+                              - paragraph: Valid till Sun, 10 Dec'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Define Bank Offer- 27% DISCOUNT-16373
+                              - paragraph: Valid till Sun, 10 Dec'28
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: BANK OF INDIA 20 % Qbuster
+                              - paragraph: Valid till Sun, 17 Jun'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: Copy Offers Voucher in Browser G
+                              - paragraph: Valid till Fri, 6 Jul'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: COPY _PJPT BOI OFFER - RS 99
+                              - paragraph: Valid till Sat, 7 Jul'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies
+                              - heading [level=3]: T-Kotak PVR INOX Credit Card 5% Off Movie Ticket
+                              - paragraph: Valid till Wed, 11 Jul'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: BOI- BANK CO VOUCHER 11 % -16000
+                              - paragraph: Valid till Tue, 21 Aug'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: BOI- BANK FREE VOUCHER 10 % -15999
+                              - paragraph: Valid till Tue, 21 Aug'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies
+                              - heading [level=3]: BOI- BANK QTY VOUCHER -15998
+                              - paragraph: Valid till Tue, 21 Aug'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: Google Wallet Free Popcorn [50G]-Copy
+                              - paragraph: Valid till Tue, 13 Nov'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies
+                              - heading [level=3]: Kotak Bank - 99% OFF 2
+                              - paragraph: Valid till Wed, 28 Nov'29
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: SBI BANK 20 % Offer - Copy(16425)
+                              - paragraph: Valid till Tue, 1 Jan'30
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: Axis -Contactless- 50 % OFF_Qbuster1
+                              - paragraph: Valid till Sat, 15 Jun'30
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: Axis -Contactless- 50 % OFF_Qbuster
+                              - paragraph: Valid till Sun, 16 Jun'30
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Food
+                              - heading [level=3]: ICICI-200 OFF ON FB - Cless
+                              - paragraph: Valid till Sun, 16 Jun'30
+                      - generic:
+                        - button:
+                          - generic:
+                            - figure
+                            - generic:
+                              - generic:
+                                - paragraph: Movies + Food
+                              - heading [level=3]: AMEX - 100 RS OFF AT ALL
+                              - paragraph: Valid till Wed, 20 Nov'30
+    - button [aria-hidden]:
+      - generic: Scroll to top
+    - contentinfo [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /
+            - paragraph: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://www.facebook.com/moviesatpvr/
+              - listitem:
+                - link:
+                  - /url: https://www.instagram.com/pvrpictures/?hl=en
+              - listitem:
+                - link:
+                  - /url: https://x.com/_PVRCinemas?lang=en
+              - listitem:
+                - link:
+                  - /url: https://in.linkedin.com/company/pvr-limited
+              - listitem:
+                - link:
+                  - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+          - generic:
+            - heading [level=3]:
+              - generic: Support
+            - navigation:
+              - list:
+                - listitem:
+                  - link:
+                    - /url: /privacy-policy
+                    - text: Privacy Policy
+                - listitem:
+                  - link:
+                    - /url: /terms-conditions
+                    - text: Terms & Conditions
+                - listitem:
+                  - link:
+                    - /url: /terms-use
+                    - text: Terms of Use
+                - listitem:
+                  - link:
+                    - /url: /feedback
+                    - text: Customer Experience
+          - generic:
+            - heading [level=3]:
+              - generic: GET THE APP
+            - generic:
+              - link:
+                - /url: https://apps.apple.com/in/app/pvr-cinemas-movie-tickets/id878127874
+              - link:
+                - /url: https://play.google.com/store/apps/details?id=com.net.pvr
+        - generic:
+          - paragraph: Copyright © 2026 PVR. All Rights Reserved
+          - figure:
+            - link:
+              - /url: /
+  - region "Notifications alt+T"
+  - dialog [active] [ref=f156e1919]:
+    - heading "Dialog" [level=2] [ref=f156e1920]
+    - heading [level=2] [ref=f156e1922]:
+      - button [ref=f156e1923] [cursor=pointer]
+    - generic [ref=f156e1928]:
+      - generic [ref=f156e1929]:
+        - generic [ref=f156e1931]:
+          - heading "Welcome!" [level=1] [ref=f156e1932]
+          - paragraph [ref=f156e1933]: Enter your phone number to proceed
+        - generic [ref=f156e1934]:
+          - generic [ref=f156e1935]:
+            - generic [ref=f156e1937]:
+              - textbox "Enter your phone number 11" [ref=f156e1938]: "9012345678"
+              - generic:
+                - generic: Phone Number
+                - generic: "*"
+              - generic [aria-hidden]:
+                - generic: "+91"
+                - generic: "|"
+            - button "Loading..." [disabled]:
+              - img "Loading..."
+          - generic [ref=f156e1939]:
+            - separator [ref=f156e1940]: or Sign-in with
+            - button "Google Logo Google" [ref=f156e1941] [cursor=pointer]:
+              - img "Google Logo" [ref=f156e1942]
+              - generic [ref=f156e1943]: Google
+      - paragraph [ref=f156e1945]:
+        - text: By proceeding, you agree to our
+        - link "Terms & Conditions" [ref=f156e1946] [cursor=pointer]:
+          - /url: /terms-conditions
+        - text: and
+        - link "Privacy Policy" [ref=f156e1947] [cursor=pointer]:
+          - /url: /privacy-policy
+        - text: .

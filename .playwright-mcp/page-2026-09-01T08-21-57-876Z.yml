@@ -1,0 +1,200 @@
+- generic [active] [ref=f129e1]:
+  - alert [ref=f129e2]
+  - generic [ref=f129e3]:
+    - banner [ref=f129e4]:
+      - generic [ref=f129e6]:
+        - generic [ref=f129e7]:
+          - link [ref=f129e9] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f129e10]
+          - button "Map Point Icon Mumbai" [ref=f129e13] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f129e14]
+            - generic [ref=f129e15]: Mumbai
+        - navigation [ref=f129e16]:
+          - link "Home" [ref=f129e17] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f129e18] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f129e19] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f129e20] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f129e21] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=f129e22] [cursor=pointer]:
+            - generic [ref=f129e23]: More
+            - img "Arrow Down" [ref=f129e24]
+        - generic [ref=f129e25]:
+          - button [ref=f129e26] [cursor=pointer]
+          - button [ref=f129e31] [cursor=pointer]:
+            - img "User Icon" [ref=f129e33]
+          - button "Download App GIF Download App" [ref=f129e34] [cursor=pointer]:
+            - img "Download App GIF" [ref=f129e35]
+            - generic [ref=f129e36]: Download App
+    - generic [ref=f129e37]:
+      - generic [ref=f129e39]:
+        - generic [ref=f129e41]:
+          - img "Background" [ref=f129e43]
+          - generic [ref=f129e44]:
+            - img "Background"
+        - generic [ref=f129e45]:
+          - generic [ref=f129e46]: Re-Release
+          - link "Ramayanam(Hindi)" [ref=f129e49] [cursor=pointer]:
+            - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-01T08%3A30%3A00.000Z
+          - list [ref=f129e50]:
+            - listitem [ref=f129e51]:
+              - generic [ref=f129e52]: S
+            - listitem [ref=f129e53]:
+              - generic [ref=f129e54]: Hindi
+            - listitem [ref=f129e55]:
+              - generic [ref=f129e56]: Adventure, Action
+          - paragraph [ref=f129e57]:
+            - link "Next Show today at 2:00 PM" [ref=f129e58] [cursor=pointer]:
+              - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-01T08%3A30%3A00.000Z
+              - generic [ref=f129e59]: Next Show today at
+              - text: 2:00 PM
+          - link "Book Now" [ref=f129e61] [cursor=pointer]:
+            - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-01T08%3A30%3A00.000Z
+        - button [ref=f129e63] [cursor=pointer]
+        - generic [ref=f129e67]:
+          - heading "IN THE SPOTLIGHT" [level=2] [ref=f129e68]
+          - generic [ref=f129e72]:
+            - generic [ref=f129e73]:
+              - button [ref=f129e75] [cursor=pointer]:
+                - generic [ref=f129e77]:
+                  - figure [ref=f129e78]:
+                    - img "Ramayanam(Hindi)" [ref=f129e79]
+                  - heading "Re-Release" [level=2] [ref=f129e82]
+              - button [ref=f129e84] [cursor=pointer]:
+                - figure [ref=f129e87]:
+                  - img "Dhurandhar(Hindi)" [ref=f129e88]
+              - button [ref=f129e90] [cursor=pointer]:
+                - generic [ref=f129e92]:
+                  - figure [ref=f129e93]:
+                    - 'img "Spider-Man: Brand New Day" [ref=f129e94]'
+                  - heading "30 Sep'26" [level=2] [ref=f129e97]
+              - button [ref=f129e99] [cursor=pointer]:
+                - generic [ref=f129e101]:
+                  - figure [ref=f129e102]:
+                    - img "Raksha Bandhan" [ref=f129e103]
+                  - heading "Re-Release" [level=2] [ref=f129e106]
+              - button [ref=f129e108] [cursor=pointer]:
+                - generic [ref=f129e110]:
+                  - figure [ref=f129e111]:
+                    - img "Border 2(Hindi)" [ref=f129e112]
+                  - heading "Re-Release" [level=2] [ref=f129e115]
+              - button [ref=f129e117] [cursor=pointer]:
+                - generic [ref=f129e119]:
+                  - figure [ref=f129e120]:
+                    - img "1920 London (Hindi)" [ref=f129e121]
+                  - heading "Re-Release" [level=2] [ref=f129e124]
+            - generic [ref=f129e125] [cursor=pointer]
+      - generic [ref=f129e128]:
+        - heading "Discover the Experiences" [level=3] [ref=f129e129]
+        - generic [ref=f129e131]:
+          - list [ref=f129e133]:
+            - listitem [ref=f129e134]:
+              - link [ref=f129e135] [cursor=pointer]:
+                - /url: /experiences?experienceID=1b3d6c0caed3396bbd35dab007201246:fcc369f741b0588210ae0d76a43940bf:c1b5de5df4c896c07aa99f8801f965ee754822d58194f930
+                - img "Logo" [ref=f129e136]
+            - listitem [ref=f129e137]:
+              - link [ref=f129e138] [cursor=pointer]:
+                - /url: /experiences?experienceID=c52118e7e9aa73aabb32dab21bb042da:5e706de8c8bb6b65331a5b59f17aef41:9317eea756b806fffe9b2a6a21543e697d5b6027f4513724
+                - img "Logo" [ref=f129e139]
+            - listitem [ref=f129e140]:
+              - link [ref=f129e141] [cursor=pointer]:
+                - /url: /experiences?experienceID=b7725f0ba6ac61ee7250148840e506be:6b4bdc57f3748ba2f113012a02881508:9dd32e4a2e8c9ef90932aa4f1778006ea336a9b5b797e42b
+                - img "Logo" [ref=f129e142]
+            - listitem [ref=f129e143]:
+              - link [ref=f129e144] [cursor=pointer]:
+                - /url: /experiences?experienceID=1466d78f151606f90884299cad17dc2c:bbf0546ac2e5a825ad48bac5cc445576:0a4462994620ac45e0aa35a90904aec9c8dfd7bc003c9ed3
+                - img "Logo" [ref=f129e145]
+          - link "View More" [ref=f129e147] [cursor=pointer]:
+            - /url: /experiences
+    - generic [ref=f129e148]:
+      - generic [ref=f129e150]:
+        - generic [ref=f129e152]:
+          - button "Now Showing" [ref=f129e156] [cursor=pointer]
+          - button "Coming Soon" [ref=f129e157] [cursor=pointer]
+          - button "Experiences" [ref=f129e158] [cursor=pointer]
+          - button "Trailers" [ref=f129e159] [cursor=pointer]
+          - button "Offers" [ref=f129e160] [cursor=pointer]
+        - generic [ref=f129e161]:
+          - button "Food Icon Food" [ref=f129e162] [cursor=pointer]:
+            - img "Food Icon" [ref=f129e163]
+            - generic [ref=f129e164]: Food
+          - button "Curated Shows Icon Curated Shows" [ref=f129e165] [cursor=pointer]:
+            - img "Curated Shows Icon" [ref=f129e166]
+            - generic [ref=f129e167]: Curated Shows
+      - generic [ref=f129e170]:
+        - heading "Now Showing" [level=2] [ref=f129e171]
+        - button "Filter Icon Filter" [ref=f129e173] [cursor=pointer]:
+          - img "Filter Icon" [ref=f129e175]
+          - generic [ref=f129e176]: Filter
+      - generic [ref=f129e179]:
+        - heading [level=2] [ref=f129e180]: Coming Soon
+        - link [ref=f129e181] [cursor=pointer]:
+          - /url: /coming-soon
+          - text: View More
+      - heading [level=2] [ref=f129e185]: Experiences
+    - button "Scroll to top Arrow Up Icon" [ref=f129e188] [cursor=pointer]:
+      - generic [ref=f129e189]: Scroll to top
+      - img "Arrow Up Icon" [ref=f129e190]
+    - contentinfo [ref=f129e191]:
+      - generic [ref=f129e192]:
+        - generic [ref=f129e193]:
+          - generic [ref=f129e194]:
+            - link [ref=f129e195] [cursor=pointer]:
+              - /url: /
+              - img "Brand Logo" [ref=f129e196]
+            - paragraph [ref=f129e197]: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            - list [ref=f129e198]:
+              - listitem [ref=f129e199]:
+                - link [ref=f129e200] [cursor=pointer]:
+                  - /url: https://www.facebook.com/moviesatpvr/
+              - listitem [ref=f129e201]:
+                - link [ref=f129e202] [cursor=pointer]:
+                  - /url: https://www.instagram.com/pvrpictures/?hl=en
+              - listitem [ref=f129e203]:
+                - link [ref=f129e204] [cursor=pointer]:
+                  - /url: https://x.com/_PVRCinemas?lang=en
+              - listitem [ref=f129e205]:
+                - link [ref=f129e206] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/pvr-limited
+              - listitem [ref=f129e207]:
+                - link [ref=f129e208] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+          - generic [ref=f129e209]:
+            - heading "Support" [level=3] [ref=f129e210]
+            - navigation [ref=f129e214]:
+              - list [ref=f129e215]:
+                - listitem [ref=f129e216]:
+                  - link "Privacy Policy" [ref=f129e217] [cursor=pointer]:
+                    - /url: /privacy-policy
+                - listitem [ref=f129e218]:
+                  - link "Terms & Conditions" [ref=f129e219] [cursor=pointer]:
+                    - /url: /terms-conditions
+                - listitem [ref=f129e220]:
+                  - link "Terms of Use" [ref=f129e221] [cursor=pointer]:
+                    - /url: /terms-use
+                - listitem [ref=f129e222]:
+                  - link "Customer Experience" [ref=f129e223] [cursor=pointer]:
+                    - /url: /feedback
+          - generic [ref=f129e224]:
+            - heading "GET THE APP" [level=3] [ref=f129e225]
+            - generic [ref=f129e229]:
+              - link [ref=f129e230] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/pvr-cinemas-movie-tickets/id878127874
+                - img "IOS Play Store" [ref=f129e231]
+              - link [ref=f129e232] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.net.pvr
+                - img "Google Play Store" [ref=f129e233]
+        - generic [ref=f129e234]:
+          - paragraph [ref=f129e235]: Copyright © 2026 PVR. All Rights Reserved
+          - figure [ref=f129e236]:
+            - link [ref=f129e237] [cursor=pointer]:
+              - /url: /
+              - img "Footer Tagline" [ref=f129e238]
+    - button "Open Movie Jockey chat" [ref=f129e239] [cursor=pointer]:
+      - img "Movie Jockey"
+  - region "Notifications alt+T"

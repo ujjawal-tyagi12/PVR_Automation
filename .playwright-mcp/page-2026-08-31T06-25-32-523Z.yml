@@ -1,0 +1,662 @@
+- generic [active] [ref=f261e1]:
+  - alert [ref=f261e2]
+  - generic [ref=f261e3]:
+    - banner [ref=f261e4]:
+      - generic [ref=f261e6]:
+        - generic [ref=f261e7]:
+          - link [ref=f261e9] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f261e10]
+          - button "Map Point Icon Mumbai" [ref=f261e13] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f261e14]
+            - generic [ref=f261e15]: Mumbai
+        - navigation [ref=f261e16]:
+          - link "Home" [ref=f261e17] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f261e18] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f261e19] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f261e20] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f261e21] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=f261e22] [cursor=pointer]:
+            - generic [ref=f261e23]: More
+            - img "Arrow Down" [ref=f261e24]
+        - generic [ref=f261e25]:
+          - button [ref=f261e26] [cursor=pointer]
+          - button [ref=f261e31] [cursor=pointer]:
+            - img "User Icon" [ref=f261e33]
+          - button "Download App GIF Download App" [ref=f261e34] [cursor=pointer]:
+            - img "Download App GIF" [ref=f261e35]
+            - generic [ref=f261e36]: Download App
+    - generic [ref=f261e37]:
+      - generic [ref=f261e39]:
+        - generic [ref=f261e41]:
+          - img "Background" [ref=f261e43]
+          - generic [ref=f261e44]:
+            - img "Background"
+        - generic [ref=f261e45]:
+          - generic [ref=f261e46]: Re-Release
+          - link "Ramayanam(Hindi)" [ref=f261e49] [cursor=pointer]:
+            - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-08-31T08%3A30%3A00.000Z
+          - list [ref=f261e50]:
+            - listitem [ref=f261e51]:
+              - generic [ref=f261e52]: S
+            - listitem [ref=f261e53]:
+              - generic [ref=f261e54]: Hindi
+            - listitem [ref=f261e55]:
+              - generic [ref=f261e56]: Adventure, Action
+          - paragraph [ref=f261e57]:
+            - link "Next Show today at 2:00 PM" [ref=f261e58] [cursor=pointer]:
+              - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-08-31T08%3A30%3A00.000Z
+              - generic [ref=f261e59]: Next Show today at
+              - text: 2:00 PM
+          - link "Book Now" [ref=f261e61] [cursor=pointer]:
+            - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-08-31T08%3A30%3A00.000Z
+        - button [ref=f261e63] [cursor=pointer]
+        - generic [ref=f261e67]:
+          - heading "IN THE SPOTLIGHT" [level=2] [ref=f261e68]
+          - generic [ref=f261e72]:
+            - generic [ref=f261e73]:
+              - button [ref=f261e75] [cursor=pointer]:
+                - generic [ref=f261e77]:
+                  - figure [ref=f261e78]:
+                    - img "Ramayanam(Hindi)" [ref=f261e79]
+                  - heading "Re-Release" [level=2] [ref=f261e82]
+              - button [ref=f261e84] [cursor=pointer]:
+                - figure [ref=f261e87]:
+                  - img "Dhurandhar(Hindi)" [ref=f261e88]
+              - button [ref=f261e90] [cursor=pointer]:
+                - generic [ref=f261e92]:
+                  - figure [ref=f261e93]:
+                    - 'img "Spider-Man: Brand New Day" [ref=f261e94]'
+                  - heading "30 Sep'26" [level=2] [ref=f261e97]
+              - button [ref=f261e99] [cursor=pointer]:
+                - generic [ref=f261e101]:
+                  - figure [ref=f261e102]:
+                    - img "Raksha Bandhan" [ref=f261e103]
+                  - heading "Re-Release" [level=2] [ref=f261e106]
+              - button [ref=f261e108] [cursor=pointer]:
+                - generic [ref=f261e110]:
+                  - figure [ref=f261e111]:
+                    - img "Border 2(Hindi)" [ref=f261e112]
+                  - heading "Re-Release" [level=2] [ref=f261e115]
+              - button [ref=f261e117] [cursor=pointer]:
+                - generic [ref=f261e119]:
+                  - figure [ref=f261e120]:
+                    - img "1920 London (Hindi)" [ref=f261e121]
+                  - heading "Re-Release" [level=2] [ref=f261e124]
+            - generic [ref=f261e125] [cursor=pointer]
+      - generic [ref=f261e128]:
+        - heading "Discover the Experiences" [level=3] [ref=f261e129]
+        - generic [ref=f261e131]:
+          - list [ref=f261e133]:
+            - listitem [ref=f261e134]:
+              - link [ref=f261e135] [cursor=pointer]:
+                - /url: /experiences?experienceID=d3e2207587ed444a1047f36ffd10daf9:cec5d14e658688ec9f4753d9fb455b44:1150557c287fbbdd65dc3aa33f8f19e0541c88d0dc7b265d
+                - img "Logo" [ref=f261e136]
+            - listitem [ref=f261e137]:
+              - link [ref=f261e138] [cursor=pointer]:
+                - /url: /experiences?experienceID=56f4f7341c97e6027ad2cd3558657188:f0d2cc6b7f6014cef7351e18a40321a1:97ae47301b49fac8bb86561f5ab7c2d7b8082cf6d438cb01
+                - img "Logo" [ref=f261e139]
+            - listitem [ref=f261e140]:
+              - link [ref=f261e141] [cursor=pointer]:
+                - /url: /experiences?experienceID=df063a30ccdb94a3ea51401ae54944a6:d8462ce46fdb1b09abc0750294f8af0b:dc1f7cd4f5594e95a06b42ab0fc9703a54c81155b1d85a8e
+                - img "Logo" [ref=f261e142]
+            - listitem [ref=f261e143]:
+              - link [ref=f261e144] [cursor=pointer]:
+                - /url: /experiences?experienceID=5d26e00ab675f2afa458404e7574cb8a:c82374a05078940eb1cb1cdc4d79b6ac:b351eaf477e60ced45623630d6982c96903a47d90b6bc99f
+                - img "Logo" [ref=f261e145]
+          - link "View More" [ref=f261e147] [cursor=pointer]:
+            - /url: /experiences
+    - generic [ref=f261e150]:
+      - generic [ref=f261e152]:
+        - generic [ref=f261e153]:
+          - button "Experience the Magic on the Big Screen! Book your tickets now and enjoy an unforgettable cinematic adventure. Get Exclusive Movie Deals Now!" [ref=f261e155] [cursor=pointer]:
+            - generic [ref=f261e156]:
+              - figure [ref=f261e157]:
+                - img "Web" [ref=f261e158]
+              - generic [ref=f261e159]:
+                - paragraph [ref=f261e161]:
+                  - strong [ref=f261e162]: Experience the Magic on the Big Screen!
+                  - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+                - generic [ref=f261e163]: Get Exclusive Movie Deals Now!
+          - button [ref=f261e165] [cursor=pointer]:
+            - generic [ref=f261e166]:
+              - figure [ref=f261e167]:
+                - img "Video" [ref=f261e168]
+                - button "Play video" [ref=f261e169]
+              - paragraph [ref=f261e175]: Get ready for adrenaline-pumping action, intense drama, and edge-of-your-seat excitement. Reserve your seats today!
+          - button [ref=f261e177] [cursor=pointer]:
+            - generic [ref=f261e178]:
+              - figure [ref=f261e179]:
+                - img "Non" [ref=f261e180]
+              - paragraph [ref=f261e183]:
+                - strong [ref=f261e184]: Experience the Magic on the Big Screen!
+                - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+        - generic [ref=f261e185]:
+          - generic [ref=f261e186] [cursor=pointer]
+          - generic [ref=f261e187] [cursor=pointer]
+          - generic [ref=f261e188] [cursor=pointer]
+      - button "Next" [ref=f261e189] [cursor=pointer]
+    - generic [ref=f261e190]:
+      - generic [ref=f261e192]:
+        - generic [ref=f261e194]:
+          - button "Now Showing" [ref=f261e198] [cursor=pointer]
+          - button "Coming Soon" [ref=f261e199] [cursor=pointer]
+          - button "Experiences" [ref=f261e200] [cursor=pointer]
+          - button "Trailers" [ref=f261e201] [cursor=pointer]
+          - button "Offers" [ref=f261e202] [cursor=pointer]
+        - generic [ref=f261e203]:
+          - button "Food Icon Food" [ref=f261e204] [cursor=pointer]:
+            - img "Food Icon" [ref=f261e205]
+            - generic [ref=f261e206]: Food
+          - button "Curated Shows Icon Curated Shows" [ref=f261e207] [cursor=pointer]:
+            - img "Curated Shows Icon" [ref=f261e208]
+            - generic [ref=f261e209]: Curated Shows
+      - generic [ref=f261e210]:
+        - generic [ref=f261e212]:
+          - heading "Now Showing" [level=2] [ref=f261e213]
+          - generic [ref=f261e214]:
+            - button "Languages" [ref=f261e216] [cursor=pointer]
+            - button "Genre" [ref=f261e223] [cursor=pointer]
+            - button "Filter Icon Filter" [ref=f261e229] [cursor=pointer]:
+              - img "Filter Icon" [ref=f261e231]
+              - generic [ref=f261e232]: Filter
+        - generic [ref=f261e234]:
+          - generic [ref=f261e238]:
+            - generic [ref=f261e241] [cursor=pointer]:
+              - 'img "Spider-Man: Brand New Day" [ref=f261e243]'
+              - generic [ref=f261e245]:
+                - paragraph [ref=f261e247]: 30 Sep'26
+                - 'heading "Spider-Man: Brand New Day" [level=3] [ref=f261e249]'
+                - generic [ref=f261e250]:
+                  - generic [ref=f261e251]:
+                    - paragraph [ref=f261e252]: 1h
+                    - paragraph [ref=f261e255]: English
+                  - generic [ref=f261e256]:
+                    - paragraph [ref=f261e257]: A
+                    - generic [ref=f261e259]:
+                      - paragraph [ref=f261e260]: Action
+                      - generic [ref=f261e261]: "+5"
+            - generic [ref=f261e265] [cursor=pointer]:
+              - img "Raksha Bandhan" [ref=f261e267]
+              - generic [ref=f261e269]:
+                - paragraph [ref=f261e271]: Re-Release
+                - heading "Raksha Bandhan" [level=3] [ref=f261e273]
+                - generic [ref=f261e274]:
+                  - generic [ref=f261e275]:
+                    - paragraph [ref=f261e276]: 2h 3m
+                    - paragraph [ref=f261e279]: Hindi
+                  - generic [ref=f261e280]:
+                    - paragraph [ref=f261e281]: U
+                    - paragraph [ref=f261e284]: Drama
+          - generic [ref=f261e285]:
+            - generic [ref=f261e286] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Dhurandhar(Hindi)"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading "Dhurandhar(Hindi)" [level=3]
+                      - generic:
+                        - generic:
+                          - paragraph: 1h
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: A
+                          - generic:
+                            - paragraph: Adventure
+                            - generic: "+1"
+                      - generic:
+                        - generic:
+                          - button "Flat ₹150 off":
+                            - generic:
+                              - figure:
+                                - img "Offer Icon"
+              - generic [ref=f261e287]:
+                - img "Dhurandhar(Hindi)" [ref=f261e289]
+                - generic [ref=f261e291]:
+                  - generic [ref=f261e292]:
+                    - paragraph
+                  - heading "Dhurandhar(Hindi)" [level=3] [ref=f261e294]
+                  - generic [ref=f261e295]:
+                    - generic [ref=f261e296]:
+                      - paragraph [ref=f261e297]: 1h
+                      - paragraph [ref=f261e300]: Hindi
+                    - generic [ref=f261e301]:
+                      - paragraph [ref=f261e302]: A
+                      - generic [ref=f261e304]:
+                        - paragraph [ref=f261e305]: Adventure
+                        - generic [ref=f261e306]: "+1"
+                    - button "Flat ₹150 off" [ref=f261e309]:
+                      - figure [ref=f261e311]:
+                        - img "Offer Icon" [ref=f261e312]
+            - generic [ref=f261e315] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Ramayanam(Hindi)"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading "Ramayanam(Hindi)" [level=3]
+                      - generic:
+                        - generic:
+                          - paragraph: 1h
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: S
+                          - generic:
+                            - paragraph: Adventure
+                            - generic: "+1"
+              - generic [ref=f261e316]:
+                - img "Ramayanam(Hindi)" [ref=f261e318]
+                - generic [ref=f261e320]:
+                  - paragraph [ref=f261e322]: Re-Release
+                  - heading "Ramayanam(Hindi)" [level=3] [ref=f261e324]
+                  - generic [ref=f261e325]:
+                    - generic [ref=f261e326]:
+                      - paragraph [ref=f261e327]: 1h
+                      - paragraph [ref=f261e330]: Hindi
+                    - generic [ref=f261e331]:
+                      - paragraph [ref=f261e332]: S
+                      - generic [ref=f261e334]:
+                        - paragraph [ref=f261e335]: Adventure
+                        - generic [ref=f261e336]: "+1"
+            - generic [ref=f261e338] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Border 2(Hindi)"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading "Border 2(Hindi)" [level=3]
+                      - generic:
+                        - generic:
+                          - paragraph: 3h 19m
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: U/A
+                          - generic:
+                            - paragraph: Action
+                            - generic: "+1"
+              - generic [ref=f261e339]:
+                - img "Border 2(Hindi)" [ref=f261e341]
+                - generic [ref=f261e343]:
+                  - paragraph [ref=f261e345]: Re-Release
+                  - heading "Border 2(Hindi)" [level=3] [ref=f261e347]
+                  - generic [ref=f261e348]:
+                    - generic [ref=f261e349]:
+                      - paragraph [ref=f261e350]: 3h 19m
+                      - paragraph [ref=f261e353]: Hindi
+                    - generic [ref=f261e354]:
+                      - paragraph [ref=f261e355]: U/A
+                      - generic [ref=f261e357]:
+                        - paragraph [ref=f261e358]: Action
+                        - generic [ref=f261e359]: "+1"
+            - generic [ref=f261e361] [cursor=pointer]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "1920 London (Hindi)"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph: Re-Release
+                      - generic:
+                        - heading "1920 London (Hindi)" [level=3]
+                      - generic:
+                        - generic:
+                          - paragraph: 2h 3m
+                          - generic:
+                            - paragraph: Hindi
+                        - generic:
+                          - paragraph: A
+                          - generic:
+                            - paragraph: Horror
+                            - generic: "+1"
+                      - generic:
+                        - generic:
+                          - button "Flat ₹150 off":
+                            - generic:
+                              - figure:
+                                - img "Offer Icon"
+              - generic [ref=f261e362]:
+                - img "1920 London (Hindi)" [ref=f261e364]
+                - generic [ref=f261e366]:
+                  - paragraph [ref=f261e368]: Re-Release
+                  - heading "1920 London (Hindi)" [level=3] [ref=f261e370]
+                  - generic [ref=f261e371]:
+                    - generic [ref=f261e372]:
+                      - paragraph [ref=f261e373]: 2h 3m
+                      - paragraph [ref=f261e376]: Hindi
+                    - generic [ref=f261e377]:
+                      - paragraph [ref=f261e378]: A
+                      - generic [ref=f261e380]:
+                        - paragraph [ref=f261e381]: Horror
+                        - generic [ref=f261e382]: "+1"
+                    - button "Flat ₹150 off" [ref=f261e385]:
+                      - figure [ref=f261e387]:
+                        - img "Offer Icon" [ref=f261e388]
+          - iframe [ref=f261e393]:
+            - link [ref=f265e2] [cursor=pointer]:
+              - /url: https://adreq.adster.tech/v1/click?actual_adunit=&ad_type=banner&ad_unit=&adv_name=PVR+advertiser&adv_vert=pvrcinemas&advertiser_id=01KJPX5D4X7K6P5624FFBS8ZGG&app_name=inox-uat-web.pvrinox.com&buy_type=CPM&cb=&city=Delhi&click_id=01M1B7X5HH38S1KBGVE16HF05X&click_url=https%3A%2F%2Fwww.getonecard.app%2F%3Fdeep_link_value%3DOffers%26af_force_deeplink%3Dtrue%26af_dp%3Donecard%253A%252F%252Fmainactivity%26source_caller%3Dui%26deep_link_sub1%3DSCREEN%26shortlink%3DOffers%26utm_source%3Dpvr_ads%26c%3DOffers%2520Page%26pid%3DSMS%26af_xp%3Dtext&client_timestamp=0&country=IND&cpc=0&creative_id=01KWV71P8NGJDCC1HFKMCSX8ZF&creative_text=&crn=&ctype=&derived_ecpm=10&ds=&ds_model=&dt=Desktop&eid=pvrcinemas&ga_id=&hour=0&lin=&line_id=01KWV780Q1YGD1HXK4E2C2K226&m=0&network=adster&order_id=01KWV780Q1YGD1HXK4E2C2K226&org_id=01KJPX5D4X7K6P5624FFBS8ZGG&partner_id=pvrcinemas&placement_id=pvr-next-desktop-home-btf-banner&pri=1&product_category=&product_subtype=&publisher_id=01KJQ0SP661H9D3MBDXNRSMHH3&pubn=&region=IN-DL&req_id=01M1B7X5HHB1DX5BTSFDWKP3R5&req_type=banner&timestamp=0&user_agent=&user_id=179925fc-85e4-4662-8e87-6f742d00aeda
+              - img "OneCard Offer_Jan26_Homepage BTF 1440x250" [ref=f265e3]
+      - generic [ref=f261e394]:
+        - generic [ref=f261e396]:
+          - heading [level=2] [ref=f261e397]: Coming Soon
+          - link [ref=f261e398] [cursor=pointer]:
+            - /url: /coming-soon
+            - text: View More
+        - generic [ref=f261e403]:
+          - button [ref=f261e405] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 30 Sep'26
+                    - heading [level=3]: Jana Nayagan
+                    - generic:
+                      - generic:
+                        - paragraph: 30m
+                        - generic:
+                          - paragraph: Hindi (Original)
+                          - generic: "+3"
+                      - generic:
+                        - paragraph: A
+                        - paragraph: Action
+                        - generic: "+3"
+            - generic [ref=f261e411]:
+              - paragraph [ref=f261e412]: Releasing On 30 Sep'26
+              - heading [level=3] [ref=f261e413]: Jana Nayagan
+              - generic [ref=f261e414]:
+                - generic [ref=f261e415]:
+                  - paragraph [ref=f261e416]: 30m
+                  - generic [ref=f261e418]:
+                    - paragraph [ref=f261e419]: Hindi (Original)
+                    - generic [ref=f261e420]: "+3"
+                - generic [ref=f261e422]:
+                  - paragraph [ref=f261e423]: A
+                  - generic [ref=f261e425]:
+                    - paragraph [ref=f261e426]: Action
+                    - generic [ref=f261e427]: "+3"
+          - button [ref=f261e430] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: Varanasi (film)
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi
+                      - generic:
+                        - paragraph: S
+                        - paragraph: Musical
+                        - generic: "+3"
+            - generic [ref=f261e432]:
+              - generic [ref=f261e433]: 45 fans are hyped for this movie!
+              - generic [ref=f261e438]:
+                - paragraph [ref=f261e439]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f261e440]: Varanasi (film)
+                - generic [ref=f261e441]:
+                  - generic [ref=f261e442]:
+                    - paragraph [ref=f261e443]: 1h
+                    - paragraph [ref=f261e446]: Hindi
+                  - generic [ref=f261e447]:
+                    - paragraph [ref=f261e448]: S
+                    - generic [ref=f261e450]:
+                      - paragraph [ref=f261e451]: Musical
+                      - generic [ref=f261e452]: "+3"
+          - button [ref=f261e455] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: King (2026 film)
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi
+                      - generic:
+                        - paragraph: S
+                        - paragraph: Action
+                        - generic: "+1"
+            - generic [ref=f261e457]:
+              - generic [ref=f261e458]: 25 fans are hyped for this movie!
+              - generic [ref=f261e463]:
+                - paragraph [ref=f261e464]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f261e465]: King (2026 film)
+                - generic [ref=f261e466]:
+                  - generic [ref=f261e467]:
+                    - paragraph [ref=f261e468]: 1h
+                    - paragraph [ref=f261e471]: Hindi
+                  - generic [ref=f261e472]:
+                    - paragraph [ref=f261e473]: S
+                    - generic [ref=f261e475]:
+                      - paragraph [ref=f261e476]: Action
+                      - generic [ref=f261e477]: "+1"
+          - button [ref=f261e480] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: English
+                      - generic:
+                        - paragraph: UA 13+
+                        - paragraph: Action
+                        - generic: "+2"
+            - generic [ref=f261e482]:
+              - generic [ref=f261e483]: 12 fans are hyped for this movie!
+              - generic [ref=f261e488]:
+                - paragraph [ref=f261e489]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f261e490]: "MISSION: IMPOSSIBLE - THE FINAL RECKONING"
+                - generic [ref=f261e491]:
+                  - generic [ref=f261e492]:
+                    - paragraph [ref=f261e493]: 1h
+                    - paragraph [ref=f261e496]: English
+                  - generic [ref=f261e497]:
+                    - paragraph [ref=f261e498]: UA 13+
+                    - generic [ref=f261e500]:
+                      - paragraph [ref=f261e501]: Action
+                      - generic [ref=f261e502]: "+2"
+          - button [ref=f261e505] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: PROJECT HAIL MARY
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: English
+                      - generic:
+                        - paragraph: UA 13+
+                        - paragraph: Science Fiction
+            - generic [ref=f261e507]:
+              - generic [ref=f261e508]: 9 fans are hyped for this movie!
+              - generic [ref=f261e513]:
+                - paragraph [ref=f261e514]: Releasing On 26 Dec'26
+                - heading [level=3] [ref=f261e515]: PROJECT HAIL MARY
+                - generic [ref=f261e516]:
+                  - generic [ref=f261e517]:
+                    - paragraph [ref=f261e518]: 1h
+                    - paragraph [ref=f261e521]: English
+                  - generic [ref=f261e522]:
+                    - paragraph [ref=f261e523]: UA 13+
+                    - paragraph [ref=f261e526]: Science Fiction
+      - generic [ref=f261e527]:
+        - heading [level=2] [ref=f261e530]: Experiences
+        - generic [ref=f261e533]:
+          - generic [ref=f261e534]:
+            - generic [ref=f261e541]:
+              - figure [ref=f261e542] [cursor=pointer]
+              - button [ref=f261e545] [cursor=pointer]
+            - generic [ref=f261e562]:
+              - button [disabled]
+              - button [ref=f261e563] [cursor=pointer]
+              - generic [ref=f261e566]:
+                - button [ref=f261e568] [cursor=pointer]:
+                  - figure [ref=f261e571]
+                - button [ref=f261e574] [cursor=pointer]:
+                  - figure [ref=f261e577]
+                - button [ref=f261e580] [cursor=pointer]:
+                  - figure [ref=f261e583]
+                - button [ref=f261e586] [cursor=pointer]:
+                  - figure [ref=f261e589]
+                - button [ref=f261e592] [cursor=pointer]:
+                  - figure [ref=f261e595]
+          - generic [ref=f261e598]:
+            - paragraph [ref=f261e600]: First private lounges for guestsSecond gourmet dining optionsThird top tier luxury seatingFourth premium service and privacyFifth most exclusive cinema experience
+            - button [ref=f261e602] [cursor=pointer]:
+              - generic [ref=f261e603]: Explore movies in INSIGNIA
+      - generic [ref=f261e607]:
+        - heading [level=2] [ref=f261e609]: Trailers
+        - generic [ref=f261e610]:
+          - generic [ref=f261e614]:
+            - button [ref=f261e616] [cursor=pointer]
+            - generic [ref=f261e623]:
+              - heading [level=2] [ref=f261e624]: Dhurandhar(Hindi)
+              - list [ref=f261e625]:
+                - listitem [ref=f261e626]:
+                  - generic [ref=f261e627]: A
+                - listitem [ref=f261e628]:
+                  - generic [ref=f261e629]: 1h
+                - listitem [ref=f261e630]:
+                  - generic [ref=f261e631]: Hindi
+                - listitem [ref=f261e632]:
+                  - generic [ref=f261e633]: Adventure
+                  - generic [ref=f261e634]: "+1"
+              - paragraph [ref=f261e637]: Dhurandhar (transl.?Stalwart) is a 2025 Indian Hindi-language spy action thriller film written, directed, and co-produced by Aditya Dhar. Produced by Jyoti Deshpande, Aditya Dhar, and Lokesh Dhar unde... Read More
+              - button [ref=f261e639] [cursor=pointer]:
+                - generic [ref=f261e640]: Watch More Trailers
+          - generic [ref=f261e644]:
+            - heading [level=3] [ref=f261e646]: Other Movie Trailers
+            - generic [ref=f261e648]:
+              - generic [ref=f261e650] [cursor=pointer]:
+                - button [ref=f261e651]:
+                  - figure [ref=f261e652]
+                - generic [ref=f261e654]:
+                  - heading [level=4] [ref=f261e655]: Dhurandhar(Hindi)
+                  - paragraph [ref=f261e657]: Hindi
+              - generic [ref=f261e659] [cursor=pointer]:
+                - button [ref=f261e660]:
+                  - figure [ref=f261e661]
+                - generic [ref=f261e663]:
+                  - heading [level=4] [ref=f261e664]: Border 2(Hindi)
+                  - paragraph [ref=f261e666]: Hindi
+              - generic [ref=f261e668] [cursor=pointer]:
+                - button [ref=f261e669]:
+                  - figure [ref=f261e670]
+                - generic [ref=f261e672]:
+                  - heading [level=4] [ref=f261e673]: Ramayanam(Hindi)
+                  - paragraph [ref=f261e675]: Hindi
+              - generic [ref=f261e677] [cursor=pointer]:
+                - button [ref=f261e678]:
+                  - figure [ref=f261e679]
+                - generic [ref=f261e681]:
+                  - heading [level=4] [ref=f261e682]: 1920 London (Hindi)
+                  - paragraph [ref=f261e684]: Hindi
+              - generic [ref=f261e686] [cursor=pointer]:
+                - button [ref=f261e687]:
+                  - figure [ref=f261e688]
+                - generic [ref=f261e690]:
+                  - heading [level=4] [ref=f261e691]: Raksha Bandhan
+                  - paragraph [ref=f261e693]: Hindi
+              - generic [ref=f261e695] [cursor=pointer]:
+                - button [ref=f261e696]:
+                  - figure [ref=f261e697]
+                - generic [ref=f261e699]:
+                  - heading [level=4] [ref=f261e700]: "Spider-Man: Brand New Day"
+                  - paragraph [ref=f261e702]: English
+    - button "Scroll to top Arrow Up Icon" [ref=f261e704] [cursor=pointer]:
+      - generic [ref=f261e705]: Scroll to top
+      - img "Arrow Up Icon" [ref=f261e706]
+    - contentinfo [ref=f261e707]:
+      - generic [ref=f261e708]:
+        - generic [ref=f261e709]:
+          - generic [ref=f261e710]:
+            - link [ref=f261e711] [cursor=pointer]:
+              - /url: /
+              - img "Brand Logo" [ref=f261e712]
+            - paragraph [ref=f261e713]: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            - list [ref=f261e714]:
+              - listitem [ref=f261e715]:
+                - link [ref=f261e716] [cursor=pointer]:
+                  - /url: https://www.facebook.com/moviesatpvr/
+              - listitem [ref=f261e717]:
+                - link [ref=f261e718] [cursor=pointer]:
+                  - /url: https://www.instagram.com/pvrpictures/?hl=en
+              - listitem [ref=f261e719]:
+                - link [ref=f261e720] [cursor=pointer]:
+                  - /url: https://x.com/_PVRCinemas?lang=en
+              - listitem [ref=f261e721]:
+                - link [ref=f261e722] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/pvr-limited
+              - listitem [ref=f261e723]:
+                - link [ref=f261e724] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+          - generic [ref=f261e725]:
+            - heading "Support" [level=3] [ref=f261e726]
+            - navigation [ref=f261e730]:
+              - list [ref=f261e731]:
+                - listitem [ref=f261e732]:
+                  - link "Privacy Policy" [ref=f261e733] [cursor=pointer]:
+                    - /url: /privacy-policy
+                - listitem [ref=f261e734]:
+                  - link "Terms & Conditions" [ref=f261e735] [cursor=pointer]:
+                    - /url: /terms-conditions
+                - listitem [ref=f261e736]:
+                  - link "Terms of Use" [ref=f261e737] [cursor=pointer]:
+                    - /url: /terms-use
+                - listitem [ref=f261e738]:
+                  - link "Customer Experience" [ref=f261e739] [cursor=pointer]:
+                    - /url: /feedback
+          - generic [ref=f261e740]:
+            - heading "GET THE APP" [level=3] [ref=f261e741]
+            - generic [ref=f261e745]:
+              - link [ref=f261e746] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/pvr-cinemas-movie-tickets/id878127874
+                - img "IOS Play Store" [ref=f261e747]
+              - link [ref=f261e748] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.net.pvr
+                - img "Google Play Store" [ref=f261e749]
+        - generic [ref=f261e750]:
+          - paragraph [ref=f261e751]: Copyright © 2026 PVR. All Rights Reserved
+          - figure [ref=f261e752]:
+            - link [ref=f261e753] [cursor=pointer]:
+              - /url: /
+              - img "Footer Tagline" [ref=f261e754]
+    - button "Open Movie Jockey chat" [ref=f261e755] [cursor=pointer]:
+      - img "Movie Jockey"
+  - region "Notifications alt+T"

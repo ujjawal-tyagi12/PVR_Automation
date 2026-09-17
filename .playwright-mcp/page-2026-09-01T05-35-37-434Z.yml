@@ -1,0 +1,95 @@
+- generic [ref=e1]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=e3] [cursor=pointer]
+  - alert [ref=e6]
+  - generic [ref=e7]:
+    - banner [ref=e8]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link [ref=e13] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=e14]
+          - button "Map Point Icon Mumbai" [ref=e17] [cursor=pointer]:
+            - img "Map Point Icon" [ref=e18]
+            - generic [ref=e19]: Mumbai
+        - navigation [ref=e20]:
+          - link "Home" [ref=e21] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=e22] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=e23] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=e24] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=e25] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [active] [ref=e26] [cursor=pointer]:
+            - generic [ref=e27]: More
+            - img "Arrow Down" [ref=e28]
+        - generic [ref=e29]:
+          - button [ref=e30] [cursor=pointer]
+          - button [ref=e35] [cursor=pointer]:
+            - img "User Icon" [ref=e37]
+          - button "Download App GIF Download App" [ref=e38] [cursor=pointer]:
+            - img "Download App GIF" [ref=e39]
+            - generic [ref=e40]: Download App
+    - generic [ref=e1992]:
+      - img "Bulk Gift Cards" [ref=e1994]
+      - generic [ref=e1997]:
+        - generic [ref=e1998]:
+          - heading "Bulk Gift Cards" [level=1] [ref=e1999]
+          - paragraph [ref=e2000]: Reward Excellence With Cinematic Joy.
+          - heading "Enter Details" [level=2] [ref=e2001]
+          - generic [ref=e2002]:
+            - generic [ref=e2005]:
+              - textbox "Enter your name" [ref=e2006]
+              - generic:
+                - text: Name
+                - generic: "*"
+            - generic [ref=e2009]:
+              - textbox "Enter your email" [ref=e2010]
+              - generic:
+                - text: Email
+                - generic: "*"
+            - generic [ref=e2013]:
+              - textbox "Enter phone number" [ref=e2014]
+              - generic:
+                - text: Mobile Number
+                - generic: "*"
+            - generic [ref=e2017]:
+              - textbox "Enter your location" [ref=e2018]
+              - generic:
+                - text: Location
+                - generic: "*"
+            - generic [ref=e2021]:
+              - textbox "Enter your company name" [ref=e2022]
+              - generic:
+                - text: Company Name
+                - generic: "*"
+            - generic [ref=e2025]:
+              - textbox "Message" [ref=e2026]
+              - generic:
+                - text: Message
+                - generic: "*"
+          - generic [ref=e2027] [cursor=pointer]:
+            - checkbox "Copy to Self" [ref=e2028]
+            - checkbox [aria-hidden] [ref=e2029]
+            - generic [ref=e2030]: Copy to Self
+          - button "Get OTP" [ref=e2032] [cursor=pointer]
+        - heading "Contact Us" [level=2] [ref=e2034]
+        - generic [ref=e2042]:
+          - link "feedback@pvrinox.com Email Support" [ref=e2043] [cursor=pointer]:
+            - /url: mailto:feedback@pvrinox.com
+            - generic [ref=e2044]: feedback@pvrinox.com
+            - generic [ref=e2045]: Email Support
+          - generic [ref=e2046]: "|"
+          - link "+91-8800900009 Phone Number" [ref=e2047] [cursor=pointer]:
+            - /url: tel:+91-8800900009
+            - generic [ref=e2048]: +91-8800900009
+            - generic [ref=e2049]: Phone Number
+          - generic [ref=e2050]: "|"
+          - link "+91-8860558660 Whatsapp" [ref=e2051] [cursor=pointer]:
+            - /url: https://wa.me/918860558660
+            - generic [ref=e2052]: +91-8860558660
+            - generic [ref=e2053]: Whatsapp
+  - region "Notifications alt+T"

@@ -1,0 +1,101 @@
+- generic [ref=e2]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=e4] [cursor=pointer]
+  - alert [ref=e1]
+  - generic [ref=e7]:
+    - banner [ref=e8]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link [ref=e13] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=e14]
+          - button "Map Point Icon Mumbai" [ref=e17] [cursor=pointer]:
+            - img "Map Point Icon" [ref=e18]
+            - generic [ref=e19]: Mumbai
+        - navigation [ref=e20]:
+          - link "Home" [ref=e21] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=e22] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=e23] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=e24] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=e25] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [active] [ref=e26] [cursor=pointer]:
+            - generic [ref=e27]: More
+            - img "Arrow Down" [ref=e28]
+        - generic [ref=e29]:
+          - button [ref=e30] [cursor=pointer]
+          - button [ref=e35] [cursor=pointer]:
+            - img "User Icon" [ref=e37]
+          - button "Download App GIF Download App" [ref=e38] [cursor=pointer]:
+            - img "Download App GIF" [ref=e39]
+            - generic [ref=e40]: Download App
+    - generic [ref=e2016]:
+      - img "Corporate Booking" [ref=e2018]
+      - generic [ref=e2020]:
+        - heading "Exclusive Corporate Screenings" [level=1] [ref=e2021]
+        - paragraph [ref=e2022]: Book Exclusive Screening
+        - generic [ref=e2026]:
+          - heading "Enter Booking Details" [level=2] [ref=e2027]
+          - generic [ref=e2028]:
+            - combobox [ref=e2030] [cursor=pointer]:
+              - generic: City*
+              - generic [ref=e2031]: Mumbai
+            - combobox [ref=e2033] [cursor=pointer]:
+              - generic: Cinema*
+              - generic [ref=e2034]: Select…
+            - button "Date * Select date Calendar Icon" [ref=e2036] [cursor=pointer]:
+              - generic [ref=e2037]:
+                - generic [ref=e2038]:
+                  - text: Date
+                  - generic [ref=e2039]: "*"
+                - generic [ref=e2040]: Select date
+              - img "Calendar Icon" [ref=e2041]
+            - combobox [ref=e2043] [cursor=pointer]:
+              - generic: Movie Type*
+              - generic [ref=e2044]: Now Showing
+          - generic [ref=e2049]:
+            - 'button "Spider-Man: Brand New Day Spider-Man: Brand New Day English" [ref=e2051] [cursor=pointer]':
+              - 'img "Spider-Man: Brand New Day" [ref=e2053]'
+              - generic [ref=e2054]: "Spider-Man: Brand New Day"
+              - generic [ref=e2055]: English
+            - button "Dhurandhar(Hindi) Dhurandhar(Hindi) Hindi" [ref=e2057] [cursor=pointer]:
+              - img "Dhurandhar(Hindi)" [ref=e2059]
+              - generic [ref=e2060]: Dhurandhar(Hindi)
+              - generic [ref=e2061]: Hindi
+            - button "Ramayanam(Hindi) Ramayanam(Hindi) Hindi" [ref=e2063] [cursor=pointer]:
+              - img "Ramayanam(Hindi)" [ref=e2065]
+              - generic [ref=e2066]: Ramayanam(Hindi)
+              - generic [ref=e2067]: Hindi
+            - button "Raksha Bandhan Raksha Bandhan Hindi" [ref=e2069] [cursor=pointer]:
+              - img "Raksha Bandhan" [ref=e2071]
+              - generic [ref=e2072]: Raksha Bandhan
+              - generic [ref=e2073]: Hindi
+            - button "Border 2(Hindi) Border 2(Hindi) Hindi" [ref=e2075] [cursor=pointer]:
+              - img "Border 2(Hindi)" [ref=e2077]
+              - generic [ref=e2078]: Border 2(Hindi)
+              - generic [ref=e2079]: Hindi
+            - button "1920 London (Hindi) 1920 London (Hindi) Hindi" [ref=e2081] [cursor=pointer]:
+              - img "1920 London (Hindi)" [ref=e2083]
+              - generic [ref=e2084]: 1920 London (Hindi)
+              - generic [ref=e2085]: Hindi
+          - generic [ref=e2086]:
+            - combobox [ref=e2088] [cursor=pointer]:
+              - generic: Preferred Show Time*
+              - generic [ref=e2089]: Select…
+            - generic [ref=e2092]:
+              - textbox "50-999" [ref=e2093]
+              - generic:
+                - text: Number of Seats
+                - generic: "*"
+            - combobox [ref=e2095] [cursor=pointer]:
+              - generic: F&B Requirements
+              - generic [ref=e2096]: Select…
+            - generic [ref=e2099]:
+              - textbox "Other requirements" [ref=e2100]
+              - generic: Other Requirements
+          - button "Next" [disabled] [ref=e2102] [cursor=pointer]
+  - region "Notifications alt+T"

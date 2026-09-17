@@ -1,0 +1,31 @@
+{
+  "name": "PVR Playwright Framework",
+  "logo": {
+    "light": "/docs/images/logo-light.svg",
+    "dark": "/docs/images/logo-dark.svg"
+  },
+  "favicon": "/docs/images/favicon.svg",
+  "colors": {
+    "primary": "#2E7D32",
+    "light": "#66BB6A",
+    "dark": "#1B5E20"
+  },
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": ["docs/QUICK_REFERENCE"]
+    },
+    {
+      "group": "AI Agents",
+      "pages": [
+        "docs/ai-agents/index",
+        "docs/ai-agents/class-plan",
+        "docs/ai-agents/planner-healer-generator",
+        "docs/ai-agents/mcp-without-hallucination",
+        "docs/ai-agents/rule-engine",
+        "docs/ai-agents/skills-and-prompts",
+        "docs/ai-agents/10-slide-class-deck"
+      ]
+    }
+  ]
+}

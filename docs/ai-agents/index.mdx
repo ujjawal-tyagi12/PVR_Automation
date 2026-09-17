@@ -1,0 +1,33 @@
+---
+title: AI Agents in This Framework
+description: How Planner, Generator, and Healer work together with MCP and the rule engine
+---
+
+This framework is designed to be driven by AI agents (Claude Code, or any MCP-capable
+assistant) on top of a deterministic, rule-enforced architecture.
+
+## The three-agent model
+
+| Agent | Input | Output |
+|-------|-------|--------|
+| **Planner** | `requirements/{module}.md` (from `/generate-test-cases` or `/create-md-ticket`) | Scenario matrix, data needs, tags, impacted files |
+| **Generator** | Approved plan + Playwright MCP snapshots | Page/Module/Test code in approved folders |
+| **Healer** | Failing test, logs, trace, rule-engine output, MCP/Chrome evidence | Minimal patch, architecture intact |
+
+See [planner-healer-generator.mdx](./planner-healer-generator) for the full workflow and
+prompts, [mcp-without-hallucination.mdx](./mcp-without-hallucination) for why MCP grounding
+matters, and [rule-engine.mdx](./rule-engine) for the guardrail that keeps generated code
+honest.
+
+## Why this matters
+
+LLM-generated E2E tests fail in predictable ways: guessed selectors, business logic leaking
+into page objects, tests reaching past the module layer straight into locators. This
+framework's `rules/framework-rule-engine.json` + `scripts/rule-engine.js` catch those
+mechanically, so review time goes to test *quality*, not architecture policing.
+
+## Related
+
+- [skills-and-prompts.mdx](./skills-and-prompts) — the `.claude/skills/` catalog
+- [class-plan.mdx](./class-plan) — teaching sequence for a workshop
+- [10-slide-class-deck.mdx](./10-slide-class-deck) — slide outline

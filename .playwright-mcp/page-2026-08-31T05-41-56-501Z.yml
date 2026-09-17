@@ -1,0 +1,347 @@
+- generic [active] [ref=f69e1]:
+  - alert [ref=f69e2]
+  - generic [ref=f69e3]:
+    - banner [ref=f69e4]:
+      - generic [ref=f69e6]:
+        - generic [ref=f69e7]:
+          - link [ref=f69e9] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f69e10]
+          - button "Map Point Icon Delhi" [ref=f69e13] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f69e14]
+            - generic [ref=f69e15]: Delhi
+        - navigation [ref=f69e16]:
+          - link "Home" [ref=f69e17] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f69e18] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f69e19] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f69e20] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f69e21] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=f69e22] [cursor=pointer]:
+            - generic [ref=f69e23]: More
+            - img "Arrow Down" [ref=f69e24]
+        - generic [ref=f69e25]:
+          - button [ref=f69e26] [cursor=pointer]
+          - button [ref=f69e31] [cursor=pointer]:
+            - img "User Icon" [ref=f69e33]
+          - button "Download App GIF Download App" [ref=f69e34] [cursor=pointer]:
+            - img "Download App GIF" [ref=f69e35]
+            - generic [ref=f69e36]: Download App
+    - generic [ref=f69e38]:
+      - img "Trending Movies Icon" [ref=f69e39]
+      - heading "No Trending Movies Found" [level=2] [ref=f69e40]
+    - generic [ref=f69e43]:
+      - generic [ref=f69e45]:
+        - generic [ref=f69e46]:
+          - button "Experience the Magic on the Big Screen! Book your tickets now and enjoy an unforgettable cinematic adventure. Get Exclusive Movie Deals Now!" [ref=f69e48] [cursor=pointer]:
+            - generic [ref=f69e49]:
+              - figure [ref=f69e50]:
+                - img "Web" [ref=f69e51]
+              - generic [ref=f69e52]:
+                - paragraph [ref=f69e54]:
+                  - strong [ref=f69e55]: Experience the Magic on the Big Screen!
+                  - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+                - generic [ref=f69e56]: Get Exclusive Movie Deals Now!
+          - button [ref=f69e58] [cursor=pointer]:
+            - generic [ref=f69e59]:
+              - figure [ref=f69e60]:
+                - img "Video" [ref=f69e61]
+                - button "Play video" [ref=f69e62]
+              - paragraph [ref=f69e68]: Get ready for adrenaline-pumping action, intense drama, and edge-of-your-seat excitement. Reserve your seats today!
+          - button [ref=f69e70] [cursor=pointer]:
+            - generic [ref=f69e71]:
+              - figure [ref=f69e72]:
+                - img "Non" [ref=f69e73]
+              - paragraph [ref=f69e76]:
+                - strong [ref=f69e77]: Experience the Magic on the Big Screen!
+                - text: Book your tickets now and enjoy an unforgettable cinematic adventure.
+        - generic [ref=f69e78]:
+          - generic [ref=f69e79] [cursor=pointer]
+          - generic [ref=f69e80] [cursor=pointer]
+          - generic [ref=f69e81] [cursor=pointer]
+      - button "Next" [ref=f69e82] [cursor=pointer]
+    - generic [ref=f69e83]:
+      - generic [ref=f69e85]:
+        - generic [ref=f69e87]:
+          - button "Now Showing" [ref=f69e91] [cursor=pointer]
+          - button "Coming Soon" [ref=f69e92] [cursor=pointer]
+          - button "Trailers" [ref=f69e93] [cursor=pointer]
+          - button "Offers" [ref=f69e94] [cursor=pointer]
+        - generic [ref=f69e95]:
+          - button "Food Icon Food" [ref=f69e96] [cursor=pointer]:
+            - img "Food Icon" [ref=f69e97]
+            - generic [ref=f69e98]: Food
+          - button "Curated Shows Icon Curated Shows" [ref=f69e99] [cursor=pointer]:
+            - img "Curated Shows Icon" [ref=f69e100]
+            - generic [ref=f69e101]: Curated Shows
+      - generic [ref=f69e102]:
+        - heading "Now Showing" [level=2] [ref=f69e105]
+        - generic [ref=f69e107]:
+          - generic [ref=f69e109]:
+            - figure [ref=f69e110]:
+              - img "No movies found" [ref=f69e111]
+            - heading "No movies found" [level=3] [ref=f69e112]
+          - iframe [ref=f69e115]:
+            - link [ref=f71e2] [cursor=pointer]:
+              - /url: https://adreq.adster.tech/v1/click?actual_adunit=&ad_type=banner&ad_unit=&adv_name=PVR+advertiser&adv_vert=pvrcinemas&advertiser_id=01KJPX5D4X7K6P5624FFBS8ZGG&app_name=inox-uat-web.pvrinox.com&buy_type=CPM&cb=&city=Delhi&click_id=01M1B5DB0MD2BZJ44WP3NWPR3K&click_url=https%3A%2F%2Fwww.getonecard.app%2F%3Fdeep_link_value%3DOffers%26af_force_deeplink%3Dtrue%26af_dp%3Donecard%253A%252F%252Fmainactivity%26source_caller%3Dui%26deep_link_sub1%3DSCREEN%26shortlink%3DOffers%26utm_source%3Dpvr_ads%26c%3DOffers%2520Page%26pid%3DSMS%26af_xp%3Dtext&client_timestamp=0&country=IND&cpc=0&creative_id=01KWV71P8NGJDCC1HFKMCSX8ZF&creative_text=&crn=&ctype=&derived_ecpm=10&ds=&ds_model=&dt=Desktop&eid=pvrcinemas&ga_id=&hour=0&lin=&line_id=01KWV780Q1YGD1HXK4E2C2K226&m=0&network=adster&order_id=01KWV780Q1YGD1HXK4E2C2K226&org_id=01KJPX5D4X7K6P5624FFBS8ZGG&partner_id=pvrcinemas&placement_id=pvr-next-desktop-home-btf-banner&pri=1&product_category=&product_subtype=&publisher_id=01KJQ0SP661H9D3MBDXNRSMHH3&pubn=&region=IN-DL&req_id=01M1B5DB0M1JYVWZX03CTTST49&req_type=banner&timestamp=0&user_agent=&user_id=179925fc-85e4-4662-8e87-6f742d00aeda
+              - img "OneCard Offer_Jan26_Homepage BTF 1440x250" [ref=f71e3]
+      - generic [ref=f69e116]:
+        - generic [ref=f69e118]:
+          - heading [level=2] [ref=f69e119]: Coming Soon
+          - link [ref=f69e120] [cursor=pointer]:
+            - /url: /coming-soon
+            - text: View More
+        - generic [ref=f69e125]:
+          - button [ref=f69e127] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 30 Sep'26
+                    - heading [level=3]: "Spider-Man: Brand New Day"
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: English
+                      - generic:
+                        - paragraph: A
+                        - paragraph: Action
+                        - generic: "+5"
+            - generic [ref=f69e133]:
+              - paragraph [ref=f69e134]: Releasing On 30 Sep'26
+              - heading [level=3] [ref=f69e135]: "Spider-Man: Brand New Day"
+              - generic [ref=f69e136]:
+                - generic [ref=f69e137]:
+                  - paragraph [ref=f69e138]: 1h
+                  - paragraph [ref=f69e141]: English
+                - generic [ref=f69e142]:
+                  - paragraph [ref=f69e143]: A
+                  - generic [ref=f69e145]:
+                    - paragraph [ref=f69e146]: Action
+                    - generic [ref=f69e147]: "+5"
+          - button [ref=f69e150] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 30 Sep'26
+                    - heading [level=3]: Jana Nayagan
+                    - generic:
+                      - generic:
+                        - paragraph: 30m
+                        - generic:
+                          - paragraph: Hindi (Original)
+                          - generic: "+3"
+                      - generic:
+                        - paragraph: A
+                        - paragraph: Action
+                        - generic: "+3"
+            - generic [ref=f69e156]:
+              - paragraph [ref=f69e157]: Releasing On 30 Sep'26
+              - heading [level=3] [ref=f69e158]: Jana Nayagan
+              - generic [ref=f69e159]:
+                - generic [ref=f69e160]:
+                  - paragraph [ref=f69e161]: 30m
+                  - generic [ref=f69e163]:
+                    - paragraph [ref=f69e164]: Hindi (Original)
+                    - generic [ref=f69e165]: "+3"
+                - generic [ref=f69e167]:
+                  - paragraph [ref=f69e168]: A
+                  - generic [ref=f69e170]:
+                    - paragraph [ref=f69e171]: Action
+                    - generic [ref=f69e172]: "+3"
+          - button [ref=f69e175] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 11 Nov'26
+                    - heading [level=3]: Godzilla Minus Zero
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi (Original)
+                          - generic: "+1"
+                      - generic:
+                        - paragraph: A
+                        - paragraph: Action
+                        - generic: "+6"
+            - generic [ref=f69e181]:
+              - paragraph [ref=f69e182]: Releasing On 11 Nov'26
+              - heading [level=3] [ref=f69e183]: Godzilla Minus Zero
+              - generic [ref=f69e184]:
+                - generic [ref=f69e185]:
+                  - paragraph [ref=f69e186]: 1h
+                  - generic [ref=f69e188]:
+                    - paragraph [ref=f69e189]: Hindi (Original)
+                    - generic [ref=f69e190]: "+1"
+                - generic [ref=f69e192]:
+                  - paragraph [ref=f69e193]: A
+                  - generic [ref=f69e195]:
+                    - paragraph [ref=f69e196]: Action
+                    - generic [ref=f69e197]: "+6"
+          - button [ref=f69e200] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: Varanasi (film)
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi
+                      - generic:
+                        - paragraph: S
+                        - paragraph: Musical
+                        - generic: "+3"
+            - generic [ref=f69e206]:
+              - paragraph [ref=f69e207]: Releasing On 26 Dec'26
+              - heading [level=3] [ref=f69e208]: Varanasi (film)
+              - generic [ref=f69e209]:
+                - generic [ref=f69e210]:
+                  - paragraph [ref=f69e211]: 1h
+                  - paragraph [ref=f69e214]: Hindi
+                - generic [ref=f69e215]:
+                  - paragraph [ref=f69e216]: S
+                  - generic [ref=f69e218]:
+                    - paragraph [ref=f69e219]: Musical
+                    - generic [ref=f69e220]: "+3"
+          - button [ref=f69e223] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: "Avengers: Doomsday"
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi (Original)
+                          - generic: "+1"
+                      - generic:
+                        - paragraph: A
+                        - paragraph: Action
+                        - generic: "+2"
+            - generic [ref=f69e229]:
+              - paragraph [ref=f69e230]: Releasing On 26 Dec'26
+              - heading [level=3] [ref=f69e231]: "Avengers: Doomsday"
+              - generic [ref=f69e232]:
+                - generic [ref=f69e233]:
+                  - paragraph [ref=f69e234]: 1h
+                  - generic [ref=f69e236]:
+                    - paragraph [ref=f69e237]: Hindi (Original)
+                    - generic [ref=f69e238]: "+1"
+                - generic [ref=f69e240]:
+                  - paragraph [ref=f69e241]: A
+                  - generic [ref=f69e243]:
+                    - paragraph [ref=f69e244]: Action
+                    - generic [ref=f69e245]: "+2"
+          - button [ref=f69e248] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: Releasing On 26 Dec'26
+                    - heading [level=3]: King (2026 film)
+                    - generic:
+                      - generic:
+                        - paragraph: 1h
+                        - generic:
+                          - paragraph: Hindi
+                      - generic:
+                        - paragraph: S
+                        - paragraph: Action
+                        - generic: "+1"
+            - generic [ref=f69e254]:
+              - paragraph [ref=f69e255]: Releasing On 26 Dec'26
+              - heading [level=3] [ref=f69e256]: King (2026 film)
+              - generic [ref=f69e257]:
+                - generic [ref=f69e258]:
+                  - paragraph [ref=f69e259]: 1h
+                  - paragraph [ref=f69e262]: Hindi
+                - generic [ref=f69e263]:
+                  - paragraph [ref=f69e264]: S
+                  - generic [ref=f69e266]:
+                    - paragraph [ref=f69e267]: Action
+                    - generic [ref=f69e268]: "+1"
+      - generic [ref=f69e270]:
+        - heading [level=2] [ref=f69e273]: Trailers
+        - generic [ref=f69e277]:
+          - figure [ref=f69e278]
+          - heading [level=3] [ref=f69e280]: No trailers found
+    - button "Scroll to top Arrow Up Icon" [ref=f69e282] [cursor=pointer]:
+      - generic [ref=f69e283]: Scroll to top
+      - img "Arrow Up Icon" [ref=f69e284]
+    - contentinfo [ref=f69e285]:
+      - generic [ref=f69e286]:
+        - generic [ref=f69e287]:
+          - generic [ref=f69e288]:
+            - link [ref=f69e289] [cursor=pointer]:
+              - /url: /
+              - img "Brand Logo" [ref=f69e290]
+            - paragraph [ref=f69e291]: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            - list [ref=f69e292]:
+              - listitem [ref=f69e293]:
+                - link [ref=f69e294] [cursor=pointer]:
+                  - /url: https://www.facebook.com/moviesatpvr/
+              - listitem [ref=f69e295]:
+                - link [ref=f69e296] [cursor=pointer]:
+                  - /url: https://www.instagram.com/pvrpictures/?hl=en
+              - listitem [ref=f69e297]:
+                - link [ref=f69e298] [cursor=pointer]:
+                  - /url: https://x.com/_PVRCinemas?lang=en
+              - listitem [ref=f69e299]:
+                - link [ref=f69e300] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/pvr-limited
+              - listitem [ref=f69e301]:
+                - link [ref=f69e302] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+          - generic [ref=f69e303]:
+            - heading "Support" [level=3] [ref=f69e304]
+            - navigation [ref=f69e308]:
+              - list [ref=f69e309]:
+                - listitem [ref=f69e310]:
+                  - link "Privacy Policy" [ref=f69e311] [cursor=pointer]:
+                    - /url: /privacy-policy
+                - listitem [ref=f69e312]:
+                  - link "Terms & Conditions" [ref=f69e313] [cursor=pointer]:
+                    - /url: /terms-conditions
+                - listitem [ref=f69e314]:
+                  - link "Terms of Use" [ref=f69e315] [cursor=pointer]:
+                    - /url: /terms-use
+                - listitem [ref=f69e316]:
+                  - link "Customer Experience" [ref=f69e317] [cursor=pointer]:
+                    - /url: /feedback
+          - generic [ref=f69e318]:
+            - heading "GET THE APP" [level=3] [ref=f69e319]
+            - generic [ref=f69e323]:
+              - link [ref=f69e324] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/pvr-cinemas-movie-tickets/id878127874
+                - img "IOS Play Store" [ref=f69e325]
+              - link [ref=f69e326] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.net.pvr
+                - img "Google Play Store" [ref=f69e327]
+        - generic [ref=f69e328]:
+          - paragraph [ref=f69e329]: Copyright © 2026 PVR. All Rights Reserved
+          - figure [ref=f69e330]:
+            - link [ref=f69e331] [cursor=pointer]:
+              - /url: /
+              - img "Footer Tagline" [ref=f69e332]
+    - button "Open Movie Jockey chat" [ref=f69e333] [cursor=pointer]:
+      - img "Movie Jockey"
+  - region "Notifications alt+T"

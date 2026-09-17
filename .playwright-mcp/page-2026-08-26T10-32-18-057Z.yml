@@ -1,0 +1,32 @@
+- generic [active]:
+  - alert [ref=f39e1]
+  - banner [ref=f39e2]:
+    - generic [ref=f39e4]:
+      - generic [ref=f39e5]:
+        - link [ref=f39e7] [cursor=pointer]:
+          - /url: /
+          - img "Brand Logo" [ref=f39e8]
+        - button [ref=f39e11] [cursor=pointer]:
+          - img "Map Point Icon" [ref=f39e12]
+      - navigation [ref=f39e13]:
+        - link "Home" [ref=f39e14] [cursor=pointer]:
+          - /url: /
+        - link "Cinemas" [ref=f39e15] [cursor=pointer]:
+          - /url: /cinemas
+        - link "Experiences" [ref=f39e16] [cursor=pointer]:
+          - /url: /experiences
+        - link "Food" [ref=f39e17] [cursor=pointer]:
+          - /url: /food
+        - link "Passport" [ref=f39e18] [cursor=pointer]:
+          - /url: /passport
+        - button "More Arrow Down" [ref=f39e19] [cursor=pointer]:
+          - generic [ref=f39e20]: More
+          - img "Arrow Down" [ref=f39e21]
+      - generic [ref=f39e22]:
+        - button [ref=f39e23] [cursor=pointer]
+        - button [ref=f39e28] [cursor=pointer]:
+          - img "User Icon" [ref=f39e30]
+        - button "Download App GIF Download App" [ref=f39e31] [cursor=pointer]:
+          - img "Download App GIF" [ref=f39e32]
+          - generic [ref=f39e33]: Download App
+  - region "Notifications alt+T"

@@ -1,0 +1,72 @@
+- generic [active] [ref=f28e1]:
+  - alert [ref=f28e2]
+  - generic [ref=f28e3]:
+    - banner [ref=f28e4]:
+      - generic [ref=f28e6]:
+        - generic [ref=f28e7]:
+          - link [ref=f28e9] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f28e10]
+          - button "Map Point Icon Mumbai" [ref=f28e13] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f28e14]
+            - generic [ref=f28e15]: Mumbai
+        - navigation [ref=f28e16]:
+          - link "Home" [ref=f28e17] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f28e18] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f28e19] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f28e20] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f28e21] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=f28e22] [cursor=pointer]:
+            - generic [ref=f28e23]: More
+            - img "Arrow Down" [ref=f28e24]
+        - generic [ref=f28e25]:
+          - button [ref=f28e26] [cursor=pointer]
+          - button [ref=f28e31] [cursor=pointer]:
+            - img "User Icon" [ref=f28e33]
+          - button "Download App GIF Download App" [ref=f28e34] [cursor=pointer]:
+            - img "Download App GIF" [ref=f28e35]
+            - generic [ref=f28e36]: Download App
+    - generic [ref=f28e37]:
+      - img "Career" [ref=f28e39]
+      - generic [ref=f28e43]:
+        - generic [ref=f28e44]:
+          - heading "Why PVR INOX?" [level=2] [ref=f28e46]
+          - paragraph [ref=f28e52]: At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR Ihghg
+        - heading "Explore Departments" [level=2] [ref=f28e54]
+        - button "Sales Marketing Sales Marketing" [ref=f28e59] [cursor=pointer]:
+          - generic [ref=f28e60]:
+            - img "Sales Marketing" [ref=f28e62]
+            - generic [ref=f28e63]: Sales Marketing
+        - generic [ref=f28e64]:
+          - heading "Connect With Us" [level=2] [ref=f28e66]
+          - generic [ref=f28e70]:
+            - generic [ref=f28e71]:
+              - generic [ref=f28e72]:
+                - heading "PVR INOX Ltd" [level=3] [ref=f28e73]
+                - paragraph [ref=f28e74]: 7th Floor, Lotus Grandeur Building, Veera Desai Road, Opp. Gundecha Symphony, Andheri(W), Mumbai-400053
+              - iframe [ref=f28e75]:
+                - generic [ref=f29e1]: "Google Maps Platform rejected your request. This IP, site or mobile application is not authorized to use this API key. Request received from IP address 14.194.22.202, with referer: https://inox-uat-web.pvrinox.com/"
+            - generic [ref=f28e76]:
+              - heading "Find us on" [level=2] [ref=f28e77]
+              - list [ref=f28e78]:
+                - listitem [ref=f28e79]:
+                  - link [ref=f28e80] [cursor=pointer]:
+                    - /url: https://www.facebook.com/moviesatpvr/
+                - listitem [ref=f28e81]:
+                  - link [ref=f28e82] [cursor=pointer]:
+                    - /url: https://www.instagram.com/pvrpictures/?hl=en
+                - listitem [ref=f28e83]:
+                  - link [ref=f28e84] [cursor=pointer]:
+                    - /url: https://x.com/_PVRCinemas?lang=en
+                - listitem [ref=f28e85]:
+                  - link [ref=f28e86] [cursor=pointer]:
+                    - /url: https://in.linkedin.com/company/pvr-limited
+                - listitem [ref=f28e87]:
+                  - link [ref=f28e88] [cursor=pointer]:
+                    - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+  - region "Notifications alt+T"

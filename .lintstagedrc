@@ -1,0 +1,4 @@
+{
+  "*.ts": ["eslint --fix", "prettier --write", "node scripts/rule-engine.js --config=rules/framework-rule-engine.json --staged"],
+  "*.{json,md}": ["prettier --write"]
+}

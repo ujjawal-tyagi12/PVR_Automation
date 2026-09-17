@@ -1,0 +1,48 @@
+- generic [ref=f305e2]:
+  - generic "Accessibility Menu":
+    - button "Accessibility Menu" [ref=f305e4] [cursor=pointer]
+  - alert [ref=f305e1]
+  - generic [ref=f305e7]:
+    - banner [ref=f305e8]:
+      - generic [ref=f305e10]:
+        - generic [ref=f305e11]:
+          - link [ref=f305e13] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f305e14]
+          - button "Map Point Icon Mumbai" [ref=f305e17] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f305e18]
+            - generic [ref=f305e19]: Mumbai
+        - navigation [ref=f305e20]:
+          - link "Home" [ref=f305e21] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f305e22] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f305e23] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f305e24] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f305e25] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=f305e26] [cursor=pointer]:
+            - generic [ref=f305e27]: More
+            - img "Arrow Down" [ref=f305e28]
+        - generic [ref=f305e29]:
+          - button [ref=f305e30] [cursor=pointer]
+          - button [ref=f305e35] [cursor=pointer]:
+            - img "User Icon" [ref=f305e37]
+          - button "Download App GIF Download App" [ref=f305e38] [cursor=pointer]:
+            - img "Download App GIF" [ref=f305e39]
+            - generic [ref=f305e40]: Download App
+    - generic [ref=f305e41]:
+      - generic [ref=f305e43]:
+        - generic [ref=f305e44]:
+          - heading "Offers" [level=1] [ref=f305e45]
+          - button "All offers" [active] [ref=f305e47] [cursor=pointer]
+        - generic:
+          - figure:
+            - img "Offer Image"
+      - generic [ref=f305e51]:
+        - figure [ref=f305e52]:
+          - img "Offer Image" [ref=f305e53]
+        - paragraph [ref=f305e54]: No Offers Available
+  - region "Notifications alt+T"

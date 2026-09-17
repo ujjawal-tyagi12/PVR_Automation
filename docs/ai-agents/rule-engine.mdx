@@ -1,0 +1,44 @@
+---
+title: The Rule Engine
+description: How scripts/rule-engine.js keeps AI-generated code inside the architecture
+---
+
+## What it checks
+
+`scripts/rule-engine.js`, configured by `rules/framework-rule-engine.json`, scans `src/**/*.ts`
+(or just your diff, with `--changed`/`--staged`) and enforces:
+
+| Category | Examples |
+|----------|----------|
+| **Placement** | `*Page.ts` → `src/pages/`, `*Module.ts`/`*Modal.ts` → `src/modules/`, `*.spec.ts` → `src/tests/` |
+| **Naming** | PascalCase pages/modules, lowercase kebab-case specs |
+| **Content** | Arrow-function locators in pages; no `page.locator()` in modules; no `@pages/` import or `page.locator()` in specs; priority/suite tags + `test.step()` in specs; no `console.log`; no `page.waitForTimeout()` |
+
+## Running it
+
+```bash
+npm run rules:check      # full src/ scan
+npm run rules:changed    # against git diff HEAD
+npm run rules:staged     # against staged files (used by the pre-commit hook)
+```
+
+Errors exit non-zero and fail CI / the commit. `spec-requires-test-step` is a warning, not a
+hard failure — everything else is an error.
+
+## Extending it
+
+Add a rule object to `rules/framework-rule-engine.json`:
+
+```json
+{
+  "id": "my-new-rule",
+  "type": "forbiddenContent",
+  "appliesTo": "src/modules/**/*.ts",
+  "pattern": "someForbiddenCall\\(",
+  "severity": "error",
+  "message": "Explain the fix here"
+}
+```
+
+Supported `type`s: `placement`, `naming`, `forbiddenContent`, `requiredContent`. See
+`scripts/rule-engine.js` for the checker implementations.

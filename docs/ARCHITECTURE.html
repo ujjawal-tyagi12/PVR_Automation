@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Architecture — PVR Playwright Framework</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 860px; margin: 2.5rem auto; padding: 0 1.5rem; line-height: 1.55; color: #1a1a1a; }
+  h1, h2 { color: #1B5E20; }
+  code, pre { background: #f4f4f4; border-radius: 4px; padding: 0.15rem 0.4rem; font-size: 0.92em; }
+  pre { padding: 1rem; overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #ddd; padding: 0.5rem 0.75rem; text-align: left; font-size: 0.94em; }
+  th { background: #f0f7f0; }
+  .layer { border-left: 4px solid #2E7D32; padding-left: 1rem; margin: 1rem 0; }
+</style>
+</head>
+<body>
+  <h1>Architecture</h1>
+  <p>Strict three-layer flow, enforced by <code>npm run rules:check</code>
+     (<code>scripts/rule-engine.js</code> + <code>rules/framework-rule-engine.json</code>).</p>
+
+  <pre>Tests (src/tests/*.spec.ts)
+  &rarr; Modules (src/modules/*Module.ts)
+    &rarr; Pages (src/pages/*Page.ts)</pre>
+
+  <div class="layer">
+    <h2>Pages</h2>
+    <p><code>src/pages/*Page.ts</code> — locators as arrow functions, simple actions,
+       <code>constructor(private page: Page) {}</code>. No business logic.</p>
+  </div>
+
+  <div class="layer">
+    <h2>Modules</h2>
+    <p><code>src/modules/*Module.ts</code> / <code>*Modal.ts</code> — orchestrate one or more
+       Pages via their methods. Use <code>Logger</code>. Never call <code>page.locator()</code>.</p>
+  </div>
+
+  <div class="layer">
+    <h2>Tests</h2>
+    <p><code>src/tests/*.spec.ts</code> — call modules/fixtures only. Tag every
+       <code>test.describe</code> with a priority (<code>@P0</code>/<code>@P1</code>/<code>@P2</code>)
+       and suite (<code>@Smoke</code>/<code>@Regression</code>) tag. Wrap phases in
+       <code>test.step()</code>.</p>
+  </div>
+
+  <h2>Supporting layers</h2>
+  <table>
+    <thead><tr><th>Folder</th><th>Role</th></tr></thead>
+    <tbody>
+      <tr><td><code>src/api/</code></td><td>Thin REST clients (Auth/Order/Product)</td></tr>
+      <tr><td><code>src/fixtures/</code></td><td>Playwright <code>test</code>/<code>expect</code> extensions</td></tr>
+      <tr><td><code>src/utils/</code></td><td>Logger, WaitHelper, DataGenerator, ApiHelper, CustomTTAReporter</td></tr>
+      <tr><td><code>src/config/</code></td><td>Env-driven config (<code>.env.local</code>)</td></tr>
+      <tr><td><code>src/testdata/</code></td><td>Static fixtures data + types</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Path aliases</h2>
+  <pre>@pages/*    -> src/pages/*
+@modules/*  -> src/modules/*
+@utils/*    -> src/utils/*
+@fixtures/* -> src/fixtures/*
+@api/*      -> src/api/*
+@config/*   -> src/config/*
+@testdata/* -> src/testdata/*</pre>
+</body>
+</html>

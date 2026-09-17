@@ -1,0 +1,200 @@
+- generic [active] [ref=f43e1]:
+  - alert [ref=f43e2]
+  - generic [ref=f43e3]:
+    - banner [ref=f43e4]:
+      - generic [ref=f43e6]:
+        - generic [ref=f43e7]:
+          - link [ref=f43e9] [cursor=pointer]:
+            - /url: /
+            - img "Brand Logo" [ref=f43e10]
+          - button "Map Point Icon Mumbai" [ref=f43e13] [cursor=pointer]:
+            - img "Map Point Icon" [ref=f43e14]
+            - generic [ref=f43e15]: Mumbai
+        - navigation [ref=f43e16]:
+          - link "Home" [ref=f43e17] [cursor=pointer]:
+            - /url: /
+          - link "Cinemas" [ref=f43e18] [cursor=pointer]:
+            - /url: /cinemas
+          - link "Experiences" [ref=f43e19] [cursor=pointer]:
+            - /url: /experiences
+          - link "Food" [ref=f43e20] [cursor=pointer]:
+            - /url: /food
+          - link "Passport" [ref=f43e21] [cursor=pointer]:
+            - /url: /passport
+          - button "More Arrow Down" [ref=f43e22] [cursor=pointer]:
+            - generic [ref=f43e23]: More
+            - img "Arrow Down" [ref=f43e24]
+        - generic [ref=f43e25]:
+          - button [ref=f43e26] [cursor=pointer]
+          - button [ref=f43e31] [cursor=pointer]:
+            - img "User Icon" [ref=f43e33]
+          - button "Download App GIF Download App" [ref=f43e34] [cursor=pointer]:
+            - img "Download App GIF" [ref=f43e35]
+            - generic [ref=f43e36]: Download App
+    - generic [ref=f43e37]:
+      - generic [ref=f43e39]:
+        - generic [ref=f43e41]:
+          - img "Background" [ref=f43e43]
+          - generic [ref=f43e44]:
+            - img "Background"
+        - generic [ref=f43e45]:
+          - generic [ref=f43e46]: Re-Release
+          - link "Ramayanam(Hindi)" [ref=f43e49] [cursor=pointer]:
+            - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-01T06%3A30%3A00.000Z
+          - list [ref=f43e50]:
+            - listitem [ref=f43e51]:
+              - generic [ref=f43e52]: S
+            - listitem [ref=f43e53]:
+              - generic [ref=f43e54]: Hindi
+            - listitem [ref=f43e55]:
+              - generic [ref=f43e56]: Adventure, Action
+          - paragraph [ref=f43e57]:
+            - link "Next Show today at 12:00 PM" [ref=f43e58] [cursor=pointer]:
+              - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-01T06%3A30%3A00.000Z
+              - generic [ref=f43e59]: Next Show today at
+              - text: 12:00 PM
+          - link "Book Now" [ref=f43e61] [cursor=pointer]:
+            - /url: /moviesessions/mumbai/ramayanamhindi/30212?theatreIds=200&time=2026-09-01T06%3A30%3A00.000Z
+        - button [ref=f43e63] [cursor=pointer]
+        - generic [ref=f43e67]:
+          - heading "IN THE SPOTLIGHT" [level=2] [ref=f43e68]
+          - generic [ref=f43e72]:
+            - generic [ref=f43e73]:
+              - button [ref=f43e75] [cursor=pointer]:
+                - generic [ref=f43e77]:
+                  - figure [ref=f43e78]:
+                    - img "Ramayanam(Hindi)" [ref=f43e79]
+                  - heading "Re-Release" [level=2] [ref=f43e82]
+              - button [ref=f43e84] [cursor=pointer]:
+                - figure [ref=f43e87]:
+                  - img "Dhurandhar(Hindi)" [ref=f43e88]
+              - button [ref=f43e90] [cursor=pointer]:
+                - generic [ref=f43e92]:
+                  - figure [ref=f43e93]:
+                    - 'img "Spider-Man: Brand New Day" [ref=f43e94]'
+                  - heading "30 Sep'26" [level=2] [ref=f43e97]
+              - button [ref=f43e99] [cursor=pointer]:
+                - generic [ref=f43e101]:
+                  - figure [ref=f43e102]:
+                    - img "Raksha Bandhan" [ref=f43e103]
+                  - heading "Re-Release" [level=2] [ref=f43e106]
+              - button [ref=f43e108] [cursor=pointer]:
+                - generic [ref=f43e110]:
+                  - figure [ref=f43e111]:
+                    - img "Border 2(Hindi)" [ref=f43e112]
+                  - heading "Re-Release" [level=2] [ref=f43e115]
+              - button [ref=f43e117] [cursor=pointer]:
+                - generic [ref=f43e119]:
+                  - figure [ref=f43e120]:
+                    - img "1920 London (Hindi)" [ref=f43e121]
+                  - heading "Re-Release" [level=2] [ref=f43e124]
+            - generic [ref=f43e125] [cursor=pointer]
+      - generic [ref=f43e128]:
+        - heading "Discover the Experiences" [level=3] [ref=f43e129]
+        - generic [ref=f43e131]:
+          - list [ref=f43e133]:
+            - listitem [ref=f43e134]:
+              - link [ref=f43e135] [cursor=pointer]:
+                - /url: /experiences?experienceID=543baa01f87a079371bddd092d3310ca:8c941fc3fac04ee25c7af6ea430a5f5a:f26a7fb2b67984d9512c8799a3be0761408576614a0a5860
+                - img "Logo" [ref=f43e136]
+            - listitem [ref=f43e137]:
+              - link [ref=f43e138] [cursor=pointer]:
+                - /url: /experiences?experienceID=7ed93f70705c4bfcf428845e5e9dbde8:4f5b6ad267fcaf9ac32ea9482f4b5e64:13de0e2ce4232362a1049f1a411e1728a341cb13f741ec77
+                - img "Logo" [ref=f43e139]
+            - listitem [ref=f43e140]:
+              - link [ref=f43e141] [cursor=pointer]:
+                - /url: /experiences?experienceID=0e21636e95d2cbe594e1154d0327da54:04474c39b5961c83f9b14a26cea87a9c:b0bd4355a89359ef4d1c2913e81e893ae89ce7ab5831ae3a
+                - img "Logo" [ref=f43e142]
+            - listitem [ref=f43e143]:
+              - link [ref=f43e144] [cursor=pointer]:
+                - /url: /experiences?experienceID=b1c72610fdb71140fcfc2c5f59d22a70:2a2f57dba19ff4dbf9ccbff80237efd4:c1269bebb6e514ee7a740136443086a06a0f44b623df6d0d
+                - img "Logo" [ref=f43e145]
+          - link "View More" [ref=f43e147] [cursor=pointer]:
+            - /url: /experiences
+    - generic [ref=f43e148]:
+      - generic [ref=f43e150]:
+        - generic [ref=f43e152]:
+          - button "Now Showing" [ref=f43e153] [cursor=pointer]
+          - button "Coming Soon" [ref=f43e154] [cursor=pointer]
+          - button "Experiences" [ref=f43e155] [cursor=pointer]
+          - button "Trailers" [ref=f43e156] [cursor=pointer]
+          - button "Offers" [ref=f43e157] [cursor=pointer]
+        - generic [ref=f43e158]:
+          - button "Food Icon Food" [ref=f43e159] [cursor=pointer]:
+            - img "Food Icon" [ref=f43e160]
+            - generic [ref=f43e161]: Food
+          - button "Curated Shows Icon Curated Shows" [ref=f43e162] [cursor=pointer]:
+            - img "Curated Shows Icon" [ref=f43e163]
+            - generic [ref=f43e164]: Curated Shows
+      - generic [ref=f43e167]:
+        - heading "Now Showing" [level=2] [ref=f43e168]
+        - button "Filter Icon Filter" [ref=f43e170] [cursor=pointer]:
+          - img "Filter Icon" [ref=f43e172]
+          - generic [ref=f43e173]: Filter
+      - generic [ref=f43e176]:
+        - heading [level=2] [ref=f43e177]: Coming Soon
+        - link [ref=f43e178] [cursor=pointer]:
+          - /url: /coming-soon
+          - text: View More
+      - heading [level=2] [ref=f43e182]: Experiences
+    - button "Scroll to top Arrow Up Icon" [ref=f43e185] [cursor=pointer]:
+      - generic [ref=f43e186]: Scroll to top
+      - img "Arrow Up Icon" [ref=f43e187]
+    - contentinfo [ref=f43e188]:
+      - generic [ref=f43e189]:
+        - generic [ref=f43e190]:
+          - generic [ref=f43e191]:
+            - link [ref=f43e192] [cursor=pointer]:
+              - /url: /
+              - img "Brand Logo" [ref=f43e193]
+            - paragraph [ref=f43e194]: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            - list [ref=f43e195]:
+              - listitem [ref=f43e196]:
+                - link [ref=f43e197] [cursor=pointer]:
+                  - /url: https://www.facebook.com/moviesatpvr/
+              - listitem [ref=f43e198]:
+                - link [ref=f43e199] [cursor=pointer]:
+                  - /url: https://www.instagram.com/pvrpictures/?hl=en
+              - listitem [ref=f43e200]:
+                - link [ref=f43e201] [cursor=pointer]:
+                  - /url: https://x.com/_PVRCinemas?lang=en
+              - listitem [ref=f43e202]:
+                - link [ref=f43e203] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/pvr-limited
+              - listitem [ref=f43e204]:
+                - link [ref=f43e205] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+          - generic [ref=f43e206]:
+            - heading "Support" [level=3] [ref=f43e207]
+            - navigation [ref=f43e211]:
+              - list [ref=f43e212]:
+                - listitem [ref=f43e213]:
+                  - link "Privacy Policy" [ref=f43e214] [cursor=pointer]:
+                    - /url: /privacy-policy
+                - listitem [ref=f43e215]:
+                  - link "Terms & Conditions" [ref=f43e216] [cursor=pointer]:
+                    - /url: /terms-conditions
+                - listitem [ref=f43e217]:
+                  - link "Terms of Use" [ref=f43e218] [cursor=pointer]:
+                    - /url: /terms-use
+                - listitem [ref=f43e219]:
+                  - link "Customer Experience" [ref=f43e220] [cursor=pointer]:
+                    - /url: /feedback
+          - generic [ref=f43e221]:
+            - heading "GET THE APP" [level=3] [ref=f43e222]
+            - generic [ref=f43e226]:
+              - link [ref=f43e227] [cursor=pointer]:
+                - /url: https://apps.apple.com/in/app/pvr-cinemas-movie-tickets/id878127874
+                - img "IOS Play Store" [ref=f43e228]
+              - link [ref=f43e229] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.net.pvr
+                - img "Google Play Store" [ref=f43e230]
+        - generic [ref=f43e231]:
+          - paragraph [ref=f43e232]: Copyright © 2026 PVR. All Rights Reserved
+          - figure [ref=f43e233]:
+            - link [ref=f43e234] [cursor=pointer]:
+              - /url: /
+              - img "Footer Tagline" [ref=f43e235]
+    - button "Open Movie Jockey chat" [ref=f43e236] [cursor=pointer]:
+      - img "Movie Jockey"
+  - region "Notifications alt+T"

@@ -1,0 +1,126 @@
+{
+  "$schema": "./framework-rule-engine.schema.json",
+  "description": "Structural + content guardrails for the Pages -> Modules -> Tests architecture.",
+  "rules": [
+    {
+      "id": "page-placement",
+      "type": "placement",
+      "filePattern": "*Page.ts",
+      "mustBeUnder": "src/pages/",
+      "severity": "error",
+      "message": "Page objects (*Page.ts) must live under src/pages/"
+    },
+    {
+      "id": "module-placement",
+      "type": "placement",
+      "filePattern": "*Module.ts",
+      "mustBeUnder": "src/modules/",
+      "severity": "error",
+      "message": "Modules (*Module.ts) must live under src/modules/"
+    },
+    {
+      "id": "modal-placement",
+      "type": "placement",
+      "filePattern": "*Modal.ts",
+      "mustBeUnder": "src/modules/",
+      "severity": "error",
+      "message": "Modals (*Modal.ts) must live under src/modules/"
+    },
+    {
+      "id": "spec-placement",
+      "type": "placement",
+      "filePattern": "*.spec.ts",
+      "mustBeUnder": "src/tests/",
+      "severity": "error",
+      "message": "Spec files (*.spec.ts) must live under src/tests/"
+    },
+    {
+      "id": "page-naming",
+      "type": "naming",
+      "appliesTo": "src/pages/*Page.ts",
+      "namePattern": "^[A-Z][A-Za-z0-9]*Page\\.ts$",
+      "severity": "error",
+      "message": "Page files must be PascalCase and end with Page.ts"
+    },
+    {
+      "id": "module-naming",
+      "type": "naming",
+      "appliesTo": "src/modules/*Module.ts",
+      "namePattern": "^[A-Z][A-Za-z0-9]*Module\\.ts$",
+      "severity": "error",
+      "message": "Module files must be PascalCase and end with Module.ts"
+    },
+    {
+      "id": "spec-naming",
+      "type": "naming",
+      "appliesTo": "src/tests/*.spec.ts",
+      "namePattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.spec\\.ts$",
+      "severity": "error",
+      "message": "Spec files must be lowercase kebab-case and end with .spec.ts"
+    },
+    {
+      "id": "page-locators-are-arrow-functions",
+      "type": "requiredContent",
+      "appliesTo": "src/pages/*Page.ts",
+      "pattern": "=>\\s*this\\.page\\.",
+      "severity": "error",
+      "message": "Page objects must expose locators as arrow functions (e.g. `submitBtn = () => this.page.getByTestId(...)`)"
+    },
+    {
+      "id": "module-no-direct-locator",
+      "type": "forbiddenContent",
+      "appliesTo": "src/modules/**/*.ts",
+      "pattern": "page\\.locator\\(",
+      "severity": "error",
+      "message": "Modules must orchestrate Page methods, not call page.locator() directly"
+    },
+    {
+      "id": "spec-no-page-import",
+      "type": "forbiddenContent",
+      "appliesTo": "src/tests/**/*.spec.ts",
+      "pattern": "@pages/",
+      "severity": "error",
+      "message": "Specs must go through modules/fixtures, not import from @pages/ directly"
+    },
+    {
+      "id": "spec-no-direct-locator",
+      "type": "forbiddenContent",
+      "appliesTo": "src/tests/**/*.spec.ts",
+      "pattern": "page\\.locator\\(",
+      "severity": "error",
+      "message": "Specs must not call page.locator() directly"
+    },
+    {
+      "id": "spec-requires-tag",
+      "type": "requiredContent",
+      "appliesTo": "src/tests/**/*.spec.ts",
+      "pattern": "@(P0|P1|P2|Smoke|Regression)",
+      "severity": "error",
+      "message": "test.describe title must include a priority tag (@P0/@P1/@P2) and/or suite tag (@Smoke/@Regression)"
+    },
+    {
+      "id": "spec-requires-test-step",
+      "type": "requiredContent",
+      "appliesTo": "src/tests/**/*.spec.ts",
+      "pattern": "test\\.step\\(",
+      "severity": "warning",
+      "message": "Multi-step specs should wrap key flows in test.step()"
+    },
+    {
+      "id": "no-console-log",
+      "type": "forbiddenContent",
+      "appliesTo": "src/**/*.ts",
+      "pattern": "console\\.log\\(",
+      "severity": "error",
+      "message": "Use Logger from @utils/Logger instead of console.log"
+    },
+    {
+      "id": "no-wait-for-timeout",
+      "type": "forbiddenContent",
+      "appliesTo": "src/**/*.ts",
+      "pattern": "page\\.waitForTimeout\\(",
+      "severity": "error",
+      "message": "Use WaitHelper or web-first assertions instead of page.waitForTimeout()"
+    }
+  ]
+}

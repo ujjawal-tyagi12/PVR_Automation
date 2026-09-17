@@ -1,0 +1,119 @@
+- generic:
+  - button [ref=f28e93] [cursor=pointer]
+  - alert
+  - generic:
+    - banner [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - link:
+                - /url: /
+            - generic:
+              - button:
+                - generic: Mumbai
+          - navigation:
+            - link:
+              - /url: /
+              - text: Home
+            - link:
+              - /url: /cinemas
+              - text: Cinemas
+            - link:
+              - /url: /experiences
+              - text: Experiences
+            - link:
+              - /url: /food
+              - text: Food
+            - link:
+              - /url: /passport
+              - text: Passport
+            - button:
+              - generic: More
+          - generic:
+            - button
+            - generic:
+              - button
+            - button:
+              - generic: Download App
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=2]:
+                - generic: Why PVR INOX?
+            - generic:
+              - generic:
+                - paragraph: At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR INOX, we want you to be part of our open and lively environment, where every employee can make a contribution. We are always looking for individuals who share our passion for films and people - individuals who can work as part of a proactive team to deliver the best cinema experience to our guests.At PVR Ihghg
+          - generic:
+            - heading [level=2]:
+              - generic: Explore Departments
+          - generic:
+            - button [active]:
+              - generic: Sales Marketing
+          - generic:
+            - generic:
+              - heading [level=2]:
+                - generic: Connect With Us
+            - generic:
+              - generic:
+                - generic:
+                  - heading [level=3]: PVR INOX Ltd
+                  - paragraph: 7th Floor, Lotus Grandeur Building, Veera Desai Road, Opp. Gundecha Symphony, Andheri(W), Mumbai-400053
+                - iframe [ref=f28e75]:
+                  - generic [ref=f29e1]: "Google Maps Platform rejected your request. This IP, site or mobile application is not authorized to use this API key. Request received from IP address 14.194.22.202, with referer: https://inox-uat-web.pvrinox.com/"
+              - generic:
+                - heading [level=2]: Find us on
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: https://www.facebook.com/moviesatpvr/
+                  - listitem:
+                    - link:
+                      - /url: https://www.instagram.com/pvrpictures/?hl=en
+                  - listitem:
+                    - link:
+                      - /url: https://x.com/_PVRCinemas?lang=en
+                  - listitem:
+                    - link:
+                      - /url: https://in.linkedin.com/company/pvr-limited
+                  - listitem:
+                    - link:
+                      - /url: https://www.youtube.com/channel/UCQAGGxDiY8mCBvorddZFymQ
+  - region "Notifications alt+T"
+  - dialog [ref=f28e95]:
+    - heading "Dialog" [level=2] [ref=f28e96]
+    - heading [level=2] [ref=f28e98]:
+      - button [ref=f28e99] [cursor=pointer]
+    - generic [ref=f28e104]:
+      - heading "Apply for the role" [level=3] [ref=f28e105]
+      - generic [ref=f28e106]:
+        - generic [ref=f28e109]:
+          - textbox "Full name" [ref=f28e110]
+          - generic:
+            - text: Full Name
+            - generic: "*"
+        - generic [ref=f28e113]:
+          - textbox "Phone number" [ref=f28e114]
+          - generic:
+            - text: Phone Number
+            - generic: "*"
+        - generic [ref=f28e117]:
+          - textbox "Email" [ref=f28e118]
+          - generic:
+            - text: Email
+            - generic: "*"
+        - generic [ref=f28e121]:
+          - textbox "Department" [disabled] [ref=f28e122]: Sales Marketing
+          - generic:
+            - text: Department
+            - generic: "*"
+        - generic [ref=f28e125]:
+          - textbox "Choose a PDF or DOC file" [ref=f28e126]
+          - button "Upload resume" [ref=f28e127] [cursor=pointer]
+          - generic:
+            - text: Upload Resume
+            - generic: "*"
+        - paragraph [ref=f28e128]: "Supported formats: .pdf, .doc, .docx · Max size: 2 MB"
+      - button "Submit" [ref=f28e130] [cursor=pointer]
