@@ -39,6 +39,17 @@ export class AdminLoginPage {
   customerExperienceMenuItem = () => this.page.getByRole('button', { name: 'Customer Experience' });
   settingsMenuItem = () => this.page.getByRole('button', { name: 'Settings' });
   editProfileButton = () => this.page.getByRole('button', { name: 'Edit profile' });
+  // Grounded 2026-09-21: the real account-sidebar button's full accessible name is "Settings
+  // right arrow" (it also has a decorative arrow icon) — a plain 'Settings' match, and even
+  // 'Settings right arrow' without exact:true, both collide with the sibling "Payment Settings
+  // right arrow" button under Playwright's substring role-name matching. exact:true is required.
+  settingsMenuItemExact = () => this.page.getByRole('button', { name: 'Settings right arrow', exact: true });
+  logoutButton = () => this.page.getByRole('button', { name: 'Logout' });
+  // Grounded 2026-09-21 (real failure on automated run — the "User Icon" button never
+  // reappeared at all, not just slowly): clicking Logout doesn't log out directly, it opens a
+  // real confirmation dialog ("Are you sure you want to logout?") that a plain click on
+  // logoutButton() never dismisses. The session only actually clears once this is confirmed.
+  confirmLogoutButton = () => this.page.getByRole('button', { name: 'Yes, Logout' });
 
   // Grounded 2026-09-01, re-verified 2026-09-15 (bypass code rotated — see .env.local's
   // TEST_PASSWORD): the current OTP bypass is a genuine UAT test-mode bypass — verified
@@ -67,6 +78,19 @@ export class AdminLoginPage {
       .filter({ has: this.completeProfileHeading() })
       .getByRole('button', { name: "I'll Miss Out" });
 
+  // Grounded 2026-09-21: a 6th overlay ("Verify Your Email") can also appear in this chain —
+  // confirmed live on a seasoned TEST_USERNAME that had an unverified email from an earlier
+  // registration. Its dismiss button's accessible name renders with a lowercase "l'll" instead
+  // of "I'll" elsewhere in this chain (a real, minor label inconsistency on the live app, not a
+  // typo in this locator) — matched case-insensitively on "miss out" so it isn't fragile to
+  // either capitalization.
+  verifyEmailHeading = () => this.page.getByRole('heading', { name: 'Verify Your Email' });
+  verifyEmailMissOutButton = () =>
+    this.page
+      .getByRole('dialog')
+      .filter({ has: this.verifyEmailHeading() })
+      .getByRole('button', { name: /miss out/i });
+
   async goto(): Promise<void> {
     await this.page.goto('/');
   }
@@ -78,7 +102,15 @@ export class AdminLoginPage {
     // first, with a generous timeout, avoids that instead of relying solely on click()'s own
     // actionability retry.
     await this.accountMenuButton().waitFor({ state: 'visible', timeout: 20000 });
-    await this.accountMenuButton().click();
+    // Grounded 2026-09-21: a transient vaul-drawer overlay (unrelated to any onboarding overlay
+    // already handled elsewhere) can be mid-animation over this exact button on a real page
+    // load, intercepting the click — confirmed live via a real failure, not reproducible on
+    // demand in isolation, so it's genuine live-app timing, not a broken locator. Same
+    // retry-the-click pattern already used for fillOtp()/dismissCompleteProfileOverlay() clears
+    // it once the transient overlay is gone, without masking a page that's actually broken.
+    await expect(async () => {
+      await this.accountMenuButton().click({ timeout: 5000 });
+    }).toPass({ timeout: 20000 });
   }
 
   async clickLogin(): Promise<void> {

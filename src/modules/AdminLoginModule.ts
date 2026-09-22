@@ -1,6 +1,7 @@
 import { Page, Locator, expect } from '@playwright/test';
 import { AdminLoginPage } from '@pages/AdminLoginPage';
 import { Logger } from '@utils/Logger';
+import { WaitHelper } from '@utils/WaitHelper';
 
 /**
  * Grounded against the live app at BASE_URL. Orchestrates the real phone+OTP login
@@ -152,6 +153,30 @@ export class AdminLoginModule {
       Logger.info('Dismissing the Complete Your Profile overlay');
       await this.loginPage.dismissCompleteProfileOverlay();
     }
+
+    // Grounded 2026-09-21: a 6th overlay ("Verify Your Email") can follow the others on a
+    // seasoned account — confirmed live. Same detach/re-render risk as the Complete Your
+    // Profile overlay, so retried the same way rather than a single click.
+    if (await this.waitVisible(this.loginPage.verifyEmailHeading(), 8000)) {
+      Logger.info('Dismissing the Verify Your Email overlay');
+      await expect(async () => {
+        await this.loginPage.verifyEmailMissOutButton().click({ timeout: 5000 });
+      }).toPass({ timeout: 15000 });
+    }
+  }
+
+  async logout(): Promise<void> {
+    Logger.info('Logging out via Settings > Logout');
+    await this.loginPage.openAccountMenu();
+    await this.loginPage.settingsMenuItemExact().click();
+    await expect(this.loginPage.logoutButton()).toBeVisible({ timeout: 10000 });
+    await this.loginPage.logoutButton().click();
+    // Grounded 2026-09-21: Logout opens a real confirmation dialog first — without confirming
+    // it, the session never actually clears (confirmed live: User Icon simply never
+    // reappeared). "Yes, Logout" is the real confirm action.
+    await expect(this.loginPage.confirmLogoutButton()).toBeVisible({ timeout: 10000 });
+    await this.loginPage.confirmLogoutButton().click();
+    await WaitHelper.forHydration(this.page);
   }
 
   /**
@@ -170,6 +195,13 @@ export class AdminLoginModule {
   async assertLoggedIn(): Promise<void> {
     await this.loginPage.openAccountMenu();
     await expect(this.loginPage.editProfileButton()).toBeVisible();
+    // Grounded 2026-09-21: while the Account sidebar is open, the whole header (including this
+    // very button) is aria-hidden — a standard modal/drawer accessibility pattern also seen on
+    // the login dialog. Leaving it open silently broke any later openAccountMenu() call in the
+    // same test (confirmed live: "User Icon" becomes unqueryable by role and its own waitFor
+    // hangs to timeout) — closing it again here keeps this assertion side-effect-free.
+    await this.loginPage.closeDialogButton().click();
+    await expect(this.loginPage.accountSidebarHeading()).toHaveCount(0);
   }
 
   async confirmDeviceLimitAndContinue(): Promise<void> {

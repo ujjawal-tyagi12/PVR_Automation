@@ -42,5 +42,12 @@ export default defineConfig({
     { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
     { name: 'webkit', use: { ...devices['Desktop Safari'] } },
     { name: 'mobile-chrome', use: { ...devices['Pixel 5'] } },
+    // Uses the system-installed Microsoft Edge via Playwright's built-in channel — confirmed
+    // installed at /usr/bin/microsoft-edge-stable, 2026-09-21.
+    { name: 'edge', use: { ...devices['Desktop Edge'], channel: 'msedge' } },
+    // Opera has no official Playwright channel (unlike msedge/chrome), but it's Chromium-based,
+    // so it's launched as a custom executable through the chromium browser type — confirmed
+    // installed at /usr/bin/opera, 2026-09-21.
+    { name: 'opera', use: { ...devices['Desktop Chrome'], launchOptions: { executablePath: '/usr/bin/opera' } } },
   ],
 });
