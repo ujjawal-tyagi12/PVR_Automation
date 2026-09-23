@@ -1,0 +1,15 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+tta-report/
+.env.local
+.auth/
+admin-auth.json
+*.log
+.DS_Store
+
+# Mobile binaries
+apps/*.apk
+apps/*.aab
+apps/*.ipa

@@ -1,0 +1,4 @@
+[
+  { "id": "sample-product-1", "name": "Sample Product 1", "price": 19.99 },
+  { "id": "sample-product-2", "name": "Sample Product 2", "price": 49.5 }
+]

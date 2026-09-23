@@ -1,0 +1,30 @@
+---
+title: The Rule Engine
+description: How architecture and naming constraints are enforced automatically instead of by convention alone.
+---
+
+Agent-generated code drifts from conventions faster than human-written code, because there's no muscle memory holding the layering in place. This repo enforces it mechanically instead.
+
+## Pieces
+
+- `rules/framework-rule-engine.json` — declarative rules: placement (`requireDir`), naming (`namingPattern`), and content (`requirePatterns` / `forbidPatterns`) per glob.
+- `scripts/rule-engine.js` — the checker; no external dependencies, matches globs and regexes against `src/**/*.ts`.
+- `rules/code-standards.md` — the human-readable version of the same rules.
+
+## Where it runs
+
+| Trigger | Command | Scope |
+|---|---|---|
+| Manual / CI | `npm run rules:check` | Full `src/` tree |
+| CI, changed-files mode | `npm run rules:changed` | Files changed vs. `HEAD` |
+| Pre-commit hook | `npm run rules:staged` | Staged files only |
+
+Exit code is non-zero on any violation, so it gates both `.husky/pre-commit` and the CI workflow.
+
+## Example rules
+
+- `placement-page` — `*Page.ts` must live in `src/pages/`.
+- `content-module-no-locator` — `src/modules/*.ts` must never call `page.locator()` directly.
+- `content-spec-tags` — every spec must carry a `@P0`/`@P1`/`@P2` and `@Smoke`/`@Regression` tag.
+
+Extend it by adding an entry to `framework-rule-engine.json` — see [`rules/framework-rules.md`](../../rules/framework-rules.md) for the field reference.

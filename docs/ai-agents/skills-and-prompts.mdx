@@ -1,0 +1,28 @@
+---
+title: Skills and Prompts
+description: The .claude/skills catalogue and how prompt templates plug into it.
+---
+
+## Skills (`.claude/skills/`)
+
+Real directories, discovered by Claude Code at session start — no symlinks, no `.cursor/` dependency:
+
+| Skill | Slash command | Purpose |
+|---|---|---|
+| `setup-framework` | `/setup-framework` | Scaffold or verify this layout in a new repo |
+| `generate-test-cases` | `/generate-test-cases` | Stories/navigation → `requirements/{module}.md` |
+| `create-md-ticket` | `/create-md-ticket` | Excel/CSV → `requirements/{module}.md` |
+| `playwright-mcp` | `/playwright-mcp` | Planner → Generator → Healer authoring loop |
+| `e2e-review` | `/e2e-review` | Review generated tests against `rules/code-standards.md` |
+
+Each skill's `SKILL.md` is the entry point; supporting material lives in that skill's `references/` folder.
+
+## Prompt templates
+
+`playwright-mcp/references/prompts.md` holds reusable prompts for Planner/Generator/Healer — fill in the repo-specific inputs (module name, requirements file, failing test) rather than writing prompts from scratch each time.
+
+## Adding a skill
+
+1. Create `.claude/skills/{name}/SKILL.md` with frontmatter (`name`, `description`, optionally `disable-model-invocation: true` to require explicit `/name` invocation).
+2. Add a `references/` folder for anything too long to inline in `SKILL.md`.
+3. Update this table and `.claude/README.md`.

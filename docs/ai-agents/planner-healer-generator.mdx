@@ -1,0 +1,23 @@
+---
+title: Planner → Generator → Healer
+description: The three-agent loop that authors and maintains Playwright tests in this repo.
+---
+
+## The loop
+
+1. **Planner** reads `requirements/{module}.md` (or a story/navigation description) and outputs scenarios, tags, and the files it expects to touch — no code yet.
+2. **Generator** writes code only inside `src/pages`, `src/modules`, `src/tests`, using MCP-grounded locators (accessibility snapshot from Playwright MCP or a live Chrome tab), never guessed selectors.
+3. Run `npm run rules:check` and the relevant spec.
+4. If it fails, **Healer** patches the *minimum* code needed, using the failure logs/traces plus fresh MCP/Chrome evidence — not a rewrite.
+5. Re-run the rule engine and tests until green.
+
+## Why three separate roles
+
+Splitting planning, generation, and healing keeps each step small and reviewable, and stops the agent from silently changing scope (a "fix" that quietly rewrites the whole spec) partway through a task. It also matches the pre-commit/CI gate: nothing is "done" until `rules:check` and the test itself both pass.
+
+## Grounding
+
+- **Playwright MCP** (`.mcp.json`) — accessibility snapshots and deterministic browser tools; the default for locator discovery.
+- **Chrome MCP** (`claude --chrome`) — the user's real Chrome tab, console, network, and authenticated session; use when the app needs a logged-in state MCP alone can't reach.
+
+See [mcp-without-hallucination.mdx](./mcp-without-hallucination.mdx) for why this matters.

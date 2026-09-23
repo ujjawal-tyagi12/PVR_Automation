@@ -1,0 +1,11 @@
+services:
+  e2e:
+    build: .
+    env_file:
+      - .env.local
+    environment:
+      CI: 'true'
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./tta-report:/app/tta-report
+      - ./test-results:/app/test-results

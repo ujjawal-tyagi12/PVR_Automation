@@ -1,0 +1,19 @@
+---
+title: MCP Without Hallucination
+description: Why locators and page structure come from MCP tool calls, not model guesses.
+---
+
+An LLM asked to write a selector for "the submit button" without ever looking at the page will guess — `button.submit`, `#submit-btn`, whatever pattern is statistically common. It's often wrong, and wrong in a way that only surfaces at test-run time.
+
+## The fix: ground every locator in a tool call
+
+- **Playwright MCP** returns an accessibility snapshot of the real page — actual roles, names, and structure — before any locator is written.
+- **Chrome MCP** (Claude in Chrome) does the same against the user's live, authenticated tab when the app needs a real session.
+
+Generator and Healer are instructed (see [`playwright-mcp` skill](../../.claude/skills/playwright-mcp/SKILL.md)) to use MCP-grounded locators — prefer `getByRole`/`getByLabel`/`getByText` from the snapshot — over invented CSS/XPath.
+
+## What this buys you
+
+- Locators that match what's actually rendered, not a plausible-looking guess.
+- Healer fixes grounded in the current DOM/accessibility tree plus the failure trace, not a second guess layered on the first.
+- A rule engine (`content-page-constructor`, layering rules) that keeps this discipline from eroding as the suite grows.

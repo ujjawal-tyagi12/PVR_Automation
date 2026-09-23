@@ -1,0 +1,89 @@
+{
+  "$schema": "./framework-rule-engine.schema.json",
+  "rules": [
+    {
+      "id": "placement-page",
+      "description": "*Page.ts files must live under src/pages/",
+      "match": "**/*Page.ts",
+      "requireDir": "src/pages"
+    },
+    {
+      "id": "placement-module",
+      "description": "*Module.ts files must live under src/modules/",
+      "match": "**/*Module.ts",
+      "requireDir": "src/modules"
+    },
+    {
+      "id": "placement-spec",
+      "description": "*.spec.ts files must live under src/tests/",
+      "match": "**/*.spec.ts",
+      "requireDir": "src/tests"
+    },
+    {
+      "id": "naming-page-pascal",
+      "description": "Page object files must be PascalCase and end in Page.ts",
+      "match": "src/pages/*.ts",
+      "excludeMatch": "src/pages/index.ts",
+      "namingPattern": "^[A-Z][A-Za-z0-9]*Page\\.ts$"
+    },
+    {
+      "id": "naming-module-pascal",
+      "description": "Module files must be PascalCase and end in Module.ts",
+      "match": "src/modules/*.ts",
+      "excludeMatch": "src/modules/index.ts",
+      "namingPattern": "^[A-Z][A-Za-z0-9]*Module\\.ts$"
+    },
+    {
+      "id": "naming-spec-kebab",
+      "description": "Spec files must be lowercase kebab-case and end in .spec.ts",
+      "match": "src/tests/*.spec.ts",
+      "namingPattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.spec\\.ts$"
+    },
+    {
+      "id": "content-page-constructor",
+      "description": "Pages must take the Playwright Page via constructor(private page: Page)",
+      "match": "src/pages/*.ts",
+      "excludeMatch": "src/pages/index.ts",
+      "requirePatterns": ["constructor\\s*\\(\\s*private\\s+(readonly\\s+)?page:\\s*Page\\s*\\)"]
+    },
+    {
+      "id": "content-module-no-locator",
+      "description": "Modules must orchestrate pages, not call page.locator() directly",
+      "match": "src/modules/*.ts",
+      "excludeMatch": "src/modules/index.ts",
+      "forbidPatterns": ["\\bpage\\.locator\\("]
+    },
+    {
+      "id": "content-spec-no-page-import",
+      "description": "Specs must go through modules/fixtures, not import page objects directly",
+      "match": "src/tests/*.spec.ts",
+      "forbidPatterns": ["from\\s+['\"]@pages/"]
+    },
+    {
+      "id": "content-spec-tags",
+      "description": "Specs must tag scenarios with @P0, @P1, @P2, @Smoke, or @Regression",
+      "match": "src/tests/*.spec.ts",
+      "requirePatterns": ["@(P0|P1|P2|Smoke|Regression)"]
+    },
+    {
+      "id": "content-spec-test-step",
+      "description": "Specs must break scenarios into test.step() calls",
+      "match": "src/tests/*.spec.ts",
+      "requirePatterns": ["test\\.step\\("]
+    },
+    {
+      "id": "general-no-console",
+      "description": "No console.log — use src/utils/Logger.ts",
+      "match": "src/**/*.ts",
+      "excludeMatch": "src/utils/Logger.ts",
+      "forbidPatterns": ["console\\.log\\("]
+    },
+    {
+      "id": "general-no-wait-for-timeout",
+      "description": "No hard waits — use auto-waiting locators or src/utils/WaitHelper.ts",
+      "match": "src/**/*.ts",
+      "excludeMatch": "src/utils/WaitHelper.ts",
+      "forbidPatterns": ["\\.waitForTimeout\\("]
+    }
+  ]
+}

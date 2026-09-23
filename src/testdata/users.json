@@ -1,0 +1,12 @@
+{
+  "standardUser": {
+    "username": "standard.user",
+    "password": "REPLACE_ME",
+    "role": "standard"
+  },
+  "adminUser": {
+    "username": "admin.user",
+    "password": "REPLACE_ME",
+    "role": "admin"
+  }
+}

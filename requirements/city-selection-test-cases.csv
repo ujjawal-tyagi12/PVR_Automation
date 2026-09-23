@@ -1,0 +1,27 @@
+Test Case ID,Title,Type,Priority,Steps,Expected Result,Tags
+CTY-001,"City Selection screen displays popular cities, scrollable full list, search bar, and ""Tap to share location"" CTA",Positive,P0,Open City Selection screen,All four elements render,@P0 @Smoke
+CTY-002,Selecting a city with no sub-cities saves it and updates Home content,Positive,P0,Select a city where hasSubCities:false (e.g. Bangalore),"City saved, Home/other screens reflect new city",@P0 @Smoke
+CTY-003,Selecting a city with sub-cities opens a sub-dropdown,Positive,P0,Select Mumbai or Delhi-NCR,Sub-dropdown appears listing its sub-cities,@P0 @Regression
+CTY-004,Selecting a sub-city saves city + sub-city and updates content,Positive,P0,Select Delhi-NCR then select Gurgaon,Both city and sub-city persisted; content updates for Gurgaon,@P0 @Regression
+CTY-005,"Selecting ""All"" under a sub-city dropdown selects the parent city",Positive,P1,"Select Delhi-NCR then choose ""All"" in sub-city dropdown","""Delhi-NCR"" is saved as the selected city",@P1 @Regression
+CTY-006,Search returns matching cities/sub-cities for a valid keyword,Positive,P0,"Type ""Delhi"" in search",Results include Delhi and Delhi NCR,@P0 @Regression
+CTY-007,Search is case-insensitive and supports partial matches,Positive,P1,"Search ""del"" then ""Del""",Identical result sets both times,@P1 @Regression
+CTY-008,Search resolves alias names,Positive,P1,"Search ""Gurgaon""","Result shows ""Gurugram""",@P1 @Regression
+CTY-009,Voice search returns matching results,Positive,P1,"Grant mic permission, speak a city name","Speech converted to text, matching city results shown",@P1 @Regression
+CTY-010,"""Tap to share location"" fetches location automatically",Positive,P1,Tap the CTA,Location fetch flow triggers (per UC 8),@P1 @Regression
+CTY-011,Popular cities render in Admin-configured sequence with name and image,Positive,P1,Open City Selection,"Popular cities ordered per configured sequenceNumber, each showing name + image",@P1 @Regression
+CTY-012,Full city/sub-city list renders alphabetically A-Z,Positive,P2,Scroll full city list,Entries sorted alphabetically,@P2 @Regression
+CTY-020,Closing without selecting retains the previously saved city,Negative,P1,"With a city already saved, open City Selection, close without choosing",Previous city remains active,@P1 @Regression
+CTY-021,"Searching a city not in the list shows ""City not found""",Negative,P1,Search a nonexistent city name,"""City not found"" message; existing list remains selectable",@P1 @Regression
+CTY-022,Search does not trigger below the 2-character minimum,Negative,P1,Type 1 character,No search triggered/no results fetched,@P1 @Regression
+CTY-023,Search rejects disallowed characters,Negative,P1,Type numbers/special symbols/emojis (@ # $ % ^ & * ( )),"Input rejected or yields no results, no crash",@P1 @Regression
+CTY-024,Search input with leading/trailing spaces still matches correctly,Negative,P2,"Search "" Delhi ""","Same results as trimmed ""Delhi""",@P2 @Regression
+CTY-025,Denied microphone permission shows Settings/Cancel prompt,Negative,P1,"Deny mic permission, tap mic icon",Popup shown with Settings/Cancel; Cancel falls back to text search,@P1 @Regression
+CTY-026,City list load failure shows an error message,Negative,P1,Simulate network/server failure while loading city list,Error message shown instead of blank screen,@P1 @Regression
+CTY-027,Missing popular-city image shows a generic placeholder,Negative,P2,Popular city configured without an image,Generic placeholder image displayed,@P2 @Regression
+CTY-040,GET /api/get-city-list success renders Popular Cities and full city list matching payload,API parity,P0,"Call get-city-list, open City Selection","statusCode:200, message:""en.CITY_LISTED""; UI Popular Cities == data.popularCities[], full list == data.cities[] by cityName/cityId",@P0 @Regression
+CTY-041,Sub-city dropdown matches subCities[] for cities with hasSubCities:true,API parity,P0,Select Mumbai-All (cityId:123) or Delhi-NCR (cityId:121),Dropdown options equal each entry's CityName from the API's subCities[] array,@P0 @Regression
+CTY-042,Popular cities render ordered by ascending sequenceNumber,API parity,P1,Inspect API response sequenceNumber per popular city vs rendered order,"UI order matches ascending sequenceNumber (Mumbai-All=3, Bangalore=5, Delhi-NCR=19, Hyderabad=22, Chennai=27)",@P1 @Regression
+CTY-043,Non-200/error response from get-city-list surfaces an error state,API parity,P1,Mock a non-200 response or timeout on get-city-list,"UI shows an error message, no blank/broken screen",@P1 @Regression
+CTY-044,Empty cities[] in API payload renders an empty state without crashing,API parity,P2,Mock data.cities:[] while popularCities still has entries,Full-list section shows an empty state; Popular Cities still renders,@P2 @Regression
+CTY-050,Both Guest and Logged-in users can fully use City Selection,RBAC,P2,"Repeat CTY-002 as Guest, then as a logged-in user",Identical behavior for both actor types (per PRD Primary Actor),@P2 @Regression

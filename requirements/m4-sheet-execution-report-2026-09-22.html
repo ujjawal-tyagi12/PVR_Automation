@@ -1,0 +1,376 @@
+<title>M4 Sheet Test Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F6F3;
+    --surface:#FFFFFF;
+    --ink:#1C1F1D;
+    --ink-muted:#5B6259;
+    --ink-faint:#8A9187;
+    --line:#DDE0D8;
+    --line-strong:#C4C8BE;
+    --accent:#2E4F6E;
+    --accent-soft:#EAF0F5;
+    --pass:#1B8F5A;
+    --pass-soft:#E7F4EC;
+    --fail:#A6314F;
+    --fail-soft:#F7E9EC;
+    --skip:#B8863A;
+    --skip-soft:#F6EEDF;
+    --gap:#7A4FA6;
+    --gap-soft:#F0E9F6;
+    --pending:#5B7A99;
+    --pending-soft:#E9F0F6;
+    --shadow: 0 1px 2px rgba(28,31,29,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#14161A; --surface:#1B1E22; --ink:#E9EAE6; --ink-muted:#9AA098; --ink-faint:#6C7269;
+      --line:#2B2F2C; --line-strong:#3A3F3A; --accent:#8FB3D4; --accent-soft:#20303F;
+      --pass:#3F9E71; --pass-soft:#1C2E23; --fail:#C13B57; --fail-soft:#3A1E24;
+      --skip:#C99A4A; --skip-soft:#332A17; --gap:#B497D6; --gap-soft:#2A2233;
+      --pending:#8FB3D4; --pending-soft:#1E2733; --shadow: 0 1px 2px rgba(0,0,0,0.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#14161A; --surface:#1B1E22; --ink:#E9EAE6; --ink-muted:#9AA098; --ink-faint:#6C7269;
+    --line:#2B2F2C; --line-strong:#3A3F3A; --accent:#8FB3D4; --accent-soft:#20303F;
+    --pass:#3F9E71; --pass-soft:#1C2E23; --fail:#C13B57; --fail-soft:#3A1E24;
+    --skip:#C99A4A; --skip-soft:#332A17; --gap:#B497D6; --gap-soft:#2A2233;
+    --pending:#8FB3D4; --pending-soft:#1E2733; --shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+
+  *{box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans', system-ui, sans-serif;font-size:15.5px;line-height:1.55;}
+  .page{max-width:960px;margin:0 auto;padding:56px 28px 96px;}
+
+  h1,h2,h3{font-family:'Fraunces', Georgia, serif;text-wrap:balance;font-weight:600;color:var(--ink);}
+  .mono{font-family:'IBM Plex Mono', ui-monospace, monospace;}
+  .num{font-variant-numeric:tabular-nums;}
+
+  .masthead{border-bottom:2px solid var(--ink);padding-bottom:22px;}
+  .eyebrow{font-family:'IBM Plex Mono', monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px;}
+  .masthead h1{font-size:clamp(30px,4.4vw,42px);line-height:1.08;margin:0 0 16px;}
+  .meta-row{display:flex;flex-wrap:wrap;gap:24px 40px;font-size:13px;color:var(--ink-muted);}
+  .meta-item dt{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:3px;}
+  .meta-item dd{margin:0;color:var(--ink);font-size:13.5px;}
+
+  .pending-banner{
+    margin-top:20px;padding:14px 18px;background:var(--pending-soft);border-radius:8px;
+    border-left:3px solid var(--pending);font-size:13.5px;color:var(--ink);display:flex;gap:10px;align-items:flex-start;
+  }
+  .pending-banner .dot{width:8px;height:8px;border-radius:50%;background:var(--pending);margin-top:5px;flex-shrink:0;animation:pulse 1.6s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+
+  section{margin-top:56px;}
+  .section-head{margin-bottom:22px;}
+  .section-head .eyebrow{margin-bottom:8px;}
+  .section-head h2{font-size:25px;margin:0 0 8px;}
+  .section-head p{margin:0;color:var(--ink-muted);max-width:68ch;font-size:14.5px;}
+
+  .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .kpi-tile{background:var(--surface);padding:22px 20px;}
+  .kpi-tile .label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px;}
+  .kpi-tile .value{font-family:'Fraunces',serif;font-size:38px;font-weight:600;line-height:1;}
+  .kpi-tile .sub{margin-top:8px;font-size:13px;color:var(--ink-muted);}
+  .kpi-tile.pass .value{color:var(--pass);}
+  .kpi-tile.fail .value{color:var(--fail);}
+  .kpi-tile.skip .value{color:var(--skip);}
+
+  .stack{display:flex;gap:2px;height:30px;margin-top:26px;border-radius:6px;}
+  .stack>div{border-radius:4px;}
+  .stack .seg-pass{background:var(--pass);}
+  .stack .seg-fail{background:var(--fail);}
+  .stack .seg-skip{background:var(--skip);}
+  .legend{display:flex;gap:26px;margin-top:14px;flex-wrap:wrap;}
+  .legend-item{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink-muted);}
+  .swatch{width:11px;height:11px;border-radius:3px;flex-shrink:0;}
+  .swatch.pass{background:var(--pass);}
+  .swatch.fail{background:var(--fail);}
+  .swatch.skip{background:var(--skip);}
+
+  .reclass{margin-top:22px;padding:16px 18px;background:var(--accent-soft);border-radius:8px;font-size:13.5px;color:var(--ink-muted);}
+  .reclass strong{color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;padding:0 14px 10px 0;border-bottom:1px solid var(--line-strong);}
+  td{padding:11px 14px 11px 0;border-bottom:1px solid var(--line);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .table-wrap{overflow-x:auto;border-radius:8px;}
+  .num-col{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;text-align:right;}
+  th.num-col{text-align:right;}
+
+  .mini-bar{display:flex;gap:1px;height:8px;width:120px;border-radius:3px;overflow:hidden;}
+  .mini-bar div:first-child{border-radius:3px 0 0 3px;}
+  .mini-bar div:last-child{border-radius:0 3px 3px 0;}
+  .mini-bar.pending{background:var(--line);width:120px;height:8px;border-radius:3px;}
+
+  .badge{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.04em;padding:2px 8px;border-radius:20px;font-weight:600;white-space:nowrap;}
+  .badge.confirmed{background:var(--fail-soft);color:var(--fail);}
+  .badge.candidate{background:var(--line);color:var(--ink-muted);}
+  .badge.fixed{background:var(--pass-soft);color:var(--pass);}
+  .badge.flaky{background:var(--skip-soft);color:var(--skip);}
+  .badge.gap{background:var(--gap-soft);color:var(--gap);}
+  .badge.scope{background:var(--gap-soft);color:var(--gap);}
+  .badge.pending{background:var(--pending-soft);color:var(--pending);}
+
+  .callout{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:22px 24px;box-shadow:var(--shadow);}
+  .callout.warn{border-left-color:var(--gap);}
+  .callout.pending{border-left-color:var(--pending);background:var(--pending-soft);}
+  .callout ul{margin:0;padding-left:20px;}
+  .callout li{margin-bottom:10px;}
+  .callout li:last-child{margin-bottom:0;}
+  .callout strong{color:var(--ink);}
+  .callout p{margin:0 0 12px;}
+  .callout p:last-child{margin-bottom:0;}
+
+  .fixnote{margin-top:18px;padding:18px 20px;background:var(--pass-soft);border-radius:8px;font-size:13.5px;color:var(--ink);}
+  .fixnote .eyebrow{color:var(--pass);margin-bottom:8px;}
+
+  footer.note{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+
+  @media (max-width:640px){
+    .kpi-grid{grid-template-columns:repeat(2,1fr);}
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">QA Execution Audit · Chromium / UAT · M4 Sheet</div>
+    <h1>M4 Sheet Test Ledger</h1>
+    <dl class="meta-row">
+      <div class="meta-item"><dt>Run date</dt><dd>2026-09-22</dd></div>
+      <div class="meta-item"><dt>Environment</dt><dd>inox-uat-web.pvrinox.com</dd></div>
+      <div class="meta-item"><dt>Source</dt><dd>_PVR INOX __ Test Cases - M4 _ Website.pdf (TC_WEB_001–447)</dd></div>
+      <div class="meta-item"><dt>Coverage</dt><dd>8 spec files · 7 complete, 1 in progress</dd></div>
+    </dl>
+    <div class="pending-banner">
+      <div class="dot"></div>
+      <div><strong>Movie Details (TC_WEB_386–447) is still executing</strong> as of this publish — its <span class="mono">beforeEach</span> hook carries a pre-documented 300s-per-test timeout (real UAT cinema/showtime data volatility, root-caused in the 2026-09-16 full-suite run). This page will be republished with its results once that run completes.</div>
+    </div>
+  </header>
+
+  <!-- ================= KPI HERO ================= -->
+  <section class="hero-kpis">
+    <div class="section-head">
+      <div class="eyebrow">7 of 8 modules</div>
+      <h2 style="font-size:20px;margin:0;">Global Search · Event Listing · Event Details · Experience · Home Screen · Cinemas Listing &amp; Detail</h2>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi-tile">
+        <div class="label">Total Executed</div>
+        <div class="value num">170</div>
+        <div class="sub">across 7 spec files</div>
+      </div>
+      <div class="kpi-tile pass">
+        <div class="label">Passed</div>
+        <div class="value num">113</div>
+        <div class="sub">66% of total</div>
+      </div>
+      <div class="kpi-tile fail">
+        <div class="label">Failed</div>
+        <div class="value num">5</div>
+        <div class="sub">3% of total</div>
+      </div>
+      <div class="kpi-tile skip">
+        <div class="label">Skipped</div>
+        <div class="value num">52</div>
+        <div class="sub">31% of total</div>
+      </div>
+    </div>
+
+    <div class="stack" role="img" aria-label="113 passed, 5 failed, 52 skipped, out of 170 total">
+      <div class="seg-pass" style="flex:66" title="Passed: 113 (66%)"></div>
+      <div class="seg-fail" style="flex:3" title="Failed: 5 (3%)"></div>
+      <div class="seg-skip" style="flex:31" title="Skipped: 52 (31%)"></div>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><span class="swatch pass"></span>Passed — 113</div>
+      <div class="legend-item"><span class="swatch fail"></span>Failed — 5</div>
+      <div class="legend-item"><span class="swatch skip"></span>Skipped — 52</div>
+    </div>
+
+    <div class="reclass">
+      <strong>Reclassified from the first pass.</strong> A 3-worker parallel run first showed 13 failures. Every one was re-run alone before being counted: <strong>3 were parallel-load flakes</strong>, <strong>4 shared one real locator bug</strong> — found and fixed during this run — <strong>2 converted to a genuine runtime data-volatility skip</strong> once the click itself worked, and <strong>5 remain real, unresolved findings</strong> (all matching previously-documented issues from the 2026-09-16 full-suite run).
+    </div>
+  </section>
+
+  <!-- ================= PER-MODULE ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 01</div>
+      <h2>Per-module breakdown</h2>
+      <p>Mapped against the real M4 sheet's own module boundaries and TC_WEB ID ranges.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Module</th><th>Sheet IDs</th><th class="num-col">Live</th><th class="num-col">Pass</th><th class="num-col">Fail</th><th class="num-col">Skip</th><th>Composition</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Global Search</td><td class="mono">TC_WEB_001–025</td>
+            <td class="num-col">20</td><td class="num-col">20</td><td class="num-col">0</td><td class="num-col">0</td>
+            <td><div class="mini-bar" title="20 pass"><div style="flex:20;background:var(--pass)"></div></div></td>
+          </tr>
+          <tr>
+            <td>Event Listing</td><td class="mono">TC_WEB_026–038</td>
+            <td class="num-col">5</td><td class="num-col">1</td><td class="num-col">0</td><td class="num-col">4</td>
+            <td><div class="mini-bar" title="1 pass / 4 skip"><div style="flex:1;background:var(--pass)"></div><div style="flex:4;background:var(--skip)"></div></div></td>
+          </tr>
+          <tr>
+            <td>Event Details</td><td class="mono">TC_WEB_039–052</td>
+            <td class="num-col">14</td><td class="num-col">4</td><td class="num-col">0</td><td class="num-col">10</td>
+            <td><div class="mini-bar" title="4 pass / 10 skip"><div style="flex:4;background:var(--pass)"></div><div style="flex:10;background:var(--skip)"></div></div></td>
+          </tr>
+          <tr>
+            <td>Experience — Functional</td><td class="mono">TC_WEB_053–080</td>
+            <td class="num-col">16</td><td class="num-col">12</td><td class="num-col">0</td><td class="num-col">4</td>
+            <td><div class="mini-bar" title="12 pass / 4 skip"><div style="flex:12;background:var(--pass)"></div><div style="flex:4;background:var(--skip)"></div></div></td>
+          </tr>
+          <tr>
+            <td>Experience — Visual</td><td class="mono">TC_WEB_081–120</td>
+            <td class="num-col">29</td><td class="num-col">25</td><td class="num-col">1</td><td class="num-col">3</td>
+            <td><div class="mini-bar" title="25 pass / 1 fail / 3 skip"><div style="flex:25;background:var(--pass)"></div><div style="flex:1;background:var(--fail)"></div><div style="flex:3;background:var(--skip)"></div></div></td>
+          </tr>
+          <tr>
+            <td>Home Screen</td><td class="mono">TC_WEB_121–303</td>
+            <td class="num-col">27</td><td class="num-col">20</td><td class="num-col">4</td><td class="num-col">3</td>
+            <td><div class="mini-bar" title="20 pass / 4 fail / 3 skip"><div style="flex:20;background:var(--pass)"></div><div style="flex:4;background:var(--fail)"></div><div style="flex:3;background:var(--skip)"></div></div></td>
+          </tr>
+          <tr>
+            <td>Cinemas Listing &amp; Detail</td><td class="mono">TC_WEB_304–385</td>
+            <td class="num-col">59</td><td class="num-col">31</td><td class="num-col">0</td><td class="num-col">28</td>
+            <td><div class="mini-bar" title="31 pass / 28 skip"><div style="flex:31;background:var(--pass)"></div><div style="flex:28;background:var(--skip)"></div></div></td>
+          </tr>
+          <tr>
+            <td>Movie Details <span class="badge pending">pending</span></td><td class="mono">TC_WEB_386–447</td>
+            <td class="num-col">—</td><td class="num-col">—</td><td class="num-col">—</td><td class="num-col">—</td>
+            <td><div class="mini-bar pending" title="run in progress"></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= FAILURES ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 02</div>
+      <h2>Failures — 13 raw, reclassified to 5</h2>
+      <p>The first parallel run's 13 failures collapse into four groups once each is re-run alone.</p>
+    </div>
+
+    <div class="fixnote">
+      <div class="eyebrow mono" style="font-size:11px;">Fixed during this run</div>
+      <strong>ExperienceModule.ts — carousel-tile click blocked by a permanent overlay (4 tests).</strong>
+      All of the module's carousel-tile click helpers used a plain (non-forced) <span class="mono">.click()</span> on <span class="mono">.swiper-slide img[alt]</span>. A permanent decorative play-icon overlay centered on every slide intercepts pointer events there — unlike the location/promo modals the existing <span class="mono">clickThroughOverlays</span> retry wrapper is built to dismiss, this overlay never goes away, so retrying the same actionability-checked click didn't help. Force-clicked at all 4 call sites instead. Verified passing post-fix; <span class="mono">npm run build</span> and <span class="mono">npm run rules:check</span> (127 files) both clean.
+    </div>
+
+    <div class="table-wrap" style="margin-top:22px;">
+      <table>
+        <thead><tr><th>Test</th><th>Module</th><th>What it does</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">EXP-038</td><td>Experience (visual)</td><td>Selected-experience highlight UI state</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">EXP-009</td><td>Experience (functional)</td><td>Selecting another experience updates page content</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">EXP-018</td><td>Experience (functional)</td><td>Movie card shows poster/rating/genre/language/format/duration/offers</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">EXP-021</td><td>Experience (functional)</td><td>Booking redirection from movie card — click now works; correctly self-skips since no bookable non-Re-Release movie card exists on the current live carousel</td><td><span class="badge fixed">fixed → skip</span></td></tr>
+          <tr><td class="mono">CIN-057</td><td>Cinemas Listing &amp; Detail</td><td>Top movie card expanded by default — "no cinema with real showtimes was available at run time"</td><td><span class="badge flaky">data skip</span></td></tr>
+          <tr><td class="mono">EXP-066</td><td>Experience (visual)</td><td>Page overflows horizontally on small screens</td><td><span class="badge confirmed">open</span></td></tr>
+          <tr><td class="mono">HOME-015</td><td>Home Screen</td><td>Spotlight carousel doesn't pause on hover/touch</td><td><span class="badge confirmed">open</span></td></tr>
+          <tr><td class="mono">HOME-016</td><td>Home Screen</td><td>Spotlight carousel doesn't loop continuously</td><td><span class="badge confirmed">open</span></td></tr>
+          <tr><td class="mono">HOME-044</td><td>Home Screen</td><td>Trailer-failure error message not shown</td><td><span class="badge confirmed">open</span></td></tr>
+          <tr><td class="mono">HOME-058</td><td>Home Screen</td><td>Homepage overflows horizontally on mobile</td><td><span class="badge confirmed">open</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color:var(--ink-muted);font-size:13px;margin-top:10px;">The 5 rows marked <span class="badge confirmed" style="vertical-align:middle;">open</span> all match previously-documented, independently-reproduced findings from this project's 2026-09-16 full-suite run — stable, not new regressions.</p>
+
+    <h3 style="font-size:16px;margin:30px 0 6px;">Confirmed parallel-load flakes (3 — informational)</h3>
+    <p style="color:var(--ink-muted);font-size:13.5px;margin:0 0 14px;max-width:70ch;">Failed only under the initial 3-worker run; passed cleanly every time re-run alone.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Test</th><th>Module</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">CIN-005</td><td>Favorite cinemas sorted to top (logged-in)</td></tr>
+          <tr><td class="mono">CIN-042</td><td>Selecting "No" in city-change nudge retains previous city</td></tr>
+          <tr><td class="mono">ED-012</td><td>No Cinemas Found error</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= SKIPS ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 03</div>
+      <h2>Skipped — 52, eight reasons</h2>
+      <p>None are stale placeholders — every one cites a specific live-grounding check recorded in the spec file's <span class="mono">test.fixme()</span> call.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Reason category</th><th>Representative examples</th><th class="num-col">Count</th></tr></thead>
+        <tbody>
+          <tr><td>Interaction/UI detail not independently grounded this pass</td><td class="mono">CIN-031/033/047/051/053/056/060, ED-002/005/006/008/009/010/011/013/014, HOME-005</td><td class="num-col">17</td></tr>
+          <tr><td>Filter button exists but fails visibility / not independently opened</td><td class="mono">CIN-026/027/028/054/065/067/069/071/072</td><td class="num-col">9</td></tr>
+          <tr><td>Map View reachability/instability</td><td class="mono">CIN-012/013/014/015/016/017/018/019</td><td class="num-col">8</td></tr>
+          <tr><td>Live UAT data volatility — required state not available at run time</td><td class="mono">CIN-030/046/058, EXP-021/023/028/065</td><td class="num-col">8</td></tr>
+          <tr><td><strong>REGRESSION</strong> — confirmed live, real product/data change since ticket was written</td><td class="mono">EL-001/007/008/013 (Events section removed from homepage), ED-007 (only 1 real cinema city-wide)</td><td class="num-col">5</td></tr>
+          <tr><td>Depends on an unconfirmed prerequisite scenario</td><td class="mono">EXP-059/060/024 (all depend on EXP-023)</td><td class="num-col">3</td></tr>
+          <tr><td>Confirmed absent from the current build</td><td class="mono">HOME-057 (no "Curated Shows" text/chip found)</td><td class="num-col">1</td></tr>
+          <tr><td><span class="badge scope">out of scope</span> Cross-browser config, not a code gap</td><td class="mono">HOME-059 (chromium-only project config)</td><td class="num-col">1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= OUT OF SCOPE ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 04</div>
+      <h2>Out of scope — 1 of 52</h2>
+      <p>Only one skip in these 7 modules is genuinely structural rather than blocked-pending-grounding.</p>
+    </div>
+    <div class="callout warn">
+      <p><span class="badge gap">out of scope · TC_WEB range n/a</span></p>
+      <p><strong>HOME-059 — cross-browser homepage rendering</strong> (Firefox/Safari/Edge). <span class="mono">playwright.config.ts</span> already defines <span class="mono">firefox</span>/<span class="mono">webkit</span>/<span class="mono">mobile-chrome</span> projects, but this suite's runs target <span class="mono">chromium</span> only. Closing this needs re-running the same spec with <span class="mono">--project=firefox</span>/<span class="mono">webkit</span>, not new test code.</p>
+      <p>Everything else in §3 is <strong>blocked</strong> (needs live grounding, specific test data, or a confirmed prerequisite), not structurally unreachable — the DOM elements are present, just not yet reliably interactable or confirmed.</p>
+    </div>
+  </section>
+
+  <!-- ================= MOVIE DETAILS PENDING ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 05</div>
+      <h2>Movie Details (TC_WEB_386–447) — pending</h2>
+    </div>
+    <div class="callout pending">
+      <p>This module is still executing as of this publish. Its <span class="mono">beforeEach</span> hook carries a 300-second per-test timeout (<span class="mono">testInfo.setTimeout(300_000)</span>, <span class="mono">movie-details.spec.ts:43</span>) because of a pre-documented systemic root cause: real UAT cinema/showtime data volatility (cinemas flip between real showtimes and "0 Shows" within minutes). This was already root-caused in the 2026-09-16 full-suite run (27 of that run's 82 failures, single systemic cause, environment/data volatility — not a product or test defect) and is reproducing identically in this pass's first several tests.</p>
+      <p>This page will be republished with final Movie Details numbers once the run completes.</p>
+    </div>
+  </section>
+
+  <!-- ================= BOTTOM LINE ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 06</div>
+      <h2>Bottom line (partial — pending Movie Details)</h2>
+    </div>
+    <div class="callout">
+      <ul>
+        <li><strong>113/170 (66%) of these 7 modules' live tests pass.</strong> One real bug — the Experience module's carousel-tile click, blocked by a permanent decorative overlay — was found and fixed in this pass across 4 tests, verified clean against <span class="mono">build</span> and <span class="mono">rules:check</span>.</li>
+        <li><strong>5 tests remain real, unresolved findings</strong>, all matching previously-documented, independently reproduced issues from the 2026-09-16 full-suite run — stable, not new regressions.</li>
+        <li><strong>52 skips:</strong> only 1 is genuinely out-of-scope (cross-browser config); the rest are blocked on live grounding, specific test data, Map View's own inconsistent reachability, or one confirmed regression (Events section removed from the homepage, 5 tests).</li>
+      </ul>
+    </div>
+    <footer class="note">
+      <span>Full per-test evidence (trace.zip / video.webm / screenshot) lives under <span class="mono">test-results/</span> from this run.</span>
+      <span>Source: <span class="mono">requirements/m4-sheet-execution-report-2026-09-22.md</span></span>
+    </footer>
+  </section>
+
+</div>

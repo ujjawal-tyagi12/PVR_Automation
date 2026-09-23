@@ -1,0 +1,19 @@
+{
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "allow": [
+      "Bash(npm *)",
+      "Bash(npx playwright *)",
+      "Bash(npx *)",
+      "Bash(node scripts/*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git branch*)"
+    ],
+    "deny": [
+      "Read(.env.local)",
+      "Read(**/.env.local)"
+    ]
+  }
+}

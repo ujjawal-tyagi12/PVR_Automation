@@ -1,0 +1,27 @@
+---
+title: Class Plan
+description: A walkthrough for teaching this AI-assisted Playwright workflow to a team.
+---
+
+## Audience
+
+QA/SDET engineers who know Playwright basics but haven't driven an agent-authored test suite before.
+
+## Duration
+
+~90 minutes, hands-on.
+
+## Outline
+
+1. **Architecture (10 min)** — walk `docs/ARCHITECTURE.html`: Pages → Modules → Tests, why the layering exists.
+2. **MCP grounding (15 min)** — show Playwright MCP and Chrome MCP producing an accessibility snapshot; contrast with a guessed selector that breaks.
+3. **Planner → Generator → Healer (20 min)** — live: feed a `requirements/{module}.md` to Planner, watch Generator write a page/module/spec trio, break something on purpose, watch Healer fix it.
+4. **Rule engine (10 min)** — run `npm run rules:check` clean, then violate a rule (call `page.locator()` from a module) and watch it fail.
+5. **Hands-on exercise (25 min)** — pairs pick a real flow in the target app, write `requirements/{flow}.md`, run the full loop themselves.
+6. **Review (10 min)** — run `/e2e-review` on the group's output; discuss findings.
+
+## Grading gate
+
+A submission is done when `npm run rules:check` and the new spec both pass — not before.
+
+See [10-slide-class-deck.mdx](./10-slide-class-deck.mdx) for slide-by-slide talking points.

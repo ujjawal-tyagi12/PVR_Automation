@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Architecture — PvrProject Automation Framework</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; line-height: 1.55; color: #1a1a1a; }
+  h1, h2 { border-bottom: 1px solid #e2e2e2; padding-bottom: 6px; }
+  pre { background: #f6f8fa; padding: 12px 16px; border-radius: 6px; overflow-x: auto; }
+  code { background: #f0f0f0; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; }
+  th { background: #f5f5f5; }
+</style>
+</head>
+<body>
+  <h1>Architecture</h1>
+
+  <h2>Layering</h2>
+  <pre>Tests (src/tests/*.spec.ts)
+  &rarr; Modules (src/modules/*Module.ts)
+    &rarr; Pages (src/pages/*Page.ts)</pre>
+  <p>Tests call modules and fixtures. Modules orchestrate one or more pages. Pages wrap Playwright's <code>Page</code> API. No layer calls past the one directly below it.</p>
+
+  <h2>Folders</h2>
+  <table>
+    <tr><th>Folder</th><th>Role</th></tr>
+    <tr><td><code>src/pages</code></td><td>Locators + thin actions, one class per screen/component</td></tr>
+    <tr><td><code>src/modules</code></td><td>User-facing workflows built from pages</td></tr>
+    <tr><td><code>src/tests</code></td><td>Specs — tagged, use <code>test.step()</code>, call modules/fixtures only</td></tr>
+    <tr><td><code>src/fixtures</code></td><td>Playwright fixtures wiring pages/modules/auth into <code>test</code></td></tr>
+    <tr><td><code>src/api</code></td><td>Typed REST clients for API-level setup/assertions</td></tr>
+    <tr><td><code>src/config</code></td><td>Environment-driven config (from <code>.env.local</code>)</td></tr>
+    <tr><td><code>src/testdata</code></td><td>Static fixtures/types for test data</td></tr>
+    <tr><td><code>src/utils</code></td><td>Logger, wait helpers, data generators, reporter</td></tr>
+  </table>
+
+  <h2>Quality gate</h2>
+  <p>The rule engine (<code>rules/framework-rule-engine.json</code> + <code>scripts/rule-engine.js</code>) enforces file placement, naming, and the constraints above. It runs via <code>npm run rules:check</code>, in <code>.husky/pre-commit</code> (staged files), and in CI (changed files).</p>
+
+  <h2>Claude Code integration</h2>
+  <p><code>.claude/skills/</code> ships five skills used by the colleague workflow: <code>setup-framework</code>, <code>generate-test-cases</code>, <code>create-md-ticket</code>, <code>playwright-mcp</code>, <code>e2e-review</code>. Playwright MCP is wired via the project <code>.mcp.json</code>; Chrome MCP comes from <code>claude --chrome</code>.</p>
+</body>
+</html>

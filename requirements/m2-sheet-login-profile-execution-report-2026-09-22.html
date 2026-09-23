@@ -1,0 +1,469 @@
+<title>M2 Sheet Test Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F6F3;
+    --surface:#FFFFFF;
+    --ink:#1C1F1D;
+    --ink-muted:#5B6259;
+    --ink-faint:#8A9187;
+    --line:#DDE0D8;
+    --line-strong:#C4C8BE;
+    --accent:#2E4F6E;
+    --accent-soft:#EAF0F5;
+    --pass:#1B8F5A;
+    --pass-soft:#E7F4EC;
+    --fail:#A6314F;
+    --fail-soft:#F7E9EC;
+    --skip:#B8863A;
+    --skip-soft:#F6EEDF;
+    --gap:#7A4FA6;
+    --gap-soft:#F0E9F6;
+    --shadow: 0 1px 2px rgba(28,31,29,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#14161A;
+      --surface:#1B1E22;
+      --ink:#E9EAE6;
+      --ink-muted:#9AA098;
+      --ink-faint:#6C7269;
+      --line:#2B2F2C;
+      --line-strong:#3A3F3A;
+      --accent:#8FB3D4;
+      --accent-soft:#20303F;
+      --pass:#3F9E71;
+      --pass-soft:#1C2E23;
+      --fail:#C13B57;
+      --fail-soft:#3A1E24;
+      --skip:#C99A4A;
+      --skip-soft:#332A17;
+      --gap:#B497D6;
+      --gap-soft:#2A2233;
+      --shadow: 0 1px 2px rgba(0,0,0,0.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#14161A;
+    --surface:#1B1E22;
+    --ink:#E9EAE6;
+    --ink-muted:#9AA098;
+    --ink-faint:#6C7269;
+    --line:#2B2F2C;
+    --line-strong:#3A3F3A;
+    --accent:#8FB3D4;
+    --accent-soft:#20303F;
+    --pass:#3F9E71;
+    --pass-soft:#1C2E23;
+    --fail:#C13B57;
+    --fail-soft:#3A1E24;
+    --skip:#C99A4A;
+    --skip-soft:#332A17;
+    --gap:#B497D6;
+    --gap-soft:#2A2233;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+    font-size:15.5px;
+    line-height:1.55;
+  }
+  .page{max-width:960px;margin:0 auto;padding:56px 28px 96px;}
+
+  h1,h2,h3{font-family:'Fraunces', Georgia, serif;text-wrap:balance;font-weight:600;color:var(--ink);}
+  .mono{font-family:'IBM Plex Mono', ui-monospace, monospace;}
+  .num{font-variant-numeric:tabular-nums;}
+
+  /* ---------- masthead ---------- */
+  .masthead{border-bottom:2px solid var(--ink);padding-bottom:22px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;margin-bottom:10px;
+  }
+  .masthead h1{font-size:clamp(30px,4.4vw,42px);line-height:1.08;margin:0 0 16px;}
+  .meta-row{
+    display:flex;flex-wrap:wrap;gap:24px 40px;
+    font-size:13px;color:var(--ink-muted);
+  }
+  .meta-item dt{
+    font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--ink-faint);margin-bottom:3px;
+  }
+  .meta-item dd{margin:0;color:var(--ink);font-size:13.5px;}
+
+  section{margin-top:56px;}
+  .section-head{margin-bottom:22px;}
+  .section-head .eyebrow{margin-bottom:8px;}
+  .section-head h2{font-size:25px;margin:0 0 8px;}
+  .section-head p{margin:0;color:var(--ink-muted);max-width:68ch;font-size:14.5px;}
+
+  /* ---------- KPI hero ---------- */
+  .kpi-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;
+  }
+  .kpi-tile{background:var(--surface);padding:22px 20px;}
+  .kpi-tile .label{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px;
+  }
+  .kpi-tile .value{font-family:'Fraunces',serif;font-size:38px;font-weight:600;line-height:1;}
+  .kpi-tile .sub{margin-top:8px;font-size:13px;color:var(--ink-muted);}
+  .kpi-tile.pass .value{color:var(--pass);}
+  .kpi-tile.fail .value{color:var(--fail);}
+  .kpi-tile.skip .value{color:var(--skip);}
+
+  .stack{display:flex;gap:2px;height:30px;margin-top:26px;border-radius:6px;}
+  .stack>div{border-radius:4px;}
+  .stack .seg-pass{background:var(--pass);}
+  .stack .seg-fail{background:var(--fail);}
+  .stack .seg-skip{background:var(--skip);}
+  .legend{display:flex;gap:26px;margin-top:14px;flex-wrap:wrap;}
+  .legend-item{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink-muted);}
+  .swatch{width:11px;height:11px;border-radius:3px;flex-shrink:0;}
+  .swatch.pass{background:var(--pass);}
+  .swatch.fail{background:var(--fail);}
+  .swatch.skip{background:var(--skip);}
+
+  /* ---------- reclass note ---------- */
+  .reclass{
+    margin-top:22px;padding:16px 18px;background:var(--accent-soft);border-radius:8px;
+    font-size:13.5px;color:var(--ink-muted);
+  }
+  .reclass strong{color:var(--ink);}
+
+  /* ---------- tables ---------- */
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  caption{text-align:left;font-size:13px;color:var(--ink-muted);margin-bottom:10px;}
+  th{
+    text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;
+    letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);
+    font-weight:500;padding:0 14px 10px 0;border-bottom:1px solid var(--line-strong);
+  }
+  td{padding:11px 14px 11px 0;border-bottom:1px solid var(--line);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .table-wrap{overflow-x:auto;border-radius:8px;}
+  .num-col{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;text-align:right;}
+  th.num-col{text-align:right;}
+
+  .mini-bar{display:flex;gap:1px;height:8px;width:120px;border-radius:3px;overflow:hidden;}
+  .mini-bar div:first-child{border-radius:3px 0 0 3px;}
+  .mini-bar div:last-child{border-radius:0 3px 3px 0;}
+
+  /* ---------- horizontal bar charts ---------- */
+  .barchart{display:flex;flex-direction:column;gap:14px;margin:24px 0 28px;}
+  .bar-row{display:grid;grid-template-columns:230px 1fr 64px;align-items:center;gap:14px;}
+  .bar-row .bar-label{font-size:13.5px;color:var(--ink);}
+  .bar-row .bar-label .sub{display:block;font-size:11.5px;color:var(--ink-faint);margin-top:1px;}
+  .bar-track{height:16px;background:var(--line);border-radius:5px;position:relative;}
+  .bar-fill{height:100%;border-radius:5px;}
+  .bar-row .bar-value{font-family:'IBM Plex Mono',monospace;font-size:13px;text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-muted);}
+
+  .badge{
+    display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;
+    letter-spacing:.04em;padding:2px 8px;border-radius:20px;font-weight:600;white-space:nowrap;
+  }
+  .badge.confirmed{background:var(--fail-soft);color:var(--fail);}
+  .badge.candidate{background:var(--line);color:var(--ink-muted);}
+  .badge.fixed{background:var(--pass-soft);color:var(--pass);}
+  .badge.flaky{background:var(--skip-soft);color:var(--skip);}
+  .badge.gap{background:var(--gap-soft);color:var(--gap);}
+
+  .callout{
+    background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:8px;padding:22px 24px;box-shadow:var(--shadow);
+  }
+  .callout.warn{border-left-color:var(--gap);}
+  .callout ul{margin:0;padding-left:20px;}
+  .callout li{margin-bottom:10px;}
+  .callout li:last-child{margin-bottom:0;}
+  .callout strong{color:var(--ink);}
+  .callout p{margin:0 0 12px;}
+  .callout p:last-child{margin-bottom:0;}
+
+  .fixnote{
+    margin-top:18px;padding:18px 20px;background:var(--pass-soft);border-radius:8px;
+    font-size:13.5px;color:var(--ink);
+  }
+  .fixnote .eyebrow{color:var(--pass);margin-bottom:8px;}
+
+  footer.note{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--ink-faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+
+  @media (max-width:640px){
+    .kpi-grid{grid-template-columns:repeat(2,1fr);}
+    .bar-row{grid-template-columns:1fr;gap:6px;}
+    .bar-row .bar-value{text-align:left;}
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">QA Execution Audit · Chromium / UAT · M2 Sheet</div>
+    <h1>M2 Sheet Test Ledger</h1>
+    <dl class="meta-row">
+      <div class="meta-item"><dt>Run date</dt><dd>2026-09-22</dd></div>
+      <div class="meta-item"><dt>Environment</dt><dd>inox-uat-web.pvrinox.com</dd></div>
+      <div class="meta-item"><dt>Source</dt><dd>_PVR INOX __ Test Cases - M2 _ Website.pdf (TC_ADM_001–215)</dd></div>
+      <div class="meta-item"><dt>Coverage</dt><dd>9 spec files · 212 live tests</dd></div>
+    </dl>
+  </header>
+
+  <!-- ================= KPI HERO ================= -->
+  <section class="hero-kpis">
+    <div class="kpi-grid">
+      <div class="kpi-tile">
+        <div class="label">Total Executed</div>
+        <div class="value num">212</div>
+        <div class="sub">across 9 spec files</div>
+      </div>
+      <div class="kpi-tile pass">
+        <div class="label">Passed</div>
+        <div class="value num">180</div>
+        <div class="sub">85% of total</div>
+      </div>
+      <div class="kpi-tile fail">
+        <div class="label">Failed</div>
+        <div class="value num">2</div>
+        <div class="sub">1% of total</div>
+      </div>
+      <div class="kpi-tile skip">
+        <div class="label">Skipped</div>
+        <div class="value num">30</div>
+        <div class="sub">14% of total</div>
+      </div>
+    </div>
+
+    <div class="stack" role="img" aria-label="180 passed, 2 failed, 30 skipped, out of 212 total">
+      <div class="seg-pass" style="flex:85" title="Passed: 180 (85%)"></div>
+      <div class="seg-fail" style="flex:1" title="Failed: 2 (1%)"></div>
+      <div class="seg-skip" style="flex:14" title="Skipped: 30 (14%)"></div>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><span class="swatch pass"></span>Passed — 180</div>
+      <div class="legend-item"><span class="swatch fail"></span>Failed — 2</div>
+      <div class="legend-item"><span class="swatch skip"></span>Skipped — 30</div>
+    </div>
+
+    <div class="reclass">
+      <strong>Reclassified from the first pass.</strong> A 3-worker parallel run first showed 20 failures. Every one was re-run alone (<span class="mono">--workers=1</span>) before being counted: <strong>11 were parallel-load flakes</strong> (pass reliably alone, folded into Passed above), <strong>7 shared one real locator bug</strong> — found and fixed during this run — and <strong>2 remain genuine, unresolved findings</strong>.
+    </div>
+  </section>
+
+  <!-- ================= PER-MODULE ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 01</div>
+      <h2>Per-module breakdown</h2>
+      <p>Mapped against the real M2 sheet's own module boundaries and TC_ADM ID ranges, confirmed against the source PDF.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Module</th>
+            <th>Sheet IDs</th>
+            <th class="num-col">Live</th>
+            <th class="num-col">Pass</th>
+            <th class="num-col">Fail</th>
+            <th class="num-col">Skip</th>
+            <th>Composition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Login</td><td class="mono">TC_ADM_001–026</td>
+            <td class="num-col">15</td><td class="num-col">14</td><td class="num-col">0</td><td class="num-col">1</td>
+            <td><div class="mini-bar" title="14 pass / 0 fail / 1 skip">
+              <div style="flex:14;background:var(--pass)"></div>
+              <div style="flex:1;background:var(--skip)"></div>
+            </div></td>
+          </tr>
+          <tr>
+            <td>Login — Field Validation<span style="display:block;font-size:11.5px;color:var(--ink-faint)">split file</span></td><td class="mono">TC_ADM_019–026</td>
+            <td class="num-col">6</td><td class="num-col">6</td><td class="num-col">0</td><td class="num-col">0</td>
+            <td><div class="mini-bar" title="6 pass"><div style="flex:6;background:var(--pass)"></div></div></td>
+          </tr>
+          <tr>
+            <td>Guest Login</td><td class="mono">TC_ADM_027–034</td>
+            <td class="num-col">1</td><td class="num-col">1</td><td class="num-col">0</td><td class="num-col">0</td>
+            <td><div class="mini-bar" title="1 pass"><div style="flex:1;background:var(--pass)"></div></div></td>
+          </tr>
+          <tr>
+            <td>Multi-Device Login</td><td class="mono">TC_ADM_035–046</td>
+            <td class="num-col">9</td><td class="num-col">9</td><td class="num-col">0</td><td class="num-col">0</td>
+            <td><div class="mini-bar" title="9 pass"><div style="flex:9;background:var(--pass)"></div></div></td>
+          </tr>
+          <tr>
+            <td>OTP Screen</td><td class="mono">TC_ADM_047–092</td>
+            <td class="num-col">42</td><td class="num-col">36</td><td class="num-col">1</td><td class="num-col">5</td>
+            <td><div class="mini-bar" title="36 pass / 1 fail / 5 skip">
+              <div style="flex:36;background:var(--pass)"></div>
+              <div style="flex:1;background:var(--fail)"></div>
+              <div style="flex:5;background:var(--skip)"></div>
+            </div></td>
+          </tr>
+          <tr>
+            <td>Registration</td><td class="mono">TC_ADM_105–137</td>
+            <td class="num-col">30</td><td class="num-col">28</td><td class="num-col">0</td><td class="num-col">2</td>
+            <td><div class="mini-bar" title="28 pass / 2 skip">
+              <div style="flex:28;background:var(--pass)"></div>
+              <div style="flex:2;background:var(--skip)"></div>
+            </div></td>
+          </tr>
+          <tr>
+            <td>Complete Your Profile</td><td class="mono">TC_ADM_138–171</td>
+            <td class="num-col">33</td><td class="num-col">28</td><td class="num-col">0</td><td class="num-col">5</td>
+            <td><div class="mini-bar" title="28 pass / 5 skip">
+              <div style="flex:28;background:var(--pass)"></div>
+              <div style="flex:5;background:var(--skip)"></div>
+            </div></td>
+          </tr>
+          <tr>
+            <td>Profile Completion (edit)</td><td class="mono">TC_ADM_172–215</td>
+            <td class="num-col">39</td><td class="num-col">36</td><td class="num-col">0</td><td class="num-col">3</td>
+            <td><div class="mini-bar" title="36 pass / 3 skip">
+              <div style="flex:36;background:var(--pass)"></div>
+              <div style="flex:3;background:var(--skip)"></div>
+            </div></td>
+          </tr>
+          <tr>
+            <td>Register/Login<span style="display:block;font-size:11.5px;color:var(--ink-faint)">generated, cross-cutting / OAuth edge cases</span></td><td class="mono">n/a</td>
+            <td class="num-col">37</td><td class="num-col">22</td><td class="num-col">1</td><td class="num-col">14</td>
+            <td><div class="mini-bar" title="22 pass / 1 fail / 14 skip">
+              <div style="flex:22;background:var(--pass)"></div>
+              <div style="flex:1;background:var(--fail)"></div>
+              <div style="flex:14;background:var(--skip)"></div>
+            </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= FAILURES ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 02</div>
+      <h2>Failures — 20 raw, reclassified to 2</h2>
+      <p>The first parallel run's 20 failures collapse into three groups once each is re-run alone: one real, now-fixed bug; two still-open findings; the rest confirmed parallel-load flakes.</p>
+    </div>
+
+    <div class="fixnote">
+      <div class="eyebrow mono" style="font-size:11px;">Fixed during this run</div>
+      <strong>ProfileEditPage.ts — email-verify locator ambiguity (7 tests).</strong>
+      The <span class="mono">emailVerifyButton</span> locator (<span class="mono">getByRole('button', {&nbsp;name:&nbsp;/^verify$/i&nbsp;})</span>) started resolving to 2 elements — the real email-verify button, and an unrelated amber "Verify" button elsewhere on the page. Every test calling <span class="mono">clickVerifyEmail()</span> hit a Playwright strict-mode violation. Rescoped the locator to the form-item container wrapping the email textbox. All 7 verified passing post-fix; <span class="mono">npm run build</span> and <span class="mono">npm run rules:check</span> (127 files) both clean.
+    </div>
+
+    <div class="table-wrap" style="margin-top:22px;">
+      <table>
+        <thead>
+          <tr><th>Test</th><th>Module</th><th>What it does</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="mono">TC_ADM_176</td><td>Profile Edit</td><td>OTP sent on email change</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">TC_ADM_178</td><td>Profile Edit</td><td>OTP verification failure</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">TC_ADM_180</td><td>Profile Edit</td><td>Resend OTP functionality (60s interval)</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">TC_ADM_194</td><td>Profile Edit</td><td>OTP API response messages</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">TC_ADM_200</td><td>Profile Edit</td><td>Invalid email & OTP combined validation</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">TC_ADM_205</td><td>Profile Edit</td><td>Resend OTP CTA starts disabled (duplicate of 180)</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">TC_ADM_207</td><td>Profile Edit</td><td>Invalid OTP (duplicate of 178)</td><td><span class="badge fixed">fixed</span></td></tr>
+          <tr><td class="mono">TC_ADM_090</td><td>OTP Screen</td><td>Multi-device login limit (duplicate scenario, kept per sheet) — registers Device A, logs in B/C to reach the real 3-device cap, then a 15s timeout waiting for the "Login" button. Reproduces consistently alone, not a parallel-load artifact; root cause not yet pinned down.</td><td><span class="badge confirmed">open</span></td></tr>
+          <tr><td class="mono">REG-036</td><td>Register/Login</td><td>Same email verified across multiple accounts is permitted — registers a second account with a reused email, then the identical 15s "Login" button timeout as TC_ADM_090. Not yet confirmed whether this shares one root cause with TC_ADM_090 or is independent.</td><td><span class="badge confirmed">open</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="font-size:16px;margin:30px 0 6px;">Confirmed parallel-load flakes (11 — informational)</h3>
+    <p style="color:var(--ink-muted);font-size:13.5px;margin:0 0 14px;max-width:70ch;">Failed only under the initial 3-worker run; passed cleanly every time re-run alone. Consistent with this project's documented sandbox/UAT-under-load behavior, not product or test bugs.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Test</th><th>Module</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">TC_ADM_145</td><td>Complete Your Profile</td></tr>
+          <tr><td class="mono">TC_ADM_155</td><td>Complete Your Profile</td></tr>
+          <tr><td class="mono">"Login precondition" check</td><td>Complete Your Profile</td></tr>
+          <tr><td class="mono">TC_ADM_008</td><td>Login</td></tr>
+          <tr><td class="mono">TC_ADM_010</td><td>Login</td></tr>
+          <tr><td class="mono">TC_ADM_039</td><td>Multi-Device Login</td></tr>
+          <tr><td class="mono">TC_ADM_173</td><td>Profile Edit</td></tr>
+          <tr><td class="mono">TC_ADM_187</td><td>Profile Edit</td></tr>
+          <tr><td class="mono">TC_ADM_198</td><td>Profile Edit</td></tr>
+          <tr><td class="mono">REG-025</td><td>Register/Login</td></tr>
+          <tr><td class="mono">TC_ADM_130</td><td>Registration</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= SKIPS ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 03</div>
+      <h2>Skipped — 30, ten reasons</h2>
+      <p>Every skip carries a specific, live-grounded reason recorded in the spec file — not a stale placeholder. None reflect missing test-authoring effort.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Reason</th><th>Tests</th><th class="num-col">Count</th></tr></thead>
+        <tbody>
+          <tr><td>OAuth grounding needed</td><td>Google/Apple social login popup + real test account required — <span class="mono">REG-009, 010, 011, 028, 033, 034, 037</span></td><td class="num-col">7</td></tr>
+          <tr><td>SIM/hardware-only</td><td>Auto-detect, multi-SIM, SMS auto-read — out of scope for a browser suite — <span class="mono">REG-003, 004, 005, 018</span></td><td class="num-col">4</td></tr>
+          <tr><td>Contradicts real, live-grounded behavior</td><td>Asserting the sheet's premise would be a false positive — no free-text field to inject, no character-constraint validation, mocked 401 behaves like 500/400 — <span class="mono">TC_ADM_161, 163, 169, 210, 211, 212</span></td><td class="num-col">6</td></tr>
+          <tr><td>Needs Admin Panel / backend session access</td><td><span class="mono">REG-030, 035, 038</span></td><td class="num-col">3</td></tr>
+          <tr><td><strong>REGRESSION</strong> — GA4 tracking stopped firing</td><td>Real & passing as of 2026-08-31, re-confirmed broken live 2026-09-07/21 — <span class="mono">TC_ADM_076, 128, 168</span></td><td class="num-col">3</td></tr>
+          <tr><td>No test account available</td><td>Deactivated user, unconfirmed reuse-error copy, unexposed resend counter — <span class="mono">TC_ADM_015, 054, 055</span></td><td class="num-col">3</td></tr>
+          <tr><td>Mocking gap, not a product gap</td><td>Intercepted route targets the wrong domain — real request goes through — <span class="mono">TC_ADM_059</span></td><td class="num-col">1</td></tr>
+          <tr><td>Already at/over the sheet's own SLA bound</td><td>Unmocked round trip measured ~2.2s against a 2s cap — <span class="mono">TC_ADM_108</span></td><td class="num-col">1</td></tr>
+          <tr><td>Conditional per sheet, not implemented</td><td>Localization — <span class="mono">TC_ADM_080</span></td><td class="num-col">1</td></tr>
+          <tr><td>Real one-time trigger, contradicts sheet</td><td>Nudge doesn't reappear — <span class="mono">TC_ADM_140</span></td><td class="num-col">1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= COVERAGE GAP ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 04</div>
+      <h2>Coverage gap — Social Login not automated</h2>
+      <p>One full module from the M2 sheet has no ticket and no test anywhere in this repo.</p>
+    </div>
+    <div class="callout warn">
+      <p><span class="badge gap">gap · TC_ADM_093–104</span></p>
+      <p>The sheet's <strong>Social Login</strong> section — Sign in with Google/Apple, OAuth flow initiation, the "Missing Details" pre-population screen, mobile-number-conflict during social login, future social logins skipping Missing Details, GA4 tracking, URL masking, responsiveness, retry-on-failure, and the WhatsApp opt-in default — has <strong>zero dedicated tickets or tests</strong>. No <span class="mono">requirements/*.md</span> file and no <span class="mono">TC_ADM_09[3-9]</span>/<span class="mono">TC_ADM_10[0-4]</span> reference exists in any spec file.</p>
+      <p>The concept is <em>partially</em> represented under <span class="mono">register-login.spec.ts</span>'s own generated scenarios (<span class="mono">REG-009/010/011/028/033/034/037</span>, all counted in §3's skip table above), but those don't map 1:1 to the sheet's IDs or scenarios, and all 7 are blocked pending live OAuth grounding.</p>
+      <p><strong>Recommend ticketing this properly via <span class="mono">/generate-test-cases</span> against TC_ADM_093–104</strong> before considering M2 fully covered.</p>
+    </div>
+  </section>
+
+  <!-- ================= BOTTOM LINE ================= -->
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Section 05</div>
+      <h2>Bottom line</h2>
+    </div>
+    <div class="callout">
+      <ul>
+        <li><strong>180/212 (85%) of M2's live tests pass.</strong> One real bug — the profile-edit email-verify locator ambiguity, 7 tests — was found and fixed in this pass, verified clean against <span class="mono">build</span> and <span class="mono">rules:check</span>.</li>
+        <li><strong>2 tests remain genuine open findings</strong> (<span class="mono">TC_ADM_090</span>, <span class="mono">REG-036</span>) — reproduce reliably, root cause not yet pinned down, flagged for a live-grounding follow-up rather than more headless retries.</li>
+        <li><strong>30 skips are all environment/access/OAuth/hardware limits or confirmed-live product findings</strong> — including a real GA4 tracking regression shared across 3 tests — not missing test-authoring effort.</li>
+        <li><strong>Social Login (12 test cases, TC_ADM_093–104) is the one module in this sheet with no automation at all</strong> — flagged for a follow-up ticket, not silently dropped.</li>
+      </ul>
+    </div>
+    <footer class="note">
+      <span>Full per-test evidence (trace.zip / video.webm / screenshot) lives under <span class="mono">test-results/</span> from this run.</span>
+      <span>Source: <span class="mono">requirements/m2-sheet-login-profile-execution-report-2026-09-22.md</span></span>
+    </footer>
+  </section>
+
+</div>

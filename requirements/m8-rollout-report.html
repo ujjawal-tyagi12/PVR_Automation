@@ -1,0 +1,275 @@
+<title>M8 Rollout Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F6F3; --surface:#FFFFFF; --ink:#1C1F1D; --ink-muted:#5B6259; --ink-faint:#8A9187;
+    --line:#DDE0D8; --line-strong:#C4C8BE; --accent:#2E4F6E; --accent-soft:#EAF0F5;
+    --pass:#1B8F5A; --pass-soft:#E7F4EC; --fail:#A6314F; --fail-soft:#F7E9EC;
+    --skip:#B8863A; --skip-soft:#F6EEDF; --shadow:0 1px 2px rgba(28,31,29,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#14161A; --surface:#1B1E22; --ink:#E9EAE6; --ink-muted:#9AA098; --ink-faint:#6C7269;
+      --line:#2B2F2C; --line-strong:#3A3F3A; --accent:#8FB3D4; --accent-soft:#20303F;
+      --pass:#3F9E71; --pass-soft:#1C2E23; --fail:#C13B57; --fail-soft:#3A1E24;
+      --skip:#C99A4A; --skip-soft:#332A17; --shadow:0 1px 2px rgba(0,0,0,0.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#14161A; --surface:#1B1E22; --ink:#E9EAE6; --ink-muted:#9AA098; --ink-faint:#6C7269;
+    --line:#2B2F2C; --line-strong:#3A3F3A; --accent:#8FB3D4; --accent-soft:#20303F;
+    --pass:#3F9E71; --pass-soft:#1C2E23; --fail:#C13B57; --fail-soft:#3A1E24;
+    --skip:#C99A4A; --skip-soft:#332A17; --shadow:0 1px 2px rgba(0,0,0,0.4);
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:15.5px;line-height:1.55;}
+  .page{max-width:920px;margin:0 auto;padding:56px 28px 96px;}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;text-wrap:balance;font-weight:600;color:var(--ink);}
+  .mono{font-family:'IBM Plex Mono',ui-monospace,monospace;}
+  .num{font-variant-numeric:tabular-nums;}
+  .masthead{border-bottom:2px solid var(--ink);padding-bottom:22px;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px;}
+  .masthead h1{font-size:clamp(30px,4.4vw,42px);line-height:1.08;margin:0 0 16px;}
+  .meta-row{display:flex;flex-wrap:wrap;gap:24px 40px;font-size:13px;color:var(--ink-muted);}
+  .meta-item dt{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:3px;}
+  .meta-item dd{margin:0;color:var(--ink);font-size:13.5px;}
+  section{margin-top:56px;}
+  .section-head{margin-bottom:22px;}
+  .section-head .eyebrow{margin-bottom:8px;}
+  .section-head h2{font-size:25px;margin:0 0 8px;}
+  .section-head p{margin:0;color:var(--ink-muted);max-width:66ch;font-size:14.5px;}
+  .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .kpi-tile{background:var(--surface);padding:22px 20px;}
+  .kpi-tile .label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px;}
+  .kpi-tile .value{font-family:'Fraunces',serif;font-size:36px;font-weight:600;line-height:1;}
+  .kpi-tile .sub{margin-top:8px;font-size:13px;color:var(--ink-muted);}
+  .kpi-tile.pass .value{color:var(--pass);}
+  .kpi-tile.skip .value{color:var(--skip);}
+  table{width:100%;border-collapse:collapse;font-size:14px;}
+  th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;padding:0 14px 10px 0;border-bottom:1px solid var(--line-strong);}
+  td{padding:11px 14px 11px 0;border-bottom:1px solid var(--line);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .table-wrap{overflow-x:auto;border-radius:8px;}
+  .num-col{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;text-align:right;}
+  th.num-col{text-align:right;}
+  .mini-bar{display:flex;gap:1px;height:9px;width:130px;border-radius:3px;overflow:hidden;}
+  .mini-bar div:first-child{border-radius:3px 0 0 3px;}
+  .mini-bar div:last-child{border-radius:0 3px 3px 0;}
+  .badge{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.04em;padding:2px 9px;border-radius:20px;font-weight:600;}
+  .badge.pass{background:var(--pass-soft);color:var(--pass);}
+  .badge.skip{background:var(--skip-soft);color:var(--skip);}
+  .badge.fail{background:var(--fail-soft);color:var(--fail);}
+  .timeline{border-left:2px solid var(--line-strong);margin-left:6px;padding-left:24px;display:flex;flex-direction:column;gap:22px;}
+  .tl-item{position:relative;}
+  .tl-item::before{content:'';position:absolute;left:-30.5px;top:4px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid var(--paper);}
+  .tl-item .tl-time{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:4px;}
+  .tl-item .tl-body{font-size:14.5px;color:var(--ink);}
+  .tl-item .tl-body strong{color:var(--ink);}
+  .callout{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:22px 24px;box-shadow:var(--shadow);}
+  .callout ul{margin:0;padding-left:20px;}
+  .callout li{margin-bottom:10px;}
+  .callout li:last-child{margin-bottom:0;}
+  .callout strong{color:var(--ink);}
+  .verdict-strip{display:flex;align-items:center;gap:14px;background:var(--pass-soft);border:1px solid var(--pass);border-radius:8px;padding:16px 20px;margin-bottom:22px;}
+  .verdict-strip .verdict-label{font-family:'Fraunces',serif;font-weight:600;font-size:17px;color:var(--pass);}
+  .verdict-strip .verdict-sub{font-size:13.5px;color:var(--ink-muted);}
+  footer.note{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  @media (max-width:640px){ .kpi-grid{grid-template-columns:repeat(2,1fr);} }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">Test Automation Progress · M8 | Website</div>
+    <h1>M8 Rollout Ledger</h1>
+    <dl class="meta-row">
+      <div class="meta-item"><dt>Session</dt><dd>2026-09-16</dd></div>
+      <div class="meta-item"><dt>Source</dt><dd>_PVR INOX __ Test Cases .xlsx → M8 | Website</dd></div>
+      <div class="meta-item"><dt>Scope</dt><dd>3 pending modules: Corporate Booking, Bulk Gift Card, Avatar</dd></div>
+      <div class="meta-item"><dt>Coverage</dt><dd>Complete — 81 sheet rows seeded</dd></div>
+    </dl>
+  </header>
+
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Starting point</div>
+      <h2>M8 sheet coverage before this session</h2>
+      <p>Of the 9 modules in the M8 | Website sheet (TC_Web_1–370), 6 were already automated. This session's job was the remaining 3.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Module</th><th>TC_Web range</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>About Us</td><td class="mono">1–51</td><td><span class="badge pass">automated</span></td></tr>
+          <tr><td>Legal Content</td><td class="mono">52–96</td><td><span class="badge pass">automated</span></td></tr>
+          <tr><td>FAQs</td><td class="mono">97–125</td><td><span class="badge pass">automated</span></td></tr>
+          <tr><td>News</td><td class="mono">126–170</td><td><span class="badge pass">automated</span></td></tr>
+          <tr><td>Investor Section</td><td class="mono">171–229</td><td><span class="badge pass">automated</span></td></tr>
+          <tr><td>Careers</td><td class="mono">230–289</td><td><span class="badge pass">automated</span></td></tr>
+          <tr><td><strong>Corporate Booking</strong></td><td class="mono">290–327</td><td><span class="badge skip">this session</span></td></tr>
+          <tr><td><strong>Bulk Gift Card</strong></td><td class="mono">328–354</td><td><span class="badge skip">this session</span></td></tr>
+          <tr><td><strong>Avatar</strong></td><td class="mono">355–370</td><td><span class="badge skip">this session</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">What got built</div>
+      <h2>Tickets → code → review</h2>
+      <p>Each module went through the full pipeline: <span class="mono">/create-md-ticket</span> → live grounding → Page/Module/Spec generation → <span class="mono">/e2e-review</span> → fixes.</p>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi-tile">
+        <div class="label">Scenarios seeded</div>
+        <div class="value num">81</div>
+        <div class="sub">across 3 approved tickets</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="label">Files created</div>
+        <div class="value num">10</div>
+        <div class="sub">3 Pages, 3 Modules, 3 Specs, 1 mock util</div>
+      </div>
+      <div class="kpi-tile pass">
+        <div class="label">Live tests passing</div>
+        <div class="value num">22<span style="font-size:20px;color:var(--ink-faint);">/23</span></div>
+        <div class="sub">up from 15/16 after a second grounding pass</div>
+      </div>
+      <div class="kpi-tile skip">
+        <div class="label">Fixme (pending)</div>
+        <div class="value num">63</div>
+        <div class="sub">down from 70 — 7 converted to real, passing tests</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Per-module detail</div>
+      <h2>Grounding depth varies by module</h2>
+      <p>Corporate Booking and Bulk Gift Card were grounded live against real UAT DOM. Avatar was seeded from the sheet only — its UI has not been observed yet.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Module</th><th>Real route</th><th class="num-col">Live</th><th class="num-col">Fixme</th><th>Composition</th><th>Grounding</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Corporate Booking</td>
+            <td class="mono">/corporate-booking</td>
+            <td class="num-col">5</td><td class="num-col">34</td>
+            <td><div class="mini-bar" title="5 live / 34 fixme">
+              <div style="flex:5;background:var(--pass)"></div>
+              <div style="flex:34;background:var(--skip)"></div>
+            </div></td>
+            <td>Step 1 grounded; step 2 (OTP/submit) not reached</td>
+          </tr>
+          <tr>
+            <td>Bulk Gift Card</td>
+            <td class="mono">/bulk-gift-cards</td>
+            <td class="num-col">17</td><td class="num-col">13</td>
+            <td><div class="mini-bar" title="17 live / 13 fixme">
+              <div style="flex:17;background:var(--pass)"></div>
+              <div style="flex:13;background:var(--skip)"></div>
+            </div></td>
+            <td>Form + OTP drawer + real validation messages grounded; OTP verification itself blocked (Server Action)</td>
+          </tr>
+          <tr>
+            <td>Avatar</td>
+            <td class="mono">n/a (Edit Profile section)</td>
+            <td class="num-col">1</td><td class="num-col">16</td>
+            <td><div class="mini-bar" title="1 live / 16 fixme">
+              <div style="flex:1;background:var(--pass)"></div>
+              <div style="flex:16;background:var(--skip)"></div>
+            </div></td>
+            <td>Not grounded — precondition (login → Edit Profile) only</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">/e2e-review outcome</div>
+      <h2>Approve with nits</h2>
+    </div>
+    <div class="verdict-strip">
+      <span class="verdict-label">✓ Approve with nits</span>
+      <span class="verdict-sub">Architecture clean · rule engine 0 violations · 1 coverage gap found and fixed</span>
+    </div>
+    <div class="callout">
+      <ul>
+        <li><strong>Fixed:</strong> 3 approved Bulk Gift Card scenarios (BGC-022/023/024) had been silently dropped from the spec — added back as real tests, now passing.</li>
+        <li><strong>Fixed:</strong> a stray <span class="mono">@P3</span> tag (this repo only uses P0–P2) and missing <span class="mono">@Regression</span> suite tags on all three <span class="mono">describe()</span> blocks.</li>
+        <li><strong>Flagged, not yet fixed:</strong> a handful of guessed locators (XPath in Corporate Booking's combobox triggers, positional CSS in Avatar's gallery tiles) — both already self-documented as TODO(heal) in the source, pending a deeper grounding pass.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">What actually happened</div>
+      <h2>Execution timeline</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-time">First run</div>
+        <div class="tl-body"><strong>10 of 13</strong> real tests passed on first execution — solid proof the grounded locators were correct.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">Then</div>
+        <div class="tl-body">Two immediate re-runs degraded to <strong>0/13</strong>, then <strong>1/13</strong>, with zero code changes in between — a signal something external had shifted.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">Diagnosis</div>
+        <div class="tl-body">A direct health check (real headless page load, not just <span class="mono">curl</span>) showed the entire UAT site — including the homepage and the long-stable <span class="mono">/career</span> page — rendering completely blank. A live, sitewide outage, not a code issue.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">Fix</div>
+        <div class="tl-body">User pointed to a working alternate host (<span class="mono">inox-uat-web.pvrinox.com</span>). Confirmed live, then re-ran with <span class="mono">UAT_BASE_URL</span> overridden to it.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">Result</div>
+        <div class="tl-body"><strong>15 of 16</strong> real tests passed (single worker, to remove parallel-load contention). The one remaining failure sits in pre-existing <span class="mono">RegisterLoginModule</span> code, unrelated to this session's new work.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">Confirmed</div>
+        <div class="tl-body">Re-ran the full batch a second time from a clean state — <strong>identical result</strong> (5/5 Corporate Booking, 10/10 Bulk Gift Card, 0/1 Avatar). Not a fluke — this is the stable, repeatable baseline for all three modules.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">Second grounding pass</div>
+        <div class="tl-body">Went back to close the fixme gap on Bulk Gift Card. Filling the form and clicking Get OTP for real surfaced: exact <span class="mono">maxlength</span> attributes (100/100/500 — all match the sheet), the real "Verify Phone Number" OTP drawer, and — unprompted — the real inline validation messages ("Please enter a valid name/email/phone number."). Converted 7 <span class="mono">fixme</span> scenarios to real, passing tests from this one pass.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">New finding</div>
+        <div class="tl-body">The Get-OTP request is a <strong>Next.js Server Action</strong> (POST to the page's own URL), not a REST <span class="mono">/api/...</span> call. <span class="mono">CorporateFormsMock.ts</span>'s pattern-matching approach can't intercept it — flagged clearly rather than risk a real OTP send by guessing further. One harmless real OTP was sent to a fake test number (<span class="mono">9876543210</span>) to confirm this.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="eyebrow">Next steps</div>
+      <h2>Known gaps</h2>
+    </div>
+    <div class="callout">
+      <ul>
+        <li><strong>Server Action interception</strong> — both Corporate Booking's and Bulk Gift Card's OTP-send are Next.js Server Actions, not REST calls. 13 Bulk Gift Card scenarios (and all of Corporate Booking's step-2 OTP/submit scenarios) stay blocked until this is solved — either a POST-to-same-URL interception strategy, or accepting a real (fake-number) OTP send as the tested boundary.</li>
+        <li><strong>Corporate Booking step 2</strong> (contact fields, success popup) — still not reached; needs City/Cinema/Date/Movie Type combobox interactions grounded first to get past step 1.</li>
+        <li><strong>Avatar's entire UI</strong> (View/Edit, gallery, tile selection) — seeded from the sheet only, zero live observation yet.</li>
+        <li><strong><span class="mono">AVT-000</span> login failure</strong> — pre-existing <span class="mono">RegisterLoginModule</span> code hit a blank screen after the login-panel click sequence; worth its own investigation, separate from this rollout.</li>
+        <li><strong>Persist the working host</strong> — add <span class="mono">UAT_BASE_URL=https://inox-uat-web.pvrinox.com/</span> to <span class="mono">.env.local</span> so future runs don't need a manual override.</li>
+      </ul>
+    </div>
+    <footer class="note">
+      <span>Tickets: <span class="mono">requirements/{corporate-booking,bulk-gift-card,avatar}.md</span></span>
+      <span>Code: <span class="mono">src/{pages,modules,tests}/*</span> + <span class="mono">src/utils/CorporateFormsMock.ts</span></span>
+    </footer>
+  </section>
+
+</div>
