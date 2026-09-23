@@ -3,7 +3,7 @@
 **Run:** chromium, UAT (`inox-uat-web.pvrinox.com`), 2026-09-22. Real, tool-executed run (8 spec
 files, run in two batches — `movie-details.spec.ts` separately given its known long per-test
 timeout), with every failure isolate-retried (`--workers=1`) before being counted as real vs.
-parallel-load flaky.
+parallel-load flaky. **Complete — all 8 modules finished.**
 
 **Source:** `_PVR INOX __ Test Cases - M4 / Website.pdf` (TC_WEB_001–447) — confirmed against the
 sheet the user pasted into this session. Module boundaries per the sheet itself: Global Search
@@ -19,20 +19,19 @@ Spec files: `global-search.spec.ts`, `event-listing.spec.ts`, `event-details.spe
 
 ## 1. Headline numbers
 
-*(Movie Details section below is being compiled separately — it reproduces a known, extensively
-pre-documented systemic issue with a 300s-per-test timeout; see §5.)*
-
-| Metric | 7 modules (excl. Movie Details) |
+| Metric | All 8 modules |
 |---|---:|
-| Total live test cases run | **170** |
-| **Passed** (after isolation re-check + fixes) | **113** (66%) |
-| **Failed** (real, after isolation re-check) | **5** (3%) |
-| **Skipped** (`test.fixme()` / runtime `test.skip()`) | **52** (31%) |
+| Total live test cases run | **207** |
+| **Passed** (after isolation re-check + fixes) | **113** (55%) |
+| **Failed** (real, after isolation re-check) | **32** (15%) |
+| **Skipped** (`test.fixme()` / runtime `test.skip()`) | **62** (30%) |
 
-First pass (3 parallel workers) showed 13 failures. Isolation re-runs split them: **3 were
-parallel-load flakes**, **4 shared one real, now-fixed locator bug** (§2.1), **2 converted to a
-genuine runtime data-volatility skip** (not fixable by test changes), and **5 remain real,
-unresolved findings** — 4 of which match previously-documented, independently-reproduced issues.
+**27 of the 32 failures are Movie Details, one single systemic cause — not 27 separate defects**
+(see §2.5). Excluding Movie Details, the other 7 modules land at 113/170 pass (66%), 5/170 fail
+(3%). First pass (3 parallel workers) on the other 7 modules showed 13 failures; isolation
+re-runs split them: **3 were parallel-load flakes**, **4 shared one real, now-fixed locator bug**
+(§2.1), **2 converted to a genuine runtime data-volatility skip** (not fixable by test changes),
+and **5 remain real, unresolved findings** matching previously-documented issues.
 
 ### Per-module breakdown
 
@@ -45,8 +44,8 @@ unresolved findings** — 4 of which match previously-documented, independently-
 | Experience — Visual | TC_WEB_081–120 | 29 | 25 | 1 | 3 |
 | Home Screen | TC_WEB_121–303 | 27 | 20 | 4 | 3 |
 | Cinemas Listing & Detail | TC_WEB_304–385 | 59 | 31 | 0 | 28 |
-| **Subtotal** | | **170** | **113** | **5** | **52** |
-| Movie Details | TC_WEB_386–447 | *pending* | | | |
+| Movie Details | TC_WEB_386–447 | 37 | 0 | 27 | 10 |
+| **Total** | | **207** | **113** | **32** | **62** |
 
 ---
 
@@ -141,28 +140,54 @@ the DOM, just not yet reliably interactable/confirmed.
 
 ---
 
-## 5. Movie Details (TC_WEB_386–447) — pending
+## 5. Movie Details (TC_WEB_386–447) — 0 pass / 27 fail / 10 skip
 
-This module is still executing as of this report's compilation. Its `beforeEach` hook is
-configured with a 300-second per-test timeout (`testInfo.setTimeout(300_000)`,
-`movie-details.spec.ts` line 43) specifically because of a **pre-documented systemic root
-cause**: real UAT cinema/showtime data volatility (cinemas flip between real showtimes and "0
-Shows" within minutes). This was already root-caused in the 2026-09-16 full-suite run (27 of that
-run's 82 failures, single systemic cause, environment/data volatility — not a product or test
-defect) and is reproducing identically in this pass's first several tests.
+### 2.5 All 27 failures: one systemic cause, not 27 defects
 
-*Update in progress — final Movie Details numbers and any newly-surfaced findings will be appended
-once the run completes.*
+Its `beforeEach` hook is configured with a 300-second per-test timeout
+(`testInfo.setTimeout(300_000)`, `movie-details.spec.ts` line 43) specifically because of a
+**pre-documented systemic root cause**: real UAT cinema/showtime data volatility (cinemas flip
+between real showtimes and "0 Shows" within minutes). This was already root-caused in the
+2026-09-16 full-suite run (27 of that run's 82 failures, single systemic cause, environment/data
+volatility — not a product or test defect). This pass **reproduced it identically**: every one of
+the 27 live tests (MOV-001, 004, 006, 008–010, 013–016, 018, 019, 021–025, 027, 028, 030–032,
+036, 038, 039, 046, 047) timed out at ~5.2–10 min in its `beforeEach` hook before the test body
+ever ran, with no distinct assertion failure of its own. No new findings — this confirms the
+known issue is still live, nothing more.
+
+**Not fixable by test-code changes**: the timeout is already the maximum practical wait for real,
+unmocked cinema data to stabilize; the actual blocker is the live UAT environment's showtime data
+itself flipping state faster than a page load completes. Resolving this needs either a stable
+UAT test-data seed (a cinema/movie combination guaranteed to keep real showtimes for the test's
+duration) or mocking the showtime API for this module specifically — both are environment/data
+decisions, not something to automate around.
+
+### Skipped (10) — by reason
+
+| Reason | Tests |
+|---|---|
+| Depends on MOV-002/003 (open-from-cinema-listing / open-from-experience), themselves blocked on the same live-data volatility | MOV-029, MOV-037 |
+| Live data volatility — required chain/state not reproducible this pass | MOV-002, MOV-003 |
+| No popups triggered for the anchor movie/cinema combination during grounding — needs different test data | MOV-041, MOV-042, MOV-043 |
+| Re-grounded: a real Distance filter does exist (corrects an earlier "no mechanism" premise), but reaching a genuinely exhausted-range state needs slider manipulation + known cinema-distance test data, neither attempted this pass | MOV-044, MOV-045 |
+| No distinct "submit preference" failure API exists to mock — indistinguishable from a generic page-load failure | MOV-020 |
 
 ---
 
-## 6. Bottom line (partial — pending Movie Details)
+## 6. Bottom line
 
-- **113/170 (66%) of these 7 modules' live tests pass.** One real bug — the Experience module's
-  carousel-tile click, blocked by a permanent decorative overlay — was found and fixed in this
-  pass across 4 tests, verified clean against `build` and `rules:check`.
-- **5 tests remain real, unresolved findings**, all matching previously-documented, independently
-  reproduced issues from the 2026-09-16 full-suite run — stable, not new regressions.
-- **52 skips**: only 1 is genuinely out-of-scope (cross-browser config); the rest are blocked on
-  live grounding, specific test data, Map View's own inconsistent reachability, or one confirmed
-  regression (Events section removed from the homepage, 5 tests).
+- **113/207 (55%) of all 8 M4 modules' live tests pass overall; 113/170 (66%) excluding Movie
+  Details**, whose 27 failures are one already-documented systemic environment issue, not new
+  defects.
+- One real bug — the Experience module's carousel-tile click, blocked by a permanent decorative
+  overlay — was found and fixed in this pass across 4 tests, verified clean against `build` and
+  `rules:check`.
+- **5 tests in the other 7 modules remain real, unresolved findings**, all matching
+  previously-documented, independently reproduced issues from the 2026-09-16 full-suite run —
+  stable, not new regressions.
+- **62 skips total**: only 1 is genuinely out-of-scope (cross-browser config); the rest are
+  blocked on live grounding, specific test data, Map View's own inconsistent reachability, or one
+  confirmed regression (Events section removed from the homepage, 5 tests).
+- **Movie Details needs an environment/data-level fix** (stable test-data seed or API mocking),
+  not more automation effort — the systemic timeout was independently reproduced twice now
+  (2026-09-16 and 2026-09-22), a week apart.

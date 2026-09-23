@@ -145,56 +145,52 @@
       <div class="meta-item"><dt>Run date</dt><dd>2026-09-22</dd></div>
       <div class="meta-item"><dt>Environment</dt><dd>inox-uat-web.pvrinox.com</dd></div>
       <div class="meta-item"><dt>Source</dt><dd>_PVR INOX __ Test Cases - M4 _ Website.pdf (TC_WEB_001–447)</dd></div>
-      <div class="meta-item"><dt>Coverage</dt><dd>8 spec files · 7 complete, 1 in progress</dd></div>
+      <div class="meta-item"><dt>Coverage</dt><dd>8 spec files · all complete</dd></div>
     </dl>
-    <div class="pending-banner">
-      <div class="dot"></div>
-      <div><strong>Movie Details (TC_WEB_386–447) is still executing</strong> as of this publish — its <span class="mono">beforeEach</span> hook carries a pre-documented 300s-per-test timeout (real UAT cinema/showtime data volatility, root-caused in the 2026-09-16 full-suite run). This page will be republished with its results once that run completes.</div>
-    </div>
   </header>
 
   <!-- ================= KPI HERO ================= -->
   <section class="hero-kpis">
     <div class="section-head">
-      <div class="eyebrow">7 of 8 modules</div>
-      <h2 style="font-size:20px;margin:0;">Global Search · Event Listing · Event Details · Experience · Home Screen · Cinemas Listing &amp; Detail</h2>
+      <div class="eyebrow">All 8 modules</div>
+      <h2 style="font-size:20px;margin:0;">Global Search · Event Listing · Event Details · Experience · Home Screen · Cinemas Listing &amp; Detail · Movie Details</h2>
     </div>
     <div class="kpi-grid">
       <div class="kpi-tile">
         <div class="label">Total Executed</div>
-        <div class="value num">170</div>
-        <div class="sub">across 7 spec files</div>
+        <div class="value num">207</div>
+        <div class="sub">across 8 spec files</div>
       </div>
       <div class="kpi-tile pass">
         <div class="label">Passed</div>
         <div class="value num">113</div>
-        <div class="sub">66% of total</div>
+        <div class="sub">55% of total</div>
       </div>
       <div class="kpi-tile fail">
         <div class="label">Failed</div>
-        <div class="value num">5</div>
-        <div class="sub">3% of total</div>
+        <div class="value num">32</div>
+        <div class="sub">15% of total</div>
       </div>
       <div class="kpi-tile skip">
         <div class="label">Skipped</div>
-        <div class="value num">52</div>
-        <div class="sub">31% of total</div>
+        <div class="value num">62</div>
+        <div class="sub">30% of total</div>
       </div>
     </div>
 
-    <div class="stack" role="img" aria-label="113 passed, 5 failed, 52 skipped, out of 170 total">
-      <div class="seg-pass" style="flex:66" title="Passed: 113 (66%)"></div>
-      <div class="seg-fail" style="flex:3" title="Failed: 5 (3%)"></div>
-      <div class="seg-skip" style="flex:31" title="Skipped: 52 (31%)"></div>
+    <div class="stack" role="img" aria-label="113 passed, 32 failed, 62 skipped, out of 207 total">
+      <div class="seg-pass" style="flex:55" title="Passed: 113 (55%)"></div>
+      <div class="seg-fail" style="flex:15" title="Failed: 32 (15%)"></div>
+      <div class="seg-skip" style="flex:30" title="Skipped: 62 (30%)"></div>
     </div>
     <div class="legend">
       <div class="legend-item"><span class="swatch pass"></span>Passed — 113</div>
-      <div class="legend-item"><span class="swatch fail"></span>Failed — 5</div>
-      <div class="legend-item"><span class="swatch skip"></span>Skipped — 52</div>
+      <div class="legend-item"><span class="swatch fail"></span>Failed — 32</div>
+      <div class="legend-item"><span class="swatch skip"></span>Skipped — 62</div>
     </div>
 
     <div class="reclass">
-      <strong>Reclassified from the first pass.</strong> A 3-worker parallel run first showed 13 failures. Every one was re-run alone before being counted: <strong>3 were parallel-load flakes</strong>, <strong>4 shared one real locator bug</strong> — found and fixed during this run — <strong>2 converted to a genuine runtime data-volatility skip</strong> once the click itself worked, and <strong>5 remain real, unresolved findings</strong> (all matching previously-documented issues from the 2026-09-16 full-suite run).
+      <strong>27 of the 32 failures are Movie Details — one single systemic cause, not 27 separate defects</strong> (see Section 05). Excluding Movie Details, the other 7 modules land at 113/170 pass (66%), 5/170 fail (3%). A first 3-worker parallel run on those 7 modules showed 13 failures; isolation re-runs split them: <strong>3 were parallel-load flakes</strong>, <strong>4 shared one real locator bug</strong> — found and fixed during this run — <strong>2 converted to a genuine runtime data-volatility skip</strong> once the click itself worked, and <strong>5 remain real, unresolved findings</strong> (all matching previously-documented issues from the 2026-09-16 full-suite run).
     </div>
   </section>
 
@@ -247,9 +243,14 @@
             <td><div class="mini-bar" title="31 pass / 28 skip"><div style="flex:31;background:var(--pass)"></div><div style="flex:28;background:var(--skip)"></div></div></td>
           </tr>
           <tr>
-            <td>Movie Details <span class="badge pending">pending</span></td><td class="mono">TC_WEB_386–447</td>
-            <td class="num-col">—</td><td class="num-col">—</td><td class="num-col">—</td><td class="num-col">—</td>
-            <td><div class="mini-bar pending" title="run in progress"></div></td>
+            <td>Movie Details <span class="badge confirmed">systemic</span></td><td class="mono">TC_WEB_386–447</td>
+            <td class="num-col">37</td><td class="num-col">0</td><td class="num-col">27</td><td class="num-col">10</td>
+            <td><div class="mini-bar" title="27 fail / 10 skip"><div style="flex:27;background:var(--fail)"></div><div style="flex:10;background:var(--skip)"></div></div></td>
+          </tr>
+          <tr style="font-weight:600;">
+            <td>Total</td><td></td>
+            <td class="num-col">207</td><td class="num-col">113</td><td class="num-col">32</td><td class="num-col">62</td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -342,15 +343,30 @@
     </div>
   </section>
 
-  <!-- ================= MOVIE DETAILS PENDING ================= -->
+  <!-- ================= MOVIE DETAILS ================= -->
   <section>
     <div class="section-head">
       <div class="eyebrow">Section 05</div>
-      <h2>Movie Details (TC_WEB_386–447) — pending</h2>
+      <h2>Movie Details — 0 pass / 27 fail / 10 skip</h2>
+      <p>All 27 failures trace to one systemic cause, independently reproduced twice a week apart — not 27 separate defects.</p>
     </div>
-    <div class="callout pending">
-      <p>This module is still executing as of this publish. Its <span class="mono">beforeEach</span> hook carries a 300-second per-test timeout (<span class="mono">testInfo.setTimeout(300_000)</span>, <span class="mono">movie-details.spec.ts:43</span>) because of a pre-documented systemic root cause: real UAT cinema/showtime data volatility (cinemas flip between real showtimes and "0 Shows" within minutes). This was already root-caused in the 2026-09-16 full-suite run (27 of that run's 82 failures, single systemic cause, environment/data volatility — not a product or test defect) and is reproducing identically in this pass's first several tests.</p>
-      <p>This page will be republished with final Movie Details numbers once the run completes.</p>
+    <div class="callout warn">
+      <p>Its <span class="mono">beforeEach</span> hook carries a 300-second per-test timeout (<span class="mono">testInfo.setTimeout(300_000)</span>, <span class="mono">movie-details.spec.ts:43</span>) because of a pre-documented systemic root cause: real UAT cinema/showtime data volatility (cinemas flip between real showtimes and "0 Shows" within minutes). This was already root-caused in the 2026-09-16 full-suite run (27 of that run's 82 failures, same single systemic cause) and <strong>reproduced identically in this pass</strong>: every one of the 27 live tests timed out at ~5.2–10 min in its <span class="mono">beforeEach</span> hook before the test body ever ran — no distinct assertion failure of its own, no new findings.</p>
+      <p><strong>Not fixable by test-code changes</strong> — the timeout is already the maximum practical wait for real, unmocked cinema data to stabilize. Resolving this needs a stable UAT test-data seed (a cinema/movie combination guaranteed to keep real showtimes for the test's duration) or mocking the showtime API for this module specifically — both environment/data decisions, not more automation effort.</p>
+    </div>
+
+    <h3 style="font-size:16px;margin:26px 0 6px;">Skipped (10) — by reason</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Reason</th><th class="mono">Tests</th></tr></thead>
+        <tbody>
+          <tr><td>Live data volatility — required chain/state not reproducible this pass</td><td class="mono">MOV-002, MOV-003</td></tr>
+          <tr><td>Depends on MOV-002/003, themselves blocked on the same live-data volatility</td><td class="mono">MOV-029, MOV-037</td></tr>
+          <tr><td>No popups triggered for the anchor movie/cinema combination during grounding</td><td class="mono">MOV-041, MOV-042, MOV-043</td></tr>
+          <tr><td>Distance filter confirmed to exist, but reaching a range-exhausted state needs slider manipulation + known cinema-distance data, not attempted this pass</td><td class="mono">MOV-044, MOV-045</td></tr>
+          <tr><td>No distinct "submit preference" failure API exists to mock</td><td class="mono">MOV-020</td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -358,13 +374,15 @@
   <section>
     <div class="section-head">
       <div class="eyebrow">Section 06</div>
-      <h2>Bottom line (partial — pending Movie Details)</h2>
+      <h2>Bottom line</h2>
     </div>
     <div class="callout">
       <ul>
-        <li><strong>113/170 (66%) of these 7 modules' live tests pass.</strong> One real bug — the Experience module's carousel-tile click, blocked by a permanent decorative overlay — was found and fixed in this pass across 4 tests, verified clean against <span class="mono">build</span> and <span class="mono">rules:check</span>.</li>
-        <li><strong>5 tests remain real, unresolved findings</strong>, all matching previously-documented, independently reproduced issues from the 2026-09-16 full-suite run — stable, not new regressions.</li>
-        <li><strong>52 skips:</strong> only 1 is genuinely out-of-scope (cross-browser config); the rest are blocked on live grounding, specific test data, Map View's own inconsistent reachability, or one confirmed regression (Events section removed from the homepage, 5 tests).</li>
+        <li><strong>113/207 (55%) of all 8 M4 modules' live tests pass overall; 113/170 (66%) excluding Movie Details</strong>, whose 27 failures are one already-documented systemic environment issue, not new defects.</li>
+        <li>One real bug — the Experience module's carousel-tile click, blocked by a permanent decorative overlay — was found and fixed in this pass across 4 tests, verified clean against <span class="mono">build</span> and <span class="mono">rules:check</span>.</li>
+        <li><strong>5 tests in the other 7 modules remain real, unresolved findings</strong>, all matching previously-documented, independently reproduced issues from the 2026-09-16 full-suite run — stable, not new regressions.</li>
+        <li><strong>62 skips total:</strong> only 1 is genuinely out-of-scope (cross-browser config); the rest are blocked on live grounding, specific test data, Map View's own inconsistent reachability, or one confirmed regression (Events section removed from the homepage, 5 tests).</li>
+        <li><strong>Movie Details needs an environment/data-level fix</strong> (stable test-data seed or API mocking), not more automation effort — the systemic timeout was independently reproduced twice now, a week apart.</li>
       </ul>
     </div>
     <footer class="note">
