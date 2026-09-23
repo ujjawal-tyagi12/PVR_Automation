@@ -3,9 +3,10 @@ import { MovieDetailsModule } from '@modules/MovieDetailsModule';
 
 /**
  * Grounded against the live app at BASE_URL (direct Playwright probe, 2026-09-22) — see
- * TestData/TestMd/now-showing-movie-details.md. Uses a live now-showing title
- * (Ramayanam(Hindi), id 30212, Mumbai) as of grounding time — live catalog data that will
- * naturally rotate.
+ * TestData/TestMd/now-showing-movie-details.md. Follows a real movie link from the homepage
+ * rather than a hardcoded slug/id, since live catalog data (which movies are showing) is
+ * environment-specific — confirmed live: a hardcoded UAT-grounded id shows a real
+ * "Movie Not Found!" page on preprod.
  *
  * @hritik
  */
@@ -14,13 +15,13 @@ test.describe('Now Showing Movies Details Page (real: /moviesessions/{City}/{Mov
 
   test.beforeEach(async ({ page }) => {
     const movie = new MovieDetailsModule(page);
-    await movie.open('mumbai', 'ramayanamhindi', '30212');
+    await movie.openAnyRealMovie();
     void page;
   });
 
   test('APP-068 real movie details load with full metadata @Smoke', async ({ page }) => {
     const movie = new MovieDetailsModule(page);
-    await movie.assertMovieDetailsLoaded('Ramayanam');
+    await movie.assertMovieDetailsLoadedGeneric();
     void page;
   });
 

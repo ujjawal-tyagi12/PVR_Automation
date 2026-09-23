@@ -3,8 +3,9 @@ import { SeatLayoutModule } from '@modules/SeatLayoutModule';
 
 /**
  * Grounded against the live app at BASE_URL (direct Playwright probe, 2026-09-22) — see
- * TestData/TestMd/seat-layout-screen.md. Uses live now-showing/showtime data as of grounding
- * time (Ramayanam(Hindi), id 30212, Mumbai, 06:00 PM show).
+ * TestData/TestMd/seat-layout-screen.md. Follows a real movie + showtime from the homepage
+ * rather than a hardcoded slug/id, since live catalog data is environment-specific —
+ * confirmed live: a hardcoded UAT-grounded id shows a real "Movie Not Found!" page on preprod.
  *
  * @hritik
  */
@@ -13,7 +14,7 @@ test.describe('Seat Layout Screen (real: /seatLayout/{params}) @P0 @Regression',
 
   test.beforeEach(async ({ page }) => {
     const seat = new SeatLayoutModule(page);
-    await seat.openSeatLayout('mumbai', 'ramayanamhindi', '30212', '06:00 PM');
+    await seat.openSeatLayoutForAnyRealMovie();
     void page;
   });
 
@@ -25,14 +26,17 @@ test.describe('Seat Layout Screen (real: /seatLayout/{params}) @P0 @Regression',
 
   test('APP-107 real seat selection updates price and enables Continue @Smoke', async ({ page }) => {
     const seat = new SeatLayoutModule(page);
-    await seat.selectFirstAvailableSeat('Executive');
+    const [category] = await seat.discoverCategoryNames();
+    await seat.selectFirstAvailableSeat(category);
     await seat.assertSeatSelectedAndPriceUpdated();
     void page;
   });
 
   test('APP-108 real cross-category selection is blocked @P1', async ({ page }) => {
     const seat = new SeatLayoutModule(page);
-    await seat.attemptCrossCategorySelection('Executive', 'Club');
+    const categories = await seat.discoverCategoryNames();
+    test.skip(categories.length < 2, 'This movie/cinema only offers one seat category — no second category to cross-select against.');
+    await seat.attemptCrossCategorySelection(categories[0], categories[1]);
     await seat.assertCrossCategoryBlocked();
     void page;
   });
@@ -71,7 +75,8 @@ test.describe('Seat Layout Screen (real: /seatLayout/{params}) @P0 @Regression',
 
   test('APP-113 real max-seat-selection limit blocks the 11th seat @P1 [Negative]', async ({ page }) => {
     const seat = new SeatLayoutModule(page);
-    await seat.selectSeatsUpToLimit('Executive', 11);
+    const [category] = await seat.discoverCategoryNames();
+    await seat.selectSeatsUpToLimit(category, 11);
     await seat.assertMaxSeatsLimitReached();
     void page;
   });
@@ -92,8 +97,9 @@ test.describe('Seat Layout Screen (real: /seatLayout/{params}) @P0 @Regression',
 
   test('APP-116 real seat deselection reverts to empty-selection state @P1', async ({ page }) => {
     const seat = new SeatLayoutModule(page);
-    await seat.selectFirstAvailableSeat('Executive');
-    await seat.deselectFirstSelectedSeat('Executive');
+    const [category] = await seat.discoverCategoryNames();
+    await seat.selectFirstAvailableSeat(category);
+    await seat.deselectFirstSelectedSeat(category);
     await seat.assertNoSeatSelected();
     void page;
   });

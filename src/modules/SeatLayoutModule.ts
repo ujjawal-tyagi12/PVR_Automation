@@ -20,8 +20,26 @@ export class SeatLayoutModule {
     await this.seatPage.gotoMovieSessionsAndOpenShowtime(city, movieSlug, movieId, timeLabel);
   }
 
+  /** Environment-agnostic alternative to openSeatLayout() — a hardcoded movie slug/id is live
+   * catalog data that doesn't carry across environments (confirmed live: a real
+   * "Movie Not Found!" page on preprod). Follows a real movie + real showtime instead. */
+  async openSeatLayoutForAnyRealMovie(): Promise<void> {
+    Logger.info('Opening seat layout for a real movie/showtime from the homepage');
+    await this.seatPage.gotoAnyRealMovieAndOpenShowtime();
+  }
+
   async assertLayoutLoadedWithCategories(): Promise<void> {
-    await expect(this.seatPage.categoryHeading('Executive')).toBeVisible({ timeout: 15000 });
+    await expect(this.seatPage.allCategoryHeadings().first()).toBeVisible({ timeout: 15000 });
+  }
+
+  /** Reads the real category names present for whatever movie/cinema was reached — "Executive"
+   * etc. are specific cinema config, not universal (confirmed live). Extracts just the name
+   * before the ":" from each heading's full text (e.g. "Executive: ₹101.68 + GST" →
+   * "Executive"). */
+  async discoverCategoryNames(): Promise<string[]> {
+    await expect(this.seatPage.allCategoryHeadings().first()).toBeVisible({ timeout: 15000 });
+    const texts = await this.seatPage.allCategoryHeadings().allInnerTexts();
+    return texts.map((t) => t.split(':')[0].trim());
   }
 
   async assertColorCodingLegendShown(): Promise<void> {

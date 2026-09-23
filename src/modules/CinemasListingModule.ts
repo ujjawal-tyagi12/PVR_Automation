@@ -34,9 +34,16 @@ export class CinemasListingModule {
     await expect(this.page.getByText(/km away/i).first()).toBeVisible({ timeout: 15000 });
   }
 
-  async openCinemaDetail(cinemaName: string): Promise<void> {
-    await this.cinemasPage.cinemaHeading(cinemaName).click();
+  /** Opens whichever cinema is first in the live listing — a hardcoded name is environment-
+   * specific catalog data that doesn't carry across environments. Returns its real name so
+   * callers can assert against it. */
+  async openFirstCinemaDetail(): Promise<string> {
+    const heading = this.cinemasPage.firstListedCinemaHeading();
+    await expect(heading).toBeVisible({ timeout: 15000 });
+    const name = (await heading.innerText()).trim();
+    await heading.click();
     await expect(this.cinemasPage.getDirectionsButton()).toBeVisible({ timeout: 15000 });
+    return name;
   }
 
   async assertCinemaDetailLoaded(cinemaName: string): Promise<void> {

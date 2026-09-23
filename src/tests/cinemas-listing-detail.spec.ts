@@ -33,8 +33,8 @@ test.describe('Cinemas Listing & Detail Page (real: /cinemas/{City}) @P0 @Regres
   test('APP-059 real cinema detail loads when a cinema is selected @Smoke', async ({ page }) => {
     const cinemas = new CinemasListingModule(page);
     await cinemas.openForCity('Mumbai');
-    await cinemas.openCinemaDetail('INOX Megaplex, Inorbit Mall');
-    await cinemas.assertCinemaDetailLoaded('INOX Megaplex, Inorbit Mall');
+    const cinemaName = await cinemas.openFirstCinemaDetail();
+    await cinemas.assertCinemaDetailLoaded(cinemaName);
   });
 
   test('APP-060 confirms no search input exists on this page (adapted) @P1', async ({ page }) => {
@@ -52,7 +52,7 @@ test.describe('Cinemas Listing & Detail Page (real: /cinemas/{City}) @P0 @Regres
   test('APP-062 real Amenities section displays for a selected cinema @P2', async ({ page }) => {
     const cinemas = new CinemasListingModule(page);
     await cinemas.openForCity('Mumbai');
-    await cinemas.openCinemaDetail('INOX Megaplex, Inorbit Mall');
+    await cinemas.openFirstCinemaDetail();
     await cinemas.assertAmenitiesDisplayed();
   });
 

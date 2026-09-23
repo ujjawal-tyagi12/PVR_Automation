@@ -24,6 +24,12 @@ export class GlobalSearchPage {
   // not just a locator guess. .first() targets the active tab's.
   noResultsHeading = () => this.page.getByRole('heading', { name: 'No Result Found!' }).first();
   movieResultHeading = (name: string) => this.page.getByRole('heading', { name, exact: true });
+  // Grounded 2026-09-23: exact live titles (movie/cinema names) are environment-specific
+  // catalog data — confirmed to differ in formatting between UAT and preprod (e.g.
+  // "Spider-Man: Brand New Day" vs "SPIDERMAN BRAND NEW DAY"). A generic level-3 result
+  // heading inside the active tabpanel is the environment-agnostic real signal that search
+  // returned a match.
+  anyResultHeading = () => this.page.getByRole('tabpanel').getByRole('heading', { level: 3 }).first();
   recentSearchesText = () => this.page.getByText(/recent search/i);
 
   async goto(): Promise<void> {

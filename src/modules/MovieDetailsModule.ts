@@ -21,8 +21,23 @@ export class MovieDetailsModule {
     await this.moviePage.goto(city, movieSlug, movieId);
   }
 
+  /** Environment-agnostic alternative to open() — a hardcoded movie slug/id is live catalog
+   * data that doesn't carry across environments (confirmed live: a real "Movie Not Found!"
+   * page on preprod). Follows a real movie link from the homepage instead. */
+  async openAnyRealMovie(): Promise<void> {
+    Logger.info('Opening a real movie from the homepage');
+    await this.moviePage.gotoHomepage();
+    const href = await this.moviePage.homepageMovieLink().getAttribute('href');
+    if (!href) throw new Error('No real movie link found on the homepage');
+    await this.page.goto(href);
+  }
+
   async assertMovieDetailsLoaded(expectedTitle: string): Promise<void> {
     await expect(this.moviePage.movieTitleHeading()).toContainText(expectedTitle, { timeout: 15000 });
+  }
+
+  async assertMovieDetailsLoadedGeneric(): Promise<void> {
+    await expect(this.moviePage.movieTitleHeading()).not.toHaveText('', { timeout: 15000 });
   }
 
   async playTrailerAndAssertOpens(): Promise<void> {

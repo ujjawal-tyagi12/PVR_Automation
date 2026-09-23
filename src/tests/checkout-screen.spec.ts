@@ -3,9 +3,11 @@ import { CheckoutModule } from '@modules/CheckoutModule';
 
 /**
  * Grounded against the live app at BASE_URL (direct Playwright probe, 2026-09-22) — see
- * TestData/TestMd/checkout-screen.md. Uses live now-showing/showtime data as of grounding time
- * (Ramayanam(Hindi), id 30212, Mumbai, 06:00 PM show). Per explicit user agreement, no test
- * here ever proceeds past "Select Payment Method" into the real payment gateway.
+ * TestData/TestMd/checkout-screen.md. Follows a real movie + showtime from the homepage rather
+ * than a hardcoded slug/id, since live catalog data is environment-specific — confirmed live:
+ * a hardcoded UAT-grounded id shows a real "Movie Not Found!" page on preprod. Per explicit
+ * user agreement, no test here ever proceeds past "Select Payment Method" into the real
+ * payment gateway.
  *
  * @hritik
  */
@@ -15,7 +17,7 @@ test.describe('Checkout Screen (real: /select-food checkout) @P0 @Regression', (
   test.beforeEach(async ({ page }) => {
     test.setTimeout(120000);
     const checkout = new CheckoutModule(page);
-    await checkout.reachCheckoutTicketOnly('mumbai', 'ramayanamhindi', '30212', '06:00 PM');
+    await checkout.reachCheckoutTicketOnlyForAnyRealMovie();
     void page;
   });
 

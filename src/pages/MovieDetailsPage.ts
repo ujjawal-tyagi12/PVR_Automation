@@ -36,4 +36,14 @@ export class MovieDetailsPage {
   async goto(city: string, movieSlug: string, movieId: string): Promise<void> {
     await this.page.goto(`/moviesessions/${city}/${movieSlug}/${movieId}`);
   }
+
+  // Grounded 2026-09-23: a hardcoded movie slug/id is live catalog data — confirmed to not
+  // exist on preprod (real "Movie Not Found!" page). The homepage always links to whatever
+  // movies are actually showing, so following one of those real links is the environment-
+  // agnostic way to reach a real movie details page.
+  homepageMovieLink = () => this.page.locator('a[href*="/moviesessions/"]').first();
+
+  async gotoHomepage(): Promise<void> {
+    await this.page.goto('/');
+  }
 }

@@ -38,7 +38,18 @@ export class CheckoutPage {
   // SeatLayoutModule.selectFirstAvailableSeat()'s hasNot-descendant filter.
   executiveCategoryRow = () =>
     this.page.locator('table').getByRole('row').filter({ has: this.page.getByRole('heading', { name: /^Executive:/i }) });
+  // Grounded 2026-09-23: "Executive" is a specific cinema's category naming — confirmed not
+  // every real cinema/screen uses that category (a real "Movie Not Found!"-adjacent failure:
+  // no matching row for a different, randomly-reached real cinema on preprod). The first
+  // category row in the table, whichever it's named, is the environment-agnostic real target.
+  firstCategoryRow = () => this.page.locator('table').getByRole('row').first();
+  allCategoryRows = () => this.page.locator('table').getByRole('row');
   showtimeButton = (timeLabel: string) => this.page.getByRole('button', { name: new RegExp(`^${timeLabel}`, 'i') }).first();
+  // Grounded 2026-09-23: a hardcoded movie slug/id is live catalog data — confirmed to not
+  // exist on preprod (real "Movie Not Found!" page). Following a real homepage movie link,
+  // then any real showtime button, is the environment-agnostic path here.
+  homepageMovieLink = () => this.page.locator('a[href*="/moviesessions/"]').first();
+  anyShowtimeButton = () => this.page.getByRole('button', { name: /^\d{2}:\d{2} (AM|PM)/ }).first();
   formatTermsAcceptButton = () => this.page.getByRole('button', { name: 'Accept & Continue' });
   skipAndProceedButton = () => this.page.getByRole('button', { name: 'Skip & Proceed' });
   continueButton = () => this.page.getByRole('button', { name: 'Continue', exact: true });

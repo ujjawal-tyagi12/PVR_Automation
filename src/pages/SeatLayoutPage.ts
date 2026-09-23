@@ -16,8 +16,15 @@ export class SeatLayoutPage {
 
   categoryHeading = (category: string) => this.page.getByRole('heading', { name: new RegExp(`^${category}:`, 'i') });
   categoryRow = (category: string) => this.page.locator('table').getByRole('row').filter({ has: this.categoryHeading(category) });
-  availableSeatsInCategory = (category: string) =>
-    this.categoryRow(category).getByRole('button').filter({ hasNot: this.page.locator('[disabled]') });
+  // Grounded 2026-09-23: not every real cinema/screen uses "Executive"/"Club" — confirmed live
+  // on a different, randomly-reached real cinema. All category-heading level-4s, in whatever
+  // real order they render, is the environment-agnostic way to discover real category names.
+  allCategoryHeadings = () => this.page.locator('table').getByRole('heading', { level: 4 });
+  // Grounded 2026-09-23: filter({ hasNot: locator('[disabled]') }) checks for a disabled
+  // *descendant*, not the seat button's own disabled attribute — a latent bug confirmed live
+  // (it only worked before by coincidence, when the first seat in DOM order happened to be
+  // enabled). button:not([disabled]) checks the attribute correctly.
+  availableSeatsInCategory = (category: string) => this.categoryRow(category).locator('button:not([disabled])');
   continueButton = () => this.page.getByRole('button', { name: 'Continue', exact: true });
   totalTicketPriceLabel = () => this.page.getByText('Total Ticket Price');
   crossCategoryDialogHeading = () => this.page.getByRole('heading', { name: 'Seat Selection Not Allowed' });
@@ -34,5 +41,19 @@ export class SeatLayoutPage {
   async gotoMovieSessionsAndOpenShowtime(city: string, movieSlug: string, movieId: string, timeLabel: string): Promise<void> {
     await this.page.goto(`/moviesessions/${city}/${movieSlug}/${movieId}`);
     await this.page.getByRole('button', { name: new RegExp(`^${timeLabel}`, 'i') }).first().click();
+  }
+
+  // Grounded 2026-09-23: a hardcoded movie slug/id is live catalog data — confirmed to not
+  // exist on preprod (real "Movie Not Found!" page). Following a real homepage movie link,
+  // then any real showtime button on that page, is the environment-agnostic path here.
+  homepageMovieLink = () => this.page.locator('a[href*="/moviesessions/"]').first();
+  anyShowtimeButton = () => this.page.getByRole('button', { name: /^\d{2}:\d{2} (AM|PM)/ }).first();
+
+  async gotoAnyRealMovieAndOpenShowtime(): Promise<void> {
+    await this.page.goto('/');
+    const href = await this.homepageMovieLink().getAttribute('href');
+    if (!href) throw new Error('No real movie link found on the homepage');
+    await this.page.goto(href);
+    await this.anyShowtimeButton().click();
   }
 }

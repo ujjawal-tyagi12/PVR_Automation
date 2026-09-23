@@ -39,6 +39,13 @@ export class GlobalSearchModule {
     await expect(this.searchPage.movieResultHeading(movieName)).toBeVisible({ timeout: 10000 });
   }
 
+  /** Environment-agnostic version of assertMovieResultShown() — exact live titles differ in
+   * formatting across environments (confirmed live), so this checks that search returned a
+   * real result at all rather than one specific title. */
+  async assertAnyResultShown(): Promise<void> {
+    await expect(this.searchPage.anyResultHeading()).toBeVisible({ timeout: 10000 });
+  }
+
   async openCinemasTab(): Promise<void> {
     await this.searchPage.cinemasTab().click();
   }

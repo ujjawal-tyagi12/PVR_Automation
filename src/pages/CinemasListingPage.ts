@@ -18,6 +18,10 @@ export class CinemasListingPage {
   listViewButton = () => this.page.getByRole('button', { name: /List View/i });
   mapViewButton = () => this.page.getByRole('button', { name: /Map View/i });
   cinemaHeading = (name: string) => this.page.getByRole('heading', { name, exact: true }).first();
+  // Grounded 2026-09-23: a hardcoded cinema name is environment-specific live catalog data —
+  // confirmed to differ between UAT and preprod. The first listed cinema, whichever it is, is
+  // the environment-agnostic real target.
+  firstListedCinemaHeading = () => this.page.getByRole('list').getByRole('heading', { level: 3 }).first();
   getDirectionsButton = () => this.page.getByRole('button', { name: 'Get Directions' });
   amenitiesHeading = () => this.page.getByRole('heading', { name: 'Amenities' });
   noResultsHeading = () => this.page.getByRole('heading', { name: 'No Result Found!' });

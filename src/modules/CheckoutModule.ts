@@ -11,10 +11,9 @@ import { Logger } from '@utils/Logger';
  * mechanics already proven live there.
  *
  * Note: uses its own, independently-correct seat-picking logic (`button:not([disabled])`)
- * rather than SeatLayoutModule.selectFirstAvailableSeat(), which was found during this
- * module's grounding to check for a disabled *descendant* rather than the seat button's own
- * disabled attribute — a latent bug in that already-shipped module, left as-is per instruction
- * not to modify previous modules; flagged for a future pass instead of fixed here.
+ * rather than SeatLayoutModule.selectFirstAvailableSeat() — the same disabled-descendant-vs-
+ * own-attribute bug this module's grounding first surfaced was since fixed directly in
+ * SeatLayoutPage.ts (2026-09-23).
  *
  * @hritik
  */
@@ -37,8 +36,25 @@ export class CheckoutModule {
     // hydration-timing class WaitHelper.forHydration already centralizes elsewhere.
     await WaitHelper.forHydration(this.page);
     await this.checkoutPage.showtimeButton(timeLabel).click();
+    await this.continueFromShowtimeToCheckout();
+  }
 
-    await this.checkoutPage.executiveCategoryRow().locator('button:not([disabled])').first().click();
+  /** Environment-agnostic alternative to reachCheckoutTicketOnly() — a hardcoded movie
+   * slug/id is live catalog data that doesn't carry across environments (confirmed live: a
+   * real "Movie Not Found!" page on preprod). Follows a real movie + real showtime instead. */
+  async reachCheckoutTicketOnlyForAnyRealMovie(): Promise<void> {
+    Logger.info('Reaching checkout for a real movie/showtime from the homepage');
+    await this.page.goto('/');
+    await WaitHelper.forHydration(this.page);
+    const href = await this.checkoutPage.homepageMovieLink().getAttribute('href');
+    if (!href) throw new Error('No real movie link found on the homepage');
+    await this.page.goto(href);
+    await this.checkoutPage.anyShowtimeButton().click();
+    await this.continueFromShowtimeToCheckout();
+  }
+
+  private async continueFromShowtimeToCheckout(): Promise<void> {
+    await this.selectAnyAvailableSeat();
     await this.checkoutPage.continueButton().click();
 
     // A format-specific T&C dialog ("HEADS UP!") can appear here — confirmed live, not always
@@ -66,6 +82,22 @@ export class CheckoutModule {
     await this.adminLogin.completeLogin(TEST_PHONE, VALID_OTP);
     await this.checkoutPage.continueButton().click();
     await expect(this.checkoutPage.billDetailsHeading()).toBeVisible({ timeout: 20000 });
+  }
+
+  /** Grounded 2026-09-23: the first category row can be fully sold out for a given real
+   * showtime (confirmed live) — not every category has an available seat. Walks the real
+   * category rows in order and clicks the first one with an actual open seat. */
+  private async selectAnyAvailableSeat(): Promise<void> {
+    const rows = this.checkoutPage.allCategoryRows();
+    const count = await rows.count();
+    for (let i = 0; i < count; i += 1) {
+      const seat = rows.nth(i).locator('button:not([disabled])').first();
+      if (await seat.isVisible().catch(() => false)) {
+        await seat.click();
+        return;
+      }
+    }
+    throw new Error('No available seat found in any category row for this showtime');
   }
 
   async assertCheckoutLoaded(): Promise<void> {
